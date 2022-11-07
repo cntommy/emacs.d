@@ -1,0 +1,42 @@
+<p><em>Iosevka Comfy</em> is a customised build of the <a href="https://github.com/be5invis/Iosevka">Iosevka
+typeface</a>, with a consistent
+rounded style and overrides for almost all individual glyphs in both
+roman (upright) and italic (slanted) variants.</p>
+
+<p>IMAGES HERE: <a href="https://protesilaos.com/emacs/iosevka-comfy-pictures">https://protesilaos.com/emacs/iosevka-comfy-pictures</a>.</p>
+
+<ul>
+  <li>Git repo on SourceHut: <a href="https://git.sr.ht/~protesilaos/iosevka-comfy">https://git.sr.ht/~protesilaos/iosevka-comfy</a>
+    <ul>
+      <li>Mirrors:
+        <ul>
+          <li>GitHub: <a href="https://github.com/protesilaos/iosevka-comfy">https://github.com/protesilaos/iosevka-comfy</a></li>
+          <li>GitLab: <a href="https://gitlab.com/protesilaos/iosevka-comfy">https://gitlab.com/protesilaos/iosevka-comfy</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Mailing list: <a href="https://lists.sr.ht/~protesilaos/general-issues">https://lists.sr.ht/~protesilaos/general-issues</a></li>
+  <li>Backronym: Iosevka (Could Only Modify a Font, Yes)</li>
+</ul>
+
+<p>Below are the release notes.</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p>Made the <code class="language-plaintext highlighter-rouge">@</code> and <code class="language-plaintext highlighter-rouge">%</code> characters wider in the font families
+<code class="language-plaintext highlighter-rouge">iosevka-comfy-duo</code>, <code class="language-plaintext highlighter-rouge">iosevka-comfy-motion-duo</code>, <code class="language-plaintext highlighter-rouge">iosevka-comfy-wide</code>,
+<code class="language-plaintext highlighter-rouge">iosevka-comfy-wide-fixed</code>, <code class="language-plaintext highlighter-rouge">iosevka-comfy-wide-duo</code>.  This is
+consistent with their design, which has wider glyphs and/or more
+generous spacing.</p>
+  </li>
+  <li>
+    <p>Built using upstream Iosevka <code class="language-plaintext highlighter-rouge">v16.3.4</code>, commit <code class="language-plaintext highlighter-rouge">ad1e247a</code>.</p>
+  </li>
+</ul>
+
+<p>The rest of the design remains the same as before.  Read the detailed
+release notes for version 1.0.0:
+<a href="https://protesilaos.com/codelog/2022-09-14-iosevka-comfy-1-0-0/">https://protesilaos.com/codelog/2022-09-14-iosevka-comfy-1-0-0/</a>.</p>

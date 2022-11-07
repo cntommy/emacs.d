@@ -1,0 +1,20 @@
+<p>This paper aims to improve the performance of text-to-SQL parsing by
+exploring the intrinsic uncertainties in the neural network based approaches
+(called SUN). From the data uncertainty perspective, it is indisputable that a
+single SQL can be learned from multiple semantically-equivalent
+questions.Different from previous methods that are limited to one-to-one
+mapping, we propose a data uncertainty constraint to explore the underlying
+complementary semantic information among multiple semantically-equivalent
+questions (many-to-one) and learn the robust feature representations with
+reduced spurious associations. In this way, we can reduce the sensitivity of
+the learned representations and improve the robustness of the parser. From the
+model uncertainty perspective, there is often structural information
+(dependence) among the weights of neural networks. To improve the
+generalizability and stability of neural text-to-SQL parsers, we propose a
+model uncertainty constraint to refine the query representations by enforcing
+the output representations of different perturbed encoding networks to be
+consistent with each other. Extensive experiments on five benchmark datasets
+demonstrate that our method significantly outperforms strong competitors and
+achieves new state-of-the-art results. For reproducibility, we release our code
+and data at https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/sunsql.
+</p>

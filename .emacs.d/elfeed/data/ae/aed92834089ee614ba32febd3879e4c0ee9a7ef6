@@ -1,0 +1,16 @@
+<p>Knowledge distillation is an effective machine learning technique to transfer
+knowledge from a teacher model to a smaller student model, especially with
+unlabeled data. In this paper, we focus on knowledge distillation for the RNN-T
+model, which is widely used in state-of-the-art (SoTA) automatic speech
+recognition (ASR). Specifically, we compared using soft and hard target
+distillation to train large-scaleRNN-T models on the LibriSpeech/LibriLight
+public dataset (60k hours) and our in-house data (600k hours). We found that
+hard tar-gets are more effective when the teacher and student have different
+architecture, such as large teacher and small streaming student. On the other
+hand, soft target distillation works better in self-training scenario like
+iterative large teacher training. For a large model with0.6B weights, we
+achieve a new SoTA word error rate (WER) on LibriSpeech (8% relative
+improvement on dev-other) using Noisy Student Training with soft target
+distillation. It also allows our production teacher to adapt new data domain
+continuously.
+</p>

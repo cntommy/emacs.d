@@ -1,0 +1,13 @@
+<p>Transformers are among the state of the art for many tasks in speech, vision,
+and natural language processing, among others. Self-attentions, which are
+crucial contributors to this performance have quadratic computational
+complexity, which makes training on longer input sequences challenging. Prior
+work has produced state-of-the-art transformer variants with linear attention,
+however, current models sacrifice performance to achieve efficient
+implementations. In this work, we develop a novel linear transformer by
+examining the properties of the key-query product within self-attentions. Our
+model outperforms state of the art approaches on speech recognition and speech
+summarization, resulting in 1 % absolute WER improvement on the Librispeech-100
+speech recognition benchmark and a new INTERVIEW speech recognition benchmark,
+and 5 points on ROUGE for summarization with How2.
+</p>

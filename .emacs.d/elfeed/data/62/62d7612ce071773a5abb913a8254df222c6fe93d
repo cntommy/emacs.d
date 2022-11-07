@@ -1,0 +1,49 @@
+<p>
+There were a lot of great submissions for <a href="https://emacsconf.org/2022/">EmacsConf 2022</a>. The only way
+we were going to get all of them into EmacsConf was to split it into
+two full tracks, which we've never done before. We hadn't planned on
+changing much about EmacsConf this year, but fortunately the other
+organizers let me talk them into going for two tracks.
+</p>
+
+<p>
+I've been spending the last few weeks figuring out the tools and
+processes that will need in order to scale up, taking advantage of
+A-'s participation in virtual grade 1 to get some focused time during
+the day and W-'s patience to squeeze in some more coding here and
+there at night.
+</p>
+
+<p>
+<a href="https://git.emacsconf.org/emacsconf-el/">Most of the code I wrote last year</a> needed some tweaking to handle
+multiple tracks. I rewrote my scheduling code to allow me to quickly
+test different strategies, and I learned how to use Emacs's SVG and
+XML support to make <a href="https://emacsconf.org/2022/talks">graphical views of the schedule</a>. I added automated
+validation for availability constraints, which made it easier to
+shuffle talks around.
+</p>
+
+<p>
+Amin Bandali usually handles the infrastructure, but he's busy, so I
+started digging into it as an excuse to learn <a href="https://www.ansible.com/">Ansible</a> along the way. I
+want our setup to be easier to reproduce, and configuration management
+helps me prevent some of the mistakes that can happen when I'm doing
+system administration while distracted or in a rush. The <a href="https://git.emacsconf.org/emacsconf-ansible/">playbook</a> is
+starting to look pretty reasonable.
+</p>
+
+<p>
+I'm looking forward to refining our captioning workflow, too. Participants
+really liked watching the videos with captions last year, and I was
+happy to see that the people who helped make that possible also want
+to help out with EmacsConf 2022. I've started trying out
+<a href="https://github.com/openai/whisper">OpenAI Whisper</a> for captions and
+<a href="https://github.com/lhotse-speech/lhotse">lhotse</a> and torchaudio for word alignment. <a href="https://git.emacsconf.org/emacsconf-ansible/tree/roles/caption/templates/process-captions.py">Recognizing text</a> with the
+large model takes a long time on res.emacsconf.org because it doesn't
+have a GPU, but the results are pretty nice.
+</p>
+
+<p>
+Looking forward to learning even more in the lead-up to the
+conference!
+</p>

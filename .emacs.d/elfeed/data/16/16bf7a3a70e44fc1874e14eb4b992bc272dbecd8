@@ -1,0 +1,13 @@
+<p>Unsupervised representation learning for speech audios attained impressive
+performances for speech recognition tasks, particularly when annotated speech
+is limited. However, the unsupervised paradigm needs to be carefully designed
+and little is known about what properties these representations acquire. There
+is no guarantee that the model learns meaningful representations for valuable
+information for recognition. Moreover, the adaptation ability of the learned
+representations to other domains still needs to be estimated. In this work, we
+explore learning domain-invariant representations via a direct mapping of
+speech representations to their corresponding high-level linguistic
+informations. Results prove that the learned latents not only capture the
+articulatory feature of each phoneme but also enhance the adaptation ability,
+outperforming the baseline largely on accented benchmarks.
+</p>

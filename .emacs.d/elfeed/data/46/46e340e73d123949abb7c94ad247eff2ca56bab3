@@ -1,0 +1,21 @@
+<p>Early diagnosis of Alzheimer's disease (AD) is crucial in facilitating
+preventive care and to delay further progression. Speech based automatic AD
+screening systems provide a non-intrusive and more scalable alternative to
+other clinical screening techniques. Textual embedding features produced by
+pre-trained language models (PLMs) such as BERT are widely used in such
+systems. However, PLM domain fine-tuning is commonly based on the masked word
+or sentence prediction costs that are inconsistent with the back-end AD
+detection task. To this end, this paper investigates the use of prompt-based
+fine-tuning of PLMs that consistently uses AD classification errors as the
+training objective function. Disfluency features based on hesitation or pause
+filler token frequencies are further incorporated into prompt phrases during
+PLM fine-tuning. The exploit of the complementarity between BERT or RoBERTa
+based PLMs that are either prompt learning fine-tuned, or optimized using
+conventional masked word or sentence prediction costs, decision voting based
+system combination between them is further applied. Mean, standard deviation
+and the maximum among accuracy scores over 15 experiment runs are adopted as
+performance measurements for the AD detection system. Mean detection accuracy
+of 84.20% (with std 2.09%, best 87.5%) and 82.64% (with std 4.0%, best 89.58%)
+were obtained using manual and ASR speech transcripts respectively on the
+ADReSS20 test set consisting of 48 elderly speakers.
+</p>

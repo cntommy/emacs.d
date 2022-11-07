@@ -1,0 +1,17 @@
+<p>Targeted studies testing knowledge of subject-verb agreement (SVA) indicate
+that pre-trained language models encode syntactic information. We assert that
+if models robustly encode subject-verb agreement, they should be able to
+identify when agreement is correct and when it is incorrect. To that end, we
+propose grammatical error detection as a diagnostic probe to evaluate
+token-level contextual representations for their knowledge of SVA. We evaluate
+contextual representations at each layer from five pre-trained English language
+models: BERT, XLNet, GPT-2, RoBERTa, and ELECTRA. We leverage public annotated
+training data from both English second language learners and Wikipedia edits,
+and report results on manually crafted stimuli for subject-verb agreement. We
+find that masked language models linearly encode information relevant to the
+detection of SVA errors, while the autoregressive models perform on par with
+our baseline. However, we also observe a divergence in performance when probes
+are trained on different training sets, and when they are evaluated on
+different syntactic constructions, suggesting the information pertaining to SVA
+error detection is not robustly encoded.
+</p>

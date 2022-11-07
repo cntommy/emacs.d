@@ -1,0 +1,212 @@
+<p>The <code class="language-plaintext highlighter-rouge">ef-themes</code> is a collection of light and dark themes for GNU Emacs
+whose goal is to provide colourful (“pretty”) yet legible options for
+users who want something with a bit more flair than the <code class="language-plaintext highlighter-rouge">modus-themes</code>
+(also designed by me).</p>
+
+<ul>
+  <li>Package name (GNU ELPA): <code class="language-plaintext highlighter-rouge">ef-themes</code></li>
+  <li>Official manual: <a href="https://protesilaos.com/emacs/ef-themes">https://protesilaos.com/emacs/ef-themes</a></li>
+  <li>Change log: <a href="https://protesilaos.com/emacs/ef-themes-changelog">https://protesilaos.com/emacs/ef-themes-changelog</a></li>
+  <li>Sample pictures: <a href="https://protesilaos.com/emacs/ef-themes-pictures">https://protesilaos.com/emacs/ef-themes-pictures</a></li>
+  <li>Git repo on SourceHut: <a href="https://git.sr.ht/~protesilaos/ef-themes">https://git.sr.ht/~protesilaos/ef-themes</a>
+    <ul>
+      <li>Mirrors:
+        <ul>
+          <li>GitHub: <a href="https://github.com/protesilaos/ef-themes">https://github.com/protesilaos/ef-themes</a></li>
+          <li>GitLab: <a href="https://gitlab.com/protesilaos/ef-themes">https://gitlab.com/protesilaos/ef-themes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Mailing list: <a href="https://lists.sr.ht/~protesilaos/ef-themes">https://lists.sr.ht/~protesilaos/ef-themes</a></li>
+  <li>Backronym: Extremely Fatigued of Themes Having Exaggerated Markings,
+Embellishments, and Sparkles.</li>
+</ul>
+
+<p>Below are the release notes.</p>
+
+<hr />
+
+<h2>Introduced the ‘ef-cherie’ and ‘ef-cyprus’ themes</h2>
+
+<p><code class="language-plaintext highlighter-rouge">ef-cherie</code> is a dark theme with mostly pink, magenta, and gold
+colours.  <code class="language-plaintext highlighter-rouge">ef-cyprus</code> is a light theme characterised by green, yellow,
+teal, and red colours.</p>
+
+<p>Read the announcements, which also include screen shots:</p>
+
+<ul>
+  <li><a href="https://protesilaos.com/codelog/2022-10-25-ef-cherie/">https://protesilaos.com/codelog/2022-10-25-ef-cherie/</a>.</li>
+  <li><a href="https://protesilaos.com/codelog/2022-10-24-ef-cyprus-theme/">https://protesilaos.com/codelog/2022-10-24-ef-cyprus-theme/</a>.</li>
+</ul>
+
+<p>These themes bring the total number of the collection to 20, split
+into an equal number of light and dark themes.</p>
+
+<p>Note that some themes in the collection are designed as pairs.  Those
+have <code class="language-plaintext highlighter-rouge">-light</code> or <code class="language-plaintext highlighter-rouge">-dark</code> in their name.  The others are standalone.
+Regardless, the user can specify any two themes in the value of the
+user option <code class="language-plaintext highlighter-rouge">ef-themes-to-toggle</code> and then switch between them with
+the command <code class="language-plaintext highlighter-rouge">ef-themes-toggle</code>.  Or just use the other available
+commands: <code class="language-plaintext highlighter-rouge">ef-themes-select</code> for minibuffer completion and the
+<code class="language-plaintext highlighter-rouge">ef-themes-load-random</code> to load one from the collection (with a <code class="language-plaintext highlighter-rouge">C-u</code>
+prefix argument to limit the set to light or dark themes). The
+official manual explains more.</p>
+
+<p>Will there be more themes?  Time will tell.  Though I think that
+between those and the <code class="language-plaintext highlighter-rouge">modus-themes</code>, I have covered a very broad
+range of preferences and requirements for accessibility.</p>
+
+<h2>The ‘ef-themes-select’ optionally limits to light or dark</h2>
+
+<p>The command <code class="language-plaintext highlighter-rouge">ef-themes-select</code> can now accept a prefix argument (<code class="language-plaintext highlighter-rouge">C-u</code>
+with the default key bindings).  It prompts for a selection between
+light or dark themes and then uses minibuffer completion that only
+includes the items of the given set.</p>
+
+<p>Inspect the value of the variables <code class="language-plaintext highlighter-rouge">ef-themes-dark-themes</code>,
+<code class="language-plaintext highlighter-rouge">ef-themes-light-themes</code> for what is included in each set.</p>
+
+<p>[ Note that the command <code class="language-plaintext highlighter-rouge">ef-themes-load-random</code> has the same behaviour
+  of limiting to a set when it reads a prefix argument. ]</p>
+
+<h2>The ‘ef-themes-load-random’ reports the theme it loaded</h2>
+
+<p>The command <code class="language-plaintext highlighter-rouge">ef-themes-load-random</code> has received a quality-of-life
+improvement to its functionality.  It now prints a message in the echo
+area that includes the name of the theme it loaded.  The user can
+review echo area messages by invoking the <code class="language-plaintext highlighter-rouge">view-echo-area-messages</code>
+command, which is bound to <code class="language-plaintext highlighter-rouge">C-h e</code> by default.</p>
+
+<p>This change makes it easier for the user to remember a theme they
+liked.</p>
+
+<p>Thanks to Federico Stilman for sharing with me the idea of reporting
+the name of the randomly loaded theme.  This information is shared
+with permission, as it was done via a private channel.</p>
+
+<h2>Stylistic refinements</h2>
+
+<ul>
+  <li>
+    <p>All themes have palette entries for colour-coded underlines.  Those
+are used by packages like <code class="language-plaintext highlighter-rouge">flymake</code> and <code class="language-plaintext highlighter-rouge">flyspell</code> to highlight
+errors and warnings.  All dark Ef themes had a bit too intense
+colours applied to those constructs.  These have now been toned down
+in order to avoid potential distractions.  They still perform their
+intended function, without drawing too much attention to themselves.</p>
+  </li>
+  <li>
+    <p>Almost all themes have a slightly more pronounced <code class="language-plaintext highlighter-rouge">border</code> colour.
+This is used to underline links and to draw the vertical line that
+separates Emacs windows (among others).  It still is a subtle grey,
+though it works better than before.</p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">warning</code> mapping of many themes has been revised to be a more
+neutral yellow (I define hues as triplets of neutral, warmer,
+colder).  The previous style was a warmer shade of yellow, which
+brought it closer to red.  This, in turn, had the unintended effect
+of making the Org agenda potentially confusing.</p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">mail-3</code> mapping of some themes has been tweaked to better stand
+out in its context, without prejudice to the overall character of
+its theme.  This colour is used by email clients that leverage the
+built-in <code class="language-plaintext highlighter-rouge">message.el</code> library (such as Gnus, Mu4e, Notmuch).  In
+short, if you edit messages with deeply nested quotes, you will have
+an easier time telling apart those inner levels.</p>
+  </li>
+</ul>
+
+<h2>Support for packages, face groups, or faces</h2>
+
+<ul>
+  <li><strong>auto-dim-other-buffers:</strong> Added support for this package.  It
+applies a grey background to inactive windows.</li>
+  <li><strong>consult-separator:</strong> This is the border that divides previews of
+registers when the user evaluates the following form and then
+invokes C-x r i: <code class="language-plaintext highlighter-rouge">(advice-add #'register-preview :override
+  #'consult-register-window)</code></li>
+  <li><strong>embark-collect-zebra-highlight:</strong> The default value of this face is
+technically okay, though it is a neutral grey which does not look
+right with some of the Ef themes.</li>
+  <li><strong>flycheck:</strong> Added support for this package and covered all its
+faces.  It looks like <code class="language-plaintext highlighter-rouge">flymake</code> as it leverages the same set of
+colour-coding that the themes define.</li>
+  <li><strong>flymake:</strong> Expanded support to its fringe indicators.  Those are
+bitmaps that bring attention to in-buffer colour-coded underlines.
+They use an appropriate colour coding, like errors being red
+(depending on the theme—see the deuteranopia and tritanopia
+implementations).</li>
+  <li><strong>help-key-binding:</strong> This face is now rendered in <code class="language-plaintext highlighter-rouge">fixed-pitch</code>
+(monospaced font) when the user option <code class="language-plaintext highlighter-rouge">ef-themes-mixed-fonts</code> is
+non-nil.  This user option basically makes spacing-sensitive
+constructs retain their mono spacing, while all the rest can use a
+proportionately spaced font (e.g. enable <code class="language-plaintext highlighter-rouge">variable-pitch-mode</code> in
+Org buffers to see the effect—changes to theme user options
+require a theme reload).</li>
+  <li><strong>ibuffer:</strong> Added support for this built-in package.  Its marks look
+the same as those of Dired.</li>
+  <li><strong>image-dired:</strong> Expanded support to two new faces it has for the
+<code class="language-plaintext highlighter-rouge">header-line</code>.  Those are part of Emacs 29.</li>
+  <li><strong>mm-command-output:</strong> This is a built-in face we encounter on
+occasion in Gnus buffers.</li>
+  <li><strong>olivetti:</strong> Made its <code class="language-plaintext highlighter-rouge">olivetti-fringe</code> face invisible.  We do not
+want to see the fringes when we enter <code class="language-plaintext highlighter-rouge">olivetti-mode</code> (it centres
+the contents of the buffer).  Note that the Ef themes do not have
+visible fringes, anyway, though a user may tweak the <code class="language-plaintext highlighter-rouge">fringe</code> face
+in their local setup.</li>
+  <li><strong>org-agenda-current-time:</strong> Made this face use the main foreground
+colour.  It applies to the line that shows the current time in
+today’s Org agend time grid.  The previous mapping to <code class="language-plaintext highlighter-rouge">variable</code> was
+giving us decent results, though this was a matter of serendipity:
+there is a chance that a theme maps an inappropriate colour to
+<code class="language-plaintext highlighter-rouge">variable</code> (e.g. red, which will interfere with deadlines).  This
+new design is just as legible, while it has the upside of reducing
+colouration where it is not needed, letting other elements get the
+attention they deserve.</li>
+  <li><strong>trashed:</strong> Added support for this package.  It marks lines like
+Dired and follows the same stylistic patterns.  Unlike Dired, it has
+an extra “mark” type (select, delete, restore), which uses
+appropriate colouration.</li>
+  <li><strong>tty-menu:</strong> This is the set of faces that are used in a text
+terminal when the <code class="language-plaintext highlighter-rouge">menu-bar-mode</code> is enabled and the user interacts
+with it via the command <code class="language-plaintext highlighter-rouge">menu-bar-open</code>.  Note, however, that the Ef
+themes are meant to be used either in a graphical Emacs frame or in
+a text terminal with very good support for colour reproduction.
+The themes do not look good in a generic terminal.</li>
+  <li><strong>writegood-mode:</strong> Added support for this package.  Its style is
+consistent with <code class="language-plaintext highlighter-rouge">flyspell</code> as it uses the same colour-coding scheme.</li>
+</ul>
+
+<h2>Faces defined by the Ef themes</h2>
+
+<p>The themes define some faces to make it possible to achieve
+consistency between various groups of faces.  For example, all “marks
+for selection” use the <code class="language-plaintext highlighter-rouge">ef-themes-mark-select</code> face.  If, say, the
+user wants to edit this face to include an underline, the change will
+apply to lots of packages, like Dired, Trashed, Ibuffer.</p>
+
+<p>All the faces defined by the themes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-fixed-pitch</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-0</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-4</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-5</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-6</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-7</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-heading-8</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-key-binding</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-mark-delete</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-mark-other</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-mark-select</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-ui-variable-pitch</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-underline-error</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-underline-info</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ef-themes-underline-warning</code></li>
+</ul>

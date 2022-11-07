@@ -1,0 +1,14 @@
+<p>We propose a recommendation system that suggests treatment strategies to a
+therapist during the psychotherapy session in real-time. Our system uses a
+turn-level rating mechanism that predicts the therapeutic outcome by computing
+a similarity score between the deep embedding of a scoring inventory, and the
+current sentence that the patient is speaking. The system automatically
+transcribes a continuous audio stream and separates it into turns of the
+patient and of the therapist and perform real-time inference of their
+therapeutic working alliance. The dialogue pairs along with their computed
+working alliance as ratings are then fed into a deep reinforcement learning
+recommendation system where the sessions are treated as users and the topics
+are treated as items. Other than evaluating the empirical advantages of the
+core components on an existing dataset of psychotherapy sessions, we
+demonstrate the effectiveness of this system in a web app.
+</p>

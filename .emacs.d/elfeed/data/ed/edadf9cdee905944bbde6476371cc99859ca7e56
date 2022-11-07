@@ -1,0 +1,3 @@
+So apparently ~/.pam_environment has been deprecated for several years now; on Arch Linux, ~/.pam_environment stopped being read since 2022-10-20. I guess I have to migrate to environment.d then.
+ArchWiki is really helpful, but it took searching for Fcitx on Twitter — because, with my environment variables now unset, the input method isn't working anymore — and stumbling onto this tweet before I learned that this is a thing.
+I don't know what the standard for a change to make it onto the Arch Linux news page, but apparently "if you set your environment variables via this method that works on both Wayland and X, your environment variables will cease to take effect" is not breaking enough.

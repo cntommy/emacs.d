@@ -1,0 +1,10 @@
+<p>Studies on interpersonal conflict have a long history and contain many
+suggestions for conflict typology. We use this as the basis of a novel
+annotation scheme and release a new dataset of situations and conflict aspect
+annotations. We then build a classifier to predict whether someone will
+perceive the actions of one individual as right or wrong in a given situation.
+Our analyses include conflict aspects, but also generated clusters, which are
+human validated, and show differences in conflict content based on the
+relationship of participants to the author. Our findings have important
+implications for understanding conflict and social norms.
+</p>

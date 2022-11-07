@@ -1,0 +1,35 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Oct 26 00:26:48 2022
+;; Desktop file format version 208
+;; Emacs version 28.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25432 3656 203160 0) (desktop . "208") "gaolegao@gaojundeMacBook-Pro.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eaeaea") (background-color . "#000000") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . dark) (ns-transparent-titlebar . t) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (fullscreen . fullboth) (display-type . color) (background-mode . dark) (cursor-color . "#d54e53") (scroll-bar-foreground . "white") (environment) (border-color . "#424242") (last-focus-update . t) (frameset--id . "0334-2725-BA36-92BB") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "gaojundeMacBook-Pro.local") (explicit-name) (tool-bar-position . top) (tabs (current-tab (name . "init-local.el") (explicit-name))) (visibility . t) (height . 56) (width . 177) (left . 0) (top . 25)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 80) (min-pixel-width . 100) (min-pixel-height-ignore . 42) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 20) (min-pixel-width-safe . 20)) leaf (pixel-width . 1792) (pixel-height . 1100) (total-width . 179) (total-height . 55) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 660) (start . 1)) (prev-buffers ("*Messages*" 312 312) ("*scratch*" 1 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("org-roam-db-sync" "eval-buffer" "org-roam-db-sync" "eval-buffer" "package-refresh-contents" "eval-buffer" "package-list-packages" "package-refresh-contents"))
+(setq face-name-history nil)
+(setq file-name-history '("~/.emacs.d/custom.el" "~/notes/content-org/20221020105357.org" "~/notes/content-org/20221020132554.org" "~/notes/content-org/20221019173435.org" "~/notes/content-org/20221017224337.org" "~/notes/content-org/20221019155555.org" "~/notes/content-org/20221024235407.org" "~/notes/content-org/20221015232702.org" "~/notes/content-org/20221011163732-从零开始使用emacs.org" "~/notes/content-org/20221020133831.org" "~/notes/content-org/20221013201408-reinforcement_learning_in_dialogue_system.org" "~/notes/content-org/20221020145221.org" "~/notes/content-org/20221015223109.org" "~/notes/content-org/20221019164515.org" "~/notes/content-org/20221020143336.org" "~/notes/content-org/20221015223056.org" "~/notes/content-org/20221020142352.org" "~/notes/content-org/20221015231700.org" "~/notes/content-org/20221013144002-2022_dialogue_paper.org" "~/notes/content-org/20221020135523.org" "~/notes/content-org/20221015223139.org" "~/notes/content-org/20221013110549-如何做笔记.org" "~/notes/content-org/20221020105357.org" "~/notes/content-org/20221024172206.org" "~/notes/content-org/20221013113356-如何提问.org" "~/notes/content-org/20221013175809-nlp会议期刊.org" "~/notes/content-org/20221019183651.org" "~/notes/content-org/20221013105202-如何做笔记.org" "~/.emacs.d/custom.el" "~/.emacs.d/lisp/init-org.el" "~/.emacs.d/lisp/init-python.el" "~/.emacs.d/lisp/init-corfu.el" "~/.emacs.d/lisp/init-dash.el" "~/.emacs.d/init.el" "~/.emacs.d/custom.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-osx-keys.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d/custom.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-osx-keys.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d/custom.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-osx-keys.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d/custom.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-osx-keys.el" "~/.emacs.d/init.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d.bak/init.el" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d/custom.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq magit-revision-history nil)
+(setq minibuffer-history '("a" "d" "a" "c" "a" "c" "a" "d" "a" "c" "a" "c" "a" "c" "a" "c" "a" "d" "s" "a" "d" "a" "d" "c" "d" "a" "c" "a" "c" "a" "d" "a" "d" "a" "d" "a" "c" "echo-keystrokes" "d" "a" "d" "c" "mac-command-modifier" "a" "d" "e" "mac-command-modifier" "a" "c" "d"))
+(setq org-clock-history nil)
+(setq org-refile-history nil)
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq search-ring '(#("0.1" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("elfeed-su" 0 9 (isearch-regexp-function nil isearch-case-fold-search t)) #("elf" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("zo" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("my" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("require" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("requi" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("if" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #(":ini" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("package" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("cus" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("17" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("M-h" 0 3 (isearch-regexp-function nil isearch-case-fold-search nil)) #("mac-" 0 4 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:

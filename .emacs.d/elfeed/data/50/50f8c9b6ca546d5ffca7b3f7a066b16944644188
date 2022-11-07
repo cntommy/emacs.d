@@ -1,0 +1,18 @@
+<p>Training large-scale image captioning (IC) models demands access to a rich
+and diverse set of training examples, gathered from the wild, often from noisy
+alt-text data. However, recent modeling approaches to IC often fall short in
+terms of performance in this case, because they assume a clean annotated
+dataset (as opposed to the noisier alt-text--based annotations), and employ an
+end-to-end generation approach, which often lacks both controllability and
+interpretability. We address these problems by breaking down the task into two
+simpler, more controllable tasks -- skeleton prediction and skeleton-based
+caption generation. Specifically, we show that selecting content words as
+skeletons} helps in generating improved and denoised captions when leveraging
+rich yet noisy alt-text--based uncurated datasets. We also show that the
+predicted English skeletons can be further cross-lingually leveraged to
+generate non-English captions, and present experimental results covering
+caption generation in French, Italian, German, Spanish and Hindi. We also show
+that skeleton-based prediction allows for better control of certain caption
+properties, such as length, content, and gender expression, providing a handle
+to perform human-in-the-loop semi-automatic corrections.
+</p>

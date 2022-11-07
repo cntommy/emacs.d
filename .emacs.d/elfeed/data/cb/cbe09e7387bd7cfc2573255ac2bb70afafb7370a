@@ -1,0 +1,87 @@
+<p>The <code class="language-plaintext highlighter-rouge">ef-cherie</code> theme is now part of my <code class="language-plaintext highlighter-rouge">ef-themes</code> package.  It is a
+legible dark theme with warm colors (mostly pink, magenta, gold).
+Conceptually, it is the <em>first</em> theme I designed for this project but
+never finalised: it was missing the <em>je ne sais quoi</em> that only became
+obvious after I started covering the different stylistic variants that
+form part of this collection.</p>
+
+<p>Sample pictures are shown below.  Also check the entire set:
+<a href="https://protesilaos.com/emacs/ef-themes-pictures">https://protesilaos.com/emacs/ef-themes-pictures</a>.  To get the most
+accurate results, <strong>click to enlarge the image</strong>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">ef-themes</code> now includes 20 items (10 light, 10 dark), which cover
+a broad range of preferences and requirements for accessibility.  I
+consider the project complete from a stylistic point of view,
+potential tweaks notwithstanding.</p>
+
+<p>[ The <code class="language-plaintext highlighter-rouge">ef-themes</code> are a collection of light and dark themes for GNU
+  Emacs whose goal is to provide colourful (“pretty”) yet legible
+  options for users who want something with a bit more flair than the
+  <code class="language-plaintext highlighter-rouge">modus-themes</code> (also designed by me). ]</p>
+
+<h2>ef-cherie</h2>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie.png"><img alt="ef-cherie theme sample" src="https://protesilaos.com/assets/images/ef/ef-cherie.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie-magit.png"><img alt="ef-cherie theme magit sample" src="https://protesilaos.com/assets/images/ef/ef-cherie-magit.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie-listing.png"><img alt="ef-cherie theme listing sample" src="https://protesilaos.com/assets/images/ef/ef-cherie-listing.png" /></a></p>
+
+<h2>Comparison between ef-trio-dark, ef-cherie, ef-winter</h2>
+
+<p>These share some similarities, though you will notice that the new
+theme is much warmer than the other two.  The following samples show
+<code class="language-plaintext highlighter-rouge">ef-trio-dark</code>, <code class="language-plaintext highlighter-rouge">ef-cherie</code>, <code class="language-plaintext highlighter-rouge">ef-winter</code> in this order.</p>
+
+<h3>Code and Org</h3>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-trio-dark.png"><img alt="ef-trio-dark theme sample" src="https://protesilaos.com/assets/images/ef/ef-trio-dark.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie.png"><img alt="ef-cherie theme sample" src="https://protesilaos.com/assets/images/ef/ef-cherie.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-winter.png"><img alt="ef-winter theme sample" src="https://protesilaos.com/assets/images/ef/ef-winter.png" /></a></p>
+
+<h3>Magit (indicative of diffs and logs)</h3>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-trio-dark-magit.png"><img alt="ef-trio-dark theme magit sample" src="https://protesilaos.com/assets/images/ef/ef-trio-dark-magit.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie-magit.png"><img alt="ef-cherie theme magit sample" src="https://protesilaos.com/assets/images/ef/ef-cherie-magit.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-winter-magit.png"><img alt="ef-winter theme magit sample" src="https://protesilaos.com/assets/images/ef/ef-winter-magit.png" /></a></p>
+
+<h3>Email listing (indicative of other listings)</h3>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-trio-dark-listing.png"><img alt="ef-trio-dark theme listing sample" src="https://protesilaos.com/assets/images/ef/ef-trio-dark-listing.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-cherie-listing.png"><img alt="ef-cherie theme listing sample" src="https://protesilaos.com/assets/images/ef/ef-cherie-listing.png" /></a></p>
+
+<p><a href="https://protesilaos.com/assets/images/ef/ef-winter-listing.png"><img alt="ef-winter theme listing sample" src="https://protesilaos.com/assets/images/ef/ef-winter-listing.png" /></a></p>
+
+<h2>Coming in version 0.9.0 (next stable release)</h2>
+
+<p><code class="language-plaintext highlighter-rouge">ef-cherie</code> is under development.  I think its character is clear at
+this point and will condition any possible tweaks to its colour
+palette or how colours are mapped to various constructs.  At any rate,
+changes are still possible.</p>
+
+<p>Expect this and other goodies to be widely available in the next
+version of the <code class="language-plaintext highlighter-rouge">ef-themes</code>, which I will prepare some time before the
+end of this month.</p>
+
+<ul>
+  <li>Package name (GNU ELPA): <code class="language-plaintext highlighter-rouge">ef-themes</code></li>
+  <li>Official manual: <a href="https://protesilaos.com/emacs/ef-themes">https://protesilaos.com/emacs/ef-themes</a></li>
+  <li>Change log: <a href="https://protesilaos.com/emacs/ef-themes-changelog">https://protesilaos.com/emacs/ef-themes-changelog</a></li>
+  <li>Sample pictures: <a href="https://protesilaos.com/emacs/ef-themes-pictures">https://protesilaos.com/emacs/ef-themes-pictures</a></li>
+  <li>Git repo on SourceHut: <a href="https://git.sr.ht/~protesilaos/ef-themes">https://git.sr.ht/~protesilaos/ef-themes</a>
+    <ul>
+      <li>Mirrors:
+        <ul>
+          <li>GitHub: <a href="https://github.com/protesilaos/ef-themes">https://github.com/protesilaos/ef-themes</a></li>
+          <li>GitLab: <a href="https://gitlab.com/protesilaos/ef-themes">https://gitlab.com/protesilaos/ef-themes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Mailing list: <a href="https://lists.sr.ht/~protesilaos/ef-themes">https://lists.sr.ht/~protesilaos/ef-themes</a></li>
+</ul>

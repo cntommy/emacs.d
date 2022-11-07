@@ -1,0 +1,12 @@
+<p>In this paper, we compare the performances of traditional machine learning
+models using feature engineering and word vectors and the state-of-the-art
+language model BERT using word embeddings on three datasets. We also consider
+the time and cost efficiency of feature engineering compared to BERT. From our
+results we conclude that the use of the BERT model was only worth the time and
+cost trade-off for one of the three datasets we used for comparison, where the
+BERT model significantly outperformed any kind of traditional classifier that
+uses feature vectors, instead of embeddings. Using the BERT model for the other
+datasets only achieved an increase of 0.03 and 0.05 of accuracy and F1 score
+respectively, which could be argued makes its use not worth the time and cost
+of GPU.
+</p>

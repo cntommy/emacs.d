@@ -1,0 +1,6 @@
+
+<p>昨天在<a href="https://mp.weixin.qq.com/s/cuT6c8gQnpwIrJrYpAo8jQ" target="_blank">这个公众号文章</a>看到了一道据说答案有争议的“十字架”组合计数问题：</p><quote>一个正方形中，如果四条边有两条是$i$色，另外两条是其他两种不同颜色，那么称这个正方形是“$i$色主导”的。考虑如下由16条线段、5个正方形组成的“十字架”图形，每条边染上红、黄、蓝三色之一，使得横向和竖向三个正方形的主导色均不相同，问有多少种不同的染色方法。
+
+<a href="https://kexue.fm/usr/uploads/2022/10/408695331.png" title="点击查看原图" target="_blank"><img src="https://kexue.fm/usr/uploads/2022/10/408695331.png" width=160 alt="“十字架”示意图.png" /></a>
+
+</quote><p>链接的文章有两个答案：吴康老师的54432，以及王慧兴老师的27216。本文先通过编程确认王慧兴老师的27216是正确答案，然后给出自己的理论分析过程。</p><p class="more"><a href="https://www.kexue.fm/archives/9291" title="“十字架”组合计数问题浅试">[...]</a></p>

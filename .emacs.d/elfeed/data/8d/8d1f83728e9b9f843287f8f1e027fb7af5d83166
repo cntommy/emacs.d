@@ -1,0 +1,5 @@
+
+<p>在上一篇文章<a href="https://kexue.fm/archives/9245" target="_blank">《生成扩散模型漫谈（七）：最优扩散方差估计（上）》</a>中，我们介绍并推导了Analytic-DPM中的扩散模型最优方差估计结果，它是直接给出了已经训练好的生成扩散模型的最优方差的一个解析估计，实验显示该估计结果确实能有效提高扩散模型的生成质量。</p><p>这篇文章我们继续介绍Analytic-DPM的升级版，出自同一作者团队的论文<a href="https://arxiv.org/abs/2206.07309" target="_blank">《Estimating the Optimal Covariance with Imperfect Mean in Diffusion Probabilistic Models》</a>，在官方Github中被称为“Extended-Analytic-DPM”，下面我们也用这个称呼。</p><h2>结果回顾</h2><p>上一篇文章是在DDIM的基础上，推出DDIM的生成过程最优方差应该是<br />
+\begin{equation}\sigma_t^2 + \gamma_t^2\bar{\sigma}_t^2\end{equation}<br />
+其中$\bar{\sigma}_t^2$是分布$p(\boldsymbol{x}_0|\boldsymbol{x}_t)$的方差，它有如下的估计结果（这里取“<a href="https://kexue.fm/archives/9245#%E6%96%B9%E5%B7%AE%E4%BC%B0%E8%AE%A12" target="_blank">方差估计2</a>”的结果）：<br />
+\begin{equation}\bar{\sigma}_t^2 = \frac{\bar{\beta}_t^2}{\bar{\alpha}_t^2}\left(1 - \frac{1}{d}\mathbb{E}_{\boldsymbol{x}_t\sim p(\boldsymbol{x}_t)}\left[ \Vert\boldsymbol{\epsilon}_{\boldsymbol{\theta}}(\boldsymbol{x}_t, t)\Vert^2\right]\right)\label{eq:basic}\end{equation}</p><p class="more"><a href="https://www.kexue.fm/archives/9246" title="生成扩散模型漫谈（八）：最优扩散方差估计（下）">[...]</a></p>

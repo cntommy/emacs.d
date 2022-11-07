@@ -1,0 +1,20 @@
+<p>Actionable sentences are terms that, in the most basic sense, imply the
+necessity of taking a specific action. In Linguistic terms, they are steps to
+achieve an operation, often through the usage of action verbs. For example, the
+sentence, `Get your homework finished by tomorrow` qualifies as actionable
+since it demands a specific action (In this case, finishing homework) to be
+taken. In contrast, a simple sentence such as, `I like to play the guitar` does
+not qualify as an actionable phrase since it simply states a personal choice of
+the person instead of demanding a task to be finished.
+</p>
+<p>In this paper, the aim is to explore if Actionables can be extracted from raw
+text using Linguistic filters designed from scratch. These filters are
+specially catered to identifying actionable text using Transfer Learning as the
+lead role. Actionable Detection can be used in detecting emergency tasks during
+a crisis, Instruction accuracy for First aid and can also be used to make
+productivity tools like automatic ToDo list generators from conferences. To
+accomplish this, we use the Enron Email Dataset and apply our Linguistic
+filters on the cleaned textual data. We then use Transfer Learning with the
+Universal Sentence Encoder to train a model to classify whether a given string
+of raw text is actionable or not.
+</p>

@@ -1,0 +1,8 @@
+<p>The automatic detection of offensive language is a pressing societal need.
+Many systems perform well on explicit offensive language but struggle to detect
+more complex, nuanced, or implicit cases of offensive and hateful language.
+OLEA is an open-source Python library that provides easy-to-use tools for error
+analysis in the context of detecting offensive language in English. OLEA also
+provides an infrastructure for re-distribution of new datasets and analysis
+methods requiring very little coding.
+</p>

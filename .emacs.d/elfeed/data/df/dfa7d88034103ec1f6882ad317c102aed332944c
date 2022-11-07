@@ -1,0 +1,12 @@
+<p>Recent progress in self-supervised or unsupervised machine learning has
+opened the possibility of building a full speech processing system from raw
+audio without using any textual representations or expert labels such as
+phonemes, dictionaries or parse trees. The contribution of the Zero Resource
+Speech Challenge series since 2015 has been to break down this long-term
+objective into four well-defined tasks -- Acoustic Unit Discovery, Spoken Term
+Discovery, Discrete Resynthesis, and Spoken Language Modeling -- and introduce
+associated metrics and benchmarks enabling model comparison and cumulative
+progress. We present an overview of the six editions of this challenge series
+since 2015, discuss the lessons learned, and outline the areas which need more
+work or give puzzling results.
+</p>

@@ -1,0 +1,15 @@
+<p>This work introduces an approach to assessing phrase break in ESL learners'
+speech with pre-trained language models (PLMs). Different with traditional
+methods, this proposal converts speech to token sequences, and then leverages
+the power of PLMs. There are two sub-tasks: overall assessment of phrase break
+for a speech clip; fine-grained assessment of every possible phrase break
+position. Speech input is first force-aligned with texts, then pre-processed to
+a token sequence, including words and associated phrase break information. The
+token sequence is then fed into the pre-training and fine-tuning pipeline. In
+pre-training, a replaced break token detection module is trained with token
+data where each token has a certain percentage chance to be randomly replaced.
+In fine-tuning, overall and fine-grained scoring are optimized with text
+classification and sequence labeling pipeline, respectively. With the
+introduction of PLMs, the dependence on labeled training data has been greatly
+reduced, and performance has improved.
+</p>

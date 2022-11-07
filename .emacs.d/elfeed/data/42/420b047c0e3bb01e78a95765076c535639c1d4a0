@@ -1,0 +1,15 @@
+<p>With the advance of natural language inference (NLI), a rising demand for NLI
+is to handle scientific texts. Existing methods depend on pre-trained models
+(PTM) which lack domain-specific knowledge. To tackle this drawback, we
+introduce a scientific knowledge graph to generalize PTM to scientific domain.
+However, existing knowledge graph construction approaches suffer from some
+drawbacks, i.e., expensive labeled data, failure to apply in other domains,
+long inference time and difficulty extending to large corpora. Therefore, we
+propose an unsupervised knowledge graph construction method to build a
+scientific knowledge graph (SKG) without any labeled data. Moreover, to
+alleviate noise effect from SKG and complement knowledge in sentences better,
+we propose an event-centric knowledge infusion method to integrate external
+knowledge into each event that is a fine-grained semantic unit in sentences.
+Experimental results show that our method achieves state-of-the-art performance
+and the effectiveness and reliability of SKG.
+</p>

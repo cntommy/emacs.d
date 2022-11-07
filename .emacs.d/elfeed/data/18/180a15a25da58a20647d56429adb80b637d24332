@@ -1,0 +1,17 @@
+<p>Prediction of medical codes from clinical notes is a practical and essential
+need for every healthcare delivery organization within current medical systems.
+Automating annotation will save significant time and excessive effort that
+human coders spend today. However, the biggest challenge is directly
+identifying appropriate medical codes from several thousands of
+high-dimensional codes from unstructured free-text clinical notes. This complex
+medical codes prediction problem from clinical notes has received substantial
+interest in the NLP community, and several recent studies have shown the
+state-of-the-art code prediction results of full-fledged deep learning-based
+methods. This progress raises the fundamental question of how far automated
+machine learning systems are from human coders' working performance, as well as
+the important question of how well current explainability methods apply to
+advanced neural network models such as transformers. This is to predict correct
+codes and present references in clinical notes that support code prediction, as
+this level of explainability and accuracy of the prediction outcomes is
+critical to gaining trust from professional medical coders.
+</p>

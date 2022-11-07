@@ -1,0 +1,26 @@
+<p>Vision-and-language (V-L) tasks require the system to understand both vision
+content and natural language, thus learning fine-grained joint representations
+of vision and language (a.k.a. V-L representations) is of paramount importance.
+Recently, various pre-trained V-L models are proposed to learn V-L
+representations and achieve improved results in many tasks. However, the
+mainstream models process both vision and language inputs with the same set of
+attention matrices. As a result, the generated V-L representations are
+entangled in one common latent space. To tackle this problem, we propose
+DiMBERT (short for Disentangled Multimodal-Attention BERT), which is a novel
+framework that applies separated attention spaces for vision and language, and
+the representations of multi-modalities can thus be disentangled explicitly. To
+enhance the correlation between vision and language in disentangled spaces, we
+introduce the visual concepts to DiMBERT which represent visual information in
+textual format. In this manner, visual concepts help to bridge the gap between
+the two modalities. We pre-train DiMBERT on a large amount of image-sentence
+pairs on two tasks: bidirectional language modeling and sequence-to-sequence
+language modeling. After pre-train, DiMBERT is further fine-tuned for the
+downstream tasks. Experiments show that DiMBERT sets new state-of-the-art
+performance on three tasks (over four datasets), including both generation
+tasks (image captioning and visual storytelling) and classification tasks
+(referring expressions). The proposed DiM (short for Disentangled
+Multimodal-Attention) module can be easily incorporated into existing
+pre-trained V-L models to boost their performance, up to a 5% increase on the
+representative task. Finally, we conduct a systematic analysis and demonstrate
+the effectiveness of our DiM and the introduced visual concepts.
+</p>

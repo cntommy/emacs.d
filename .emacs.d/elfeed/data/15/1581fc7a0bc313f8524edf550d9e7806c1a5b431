@@ -1,0 +1,25 @@
+<p>This study is devoted to two of the oldest known manuscripts in which the
+oeuvre of the medieval mystical author Hadewijch has been preserved: Brussels,
+KBR, 2879-2880 (ms. A) and Brussels, KBR, 2877-2878 (ms. B). On the basis of
+codicological and contextual arguments, it is assumed that the scribe who
+produced B used A as an exemplar. While the similarities in both layout and
+content between the two manuscripts are striking, the present article seeks to
+identify the differences. After all, regardless of the intention to produce a
+copy that closely follows the exemplar, subtle linguistic variation is
+apparent. Divergences relate to spelling conventions, but also to the way in
+which words are abbreviated (and the extent to which abbreviations occur). The
+present study investigates the spelling profiles of the scribes who produced
+mss. A and B in a computational way. In the first part of this study, we will
+present both manuscripts in more detail, after which we will consider prior
+research carried out on scribal profiling. The current study both builds and
+expands on Kestemont (2015). Next, we outline the methodology used to analyse
+and measure the degree of scribal appropriation that took place when ms. B was
+copied off the exemplar ms. A. After this, we will discuss the results
+obtained, focusing on the scribal variation that can be found both at the level
+of individual words and n-grams. To this end, we use machine learning to
+identify the most distinctive features that separate manuscript A from B.
+Finally, we look at possible diachronic trends in the appropriation by B's
+scribe of his exemplar. We argue that scribal takeovers in the exemplar impacts
+the practice of the copying scribe, while transitions to a different content
+matter cause little to no effect.
+</p>

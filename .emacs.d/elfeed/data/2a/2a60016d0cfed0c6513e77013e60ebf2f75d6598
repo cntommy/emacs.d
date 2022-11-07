@@ -1,0 +1,12 @@
+<p>Recent language modeling performance has been greatly improved by the use of
+external memory. This memory encodes the context so that similar contexts can
+be recalled during decoding. This similarity depends on how the model learns to
+encode context, which can be altered to include other attributes, such as
+style. We construct and evaluate an architecture for this purpose, using
+corpora annotated for politeness, formality, and toxicity. Through extensive
+experiments and human evaluation we demonstrate the potential of our method to
+generate text while controlling style. We find that style-specific datastores
+improve generation performance, though results vary greatly across styles, and
+the effect of pretraining data and specific styles should be explored in future
+work.
+</p>

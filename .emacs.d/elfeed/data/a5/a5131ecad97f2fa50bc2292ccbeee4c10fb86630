@@ -1,0 +1,92 @@
+<p>Contrary to my experience with free or open source projects, when it comes to
+the proprietary software I have been developing for work since late 2004, code
+formatting has never been matter of discussion. There was a team, back in my
+days in the UK, that enforced some strict rules via Ant, but until today that
+was the sole exception.</p>
+
+<p>Luckily the people I am coding with nowadays are more open to this kind of
+problem. Yes, I used the word <em>problem</em>. As I explained to a co-worker when I
+raised the question of formatting tools, I read code as I read a book. I cannot
+imagine sitting through different books each written according to the authors’
+own ideas of stylistic conventions. It’s about having the text, whether words or
+code<sup id="fnref:1"><a class="footnote" href="https://manueluberti.eu/feed.xml#fn:1" rel="footnote">1</a></sup>, accessible to anyone by making the assumption that the first step to
+understanding is ease of legibility.</p>
+
+<p>The team agreed on using <code class="language-plaintext highlighter-rouge">cljfmt</code><sup id="fnref:2"><a class="footnote" href="https://manueluberti.eu/feed.xml#fn:2" rel="footnote">2</a></sup> for this task. Most of the developers here
+use Clojure LSP and, from what I understand, the integration with <code class="language-plaintext highlighter-rouge">cljfmt</code> is
+already there for them. I, on the other hand, went with a more manual approach.
+I first built the <code class="language-plaintext highlighter-rouge">cljfmt</code> binary with GraalVM thanks to Rune Juhl Jacobsen’s
+useful <code class="language-plaintext highlighter-rouge">cljfmt-graalvm</code><sup id="fnref:3"><a class="footnote" href="https://manueluberti.eu/feed.xml#fn:3" rel="footnote">3</a></sup>. Rune offers a snippet for <code class="language-plaintext highlighter-rouge">use-package</code> and
+Projectile users, but I leveraged <code class="language-plaintext highlighter-rouge">project.el</code> and a CIDER hook instead.</p>
+
+<div class="language-emacs-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">defun</span> <span class="nv">mu-cljfmt-format-buffer</span> <span class="p">()</span>
+  <span class="s">"Format current buffer with `cljfmt'."</span>
+  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">derived-mode-p</span> <span class="ss">'clojure-mode</span><span class="p">)</span>
+    <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">pr</span> <span class="p">(</span><span class="nv">project-root</span> <span class="p">(</span><span class="nv">project-current</span><span class="p">)))</span>
+           <span class="p">(</span><span class="nv">cfg-dir</span> <span class="p">(</span><span class="nv">locate-dominating-file</span> <span class="nv">pr</span> <span class="s">"cljfmt.edn"</span><span class="p">))</span>
+           <span class="p">(</span><span class="nv">cfg-edn</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="s">"cljfmt.edn"</span> <span class="nv">cfg-dir</span><span class="p">))</span>
+           <span class="p">(</span><span class="nv">cmd</span> <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nv">file-exists-p</span> <span class="nv">cfg-edn</span><span class="p">)</span>
+                    <span class="p">(</span><span class="nb">format</span> <span class="s">"cljfmt -c %s %s"</span> <span class="nv">cfg-edn</span> <span class="nv">buffer-file-name</span><span class="p">)</span>
+                  <span class="p">(</span><span class="nb">format</span> <span class="s">"cljfmt %s"</span> <span class="nv">buffer-file-name</span><span class="p">))))</span>
+      <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="nv">cmd</span><span class="p">))</span>
+    <span class="p">(</span><span class="nv">revert-buffer</span> <span class="no">t</span> <span class="no">t</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">mu-cider-format-buffer</span> <span class="p">()</span>
+  <span class="s">"Automatically format current buffer after saving."</span>
+  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'after-save-hook</span> <span class="nf">#'</span><span class="nv">mu-cljfmt-format-buffer</span> <span class="no">nil</span> <span class="no">t</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'cider-mode-hook</span> <span class="nf">#'</span><span class="nv">mu-cider-format-buffer</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Some things worth considering:</p>
+
+<ul>
+  <li>
+    <p>the location and the name of the <code class="language-plaintext highlighter-rouge">cljfmt.edn</code> file matter, so check your
+projects if you follow my approach. For instance, the snippet provided by Rune
+uses <code class="language-plaintext highlighter-rouge">.cljfmt.edn</code>;</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">clojurec-mode</code> and <code class="language-plaintext highlighter-rouge">clojurescript-mode</code> are both derived from <code class="language-plaintext highlighter-rouge">clojure-mode</code>.
+This explains the use of <code class="language-plaintext highlighter-rouge">derived-mode-p</code>;</p>
+  </li>
+  <li>
+    <p>in buffers handled by <code class="language-plaintext highlighter-rouge">clojure-mode</code> I always have CIDER enabled, even if not
+necessarily jacked-in. For a more general approach, <code class="language-plaintext highlighter-rouge">clojure-mode-hook</code> should
+be preferred;</p>
+  </li>
+  <li>
+    <p>CIDER provides an integration with <code class="language-plaintext highlighter-rouge">cljfmt</code><sup id="fnref:4"><a class="footnote" href="https://manueluberti.eu/feed.xml#fn:4" rel="footnote">4</a></sup>. Depending on your needs that
+may be already enough.</p>
+  </li>
+</ul>
+
+<p>With a tool tweaked to format code idiomatically<sup id="fnref:5"><a class="footnote" href="https://manueluberti.eu/feed.xml#fn:5" rel="footnote">5</a></sup> for us, now it’s time to
+argue about names. Wait, let me refresh my <em>hadoukens</em> first.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>By the way, looking at code as text is the subject of <a href="https://pwlconf.org/2022/zach-tellman/">Sense and
+Structure: Towards a Textual Analysis of
+Software</a>, a recent talk by Zach
+Tellman. <a class="reversefootnote" href="https://manueluberti.eu/feed.xml#fnref:1">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>See: <a href="https://github.com/weavejester/cljfmt">cljfmt</a>. <a class="reversefootnote" href="https://manueluberti.eu/feed.xml#fnref:2">↩</a></p>
+    </li>
+    <li id="fn:3">
+      <p>See: <a href="https://github.com/runejuhl/cljfmt-graalvm">cljfmt-graalvm</a>. <a class="reversefootnote" href="https://manueluberti.eu/feed.xml#fnref:3">↩</a></p>
+    </li>
+    <li id="fn:4">
+      <p>See: <a href="https://docs.cider.mx/cider/usage/misc_features.html#formatting-code-with-cljfmt">Formatting Code with
+cljfmt</a>. <a class="reversefootnote" href="https://manueluberti.eu/feed.xml#fnref:4">↩</a></p>
+    </li>
+    <li id="fn:5">
+      <p><code class="language-plaintext highlighter-rouge">cljfmt</code> follows the <a href="https://github.com/bbatsov/clojure-style-guide">Clojure Style
+Guide</a> by default. <a class="reversefootnote" href="https://manueluberti.eu/feed.xml#fnref:5">↩</a></p>
+    </li>
+  </ol>
+</div>

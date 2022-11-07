@@ -1,0 +1,21 @@
+<p>Social media data has emerged as a useful source of timely information about
+real-world crisis events. One of the main tasks related to the use of social
+media for disaster management is the automatic identification of crisis-related
+messages. Most of the studies on this topic have focused on the analysis of
+data for a particular type of event in a specific language. This limits the
+possibility of generalizing existing approaches because models cannot be
+directly applied to new types of events or other languages. In this work, we
+study the task of automatically classifying messages that are related to crisis
+events by leveraging cross-language and cross-domain labeled data. Our goal is
+to make use of labeled data from high-resource languages to classify messages
+from other (low-resource) languages and/or of new (previously unseen) types of
+crisis situations. For our study we consolidated from the literature a large
+unified dataset containing multiple crisis events and languages. Our empirical
+findings show that it is indeed possible to leverage data from crisis events in
+English to classify the same type of event in other languages, such as Spanish
+and Italian (80.0% F1-score). Furthermore, we achieve good performance for the
+cross-domain task (80.0% F1-score) in a cross-lingual setting. Overall, our
+work contributes to improving the data scarcity problem that is so important
+for multilingual crisis classification. In particular, mitigating cold-start
+situations in emergency events, when time is of essence.
+</p>

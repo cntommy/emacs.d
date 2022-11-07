@@ -1,0 +1,11 @@
+<p>We show that existing model interpretation methods such as linear probes and
+prompts have some key limitations in answering these questions. We revisit KI
+from an information-theoretic view and propose a new theoretically sound probe
+called Graph Convolution Simulator (GCS) for KI interpretation. GCS uses graph
+attention on the corresponding knowledge graph for interpretation. In our
+experiments we verify that GCS can provide reasonable interpretation results
+for two well-known knowledge-enhanced LMs: ERNIE and K-Adapter. We also find
+that only a marginal amount of knowledge is successfully integrated in these
+models, and simply increasing the size of the KI corpus may not lead to better
+knowledge-enhanced LMs.
+</p>

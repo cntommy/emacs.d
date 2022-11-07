@@ -1,0 +1,6 @@
+
+<p>在<a href="https://kexue.fm/archives/9262" target="_blank">《生成扩散模型漫谈（十）：统一扩散模型（理论篇）》</a>中，笔者自称构建了一个统一的模型框架（Unified Diffusion Model，UDM），它允许更一般的扩散方式和数据类型。那么UDM框架究竟能否实现如期目的呢？本文先回顾DUM框架的一般流程，然后通过一些具体例子来演示其一般性。</p><h2>框架回顾</h2><p>首先，UDM通过选择噪声分布$q(\boldsymbol{\varepsilon})$和变换$\boldsymbol{\mathcal{F}}$来构建前向过程<br />
+\begin{equation}\boldsymbol{x}_t = \boldsymbol{\mathcal{F}}_t(\boldsymbol{x}_0,\boldsymbol{\varepsilon}),\quad \boldsymbol{\varepsilon}\sim q(\boldsymbol{\varepsilon})\end{equation}<br />
+然后，通过如下的分解来实现反向过程$\boldsymbol{x}_{t-1}\sim p(\boldsymbol{x}_{t-1}|\boldsymbol{x}_t)$的采样<br />
+\begin{equation}\hat{\boldsymbol{x}}_0\sim p(\boldsymbol{x}_0|\boldsymbol{x}_t)\quad \& \quad \boldsymbol{x}_{t-1}\sim p(\boldsymbol{x}_{t-1}|\boldsymbol{x}_t, \boldsymbol{x}_0=\hat{\boldsymbol{x}}_0)\end{equation}<br />
+其中$p(\boldsymbol{x}_0|\boldsymbol{x}_t)$就是用$\boldsymbol{x}_t$预估$\boldsymbol{x}_0$的概率，一般用简单分布$q(\boldsymbol{x}_0|\boldsymbol{x}_t)$来近似建模，训练目标基本上就是$-\log q(\boldsymbol{x}_0|\boldsymbol{x}_t)$或其简单变体。当$\boldsymbol{x}_0$是连续型数据时，$q(\boldsymbol{x}_0|\boldsymbol{x}_t)$一般就取条件正态分布；当$\boldsymbol{x}_0$是离散型数据时，$q(\boldsymbol{x}_0|\boldsymbol{x}_t)$可以选择自回归模型或者非自回归模型。</p><p class="more"><a href="https://www.kexue.fm/archives/9271" title="生成扩散模型漫谈（十一）：统一扩散模型（应用篇）">[...]</a></p>

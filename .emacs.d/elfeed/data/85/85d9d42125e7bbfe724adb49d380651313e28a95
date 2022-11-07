@@ -1,0 +1,22 @@
+<p>Since its original appearance in 1991, the Perso-Arabic script representation
+in Unicode has grown from 169 to over 440 atomic isolated characters spread
+over several code pages representing standard letters, various diacritics and
+punctuation for the original Arabic and numerous other regional orthographic
+traditions. This paper documents the challenges that Perso-Arabic presents
+beyond the best-documented languages, such as Arabic and Persian, building on
+earlier work by the expert community. We particularly focus on the situation in
+natural language processing (NLP), which is affected by multiple, often
+neglected, issues such as the use of visually ambiguous yet canonically
+nonequivalent letters and the mixing of letters from different orthographies.
+Among the contributing conflating factors are the lack of input methods, the
+instability of modern orthographies, insufficient literacy, and loss or lack of
+orthographic tradition. We evaluate the effects of script normalization on
+eight languages from diverse language families in the Perso-Arabic script
+diaspora on machine translation and statistical language modeling tasks. Our
+results indicate statistically significant improvements in performance in most
+conditions for all the languages considered when normalization is applied. We
+argue that better understanding and representation of Perso-Arabic script
+variation within regional orthographic traditions, where those are present, is
+crucial for further progress of modern computational NLP techniques especially
+for languages with a paucity of resources.
+</p>

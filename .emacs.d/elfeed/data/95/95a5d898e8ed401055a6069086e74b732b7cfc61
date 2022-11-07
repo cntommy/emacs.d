@@ -1,0 +1,12 @@
+<p>In this paper we present a rule-based stemming algorithm for the Uzbek
+language. Uzbek is an agglutinative language, so many words are formed by
+adding suffixes, and the number of suffixes is also large. For this reason, it
+is difficult to find a stem of words. The methodology is proposed for doing the
+stemming of the Uzbek words with an affix stripping approach whereas not
+including any database of the normal word forms of the Uzbek language. Word
+affixes are classified into fifteen classes and designed as finite state
+machines (FSMs) for each class according to morphological rules. We created
+fifteen FSMs and linked them together to create the Basic FSM. A lexicon of
+affixes in XML format was created and a stemming application for Uzbek words
+has been developed based on the FSMs.
+</p>

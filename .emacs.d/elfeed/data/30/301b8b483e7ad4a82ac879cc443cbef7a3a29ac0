@@ -1,0 +1,119 @@
+<h2>Delving into org-mode and org-element-map</h2>
+        <p><time datetime="2022-10-23">Yesterday evening</time> I spent some time hacking on <a href="https://www.gnu.org/software/emacs/">Emacs</a>.  What follows builds from 
+<cite><a href="https://takeonrules.com/2022/09/06/org-mode-capture-templates-and-time-tracking/">Org Mode Capture Templates and Time Tracking</a></cite>.</p>
+<p>My intention in sharing this post is to add to the corpus of examples for <a href="https://orgmode.org/worg/dev/org-element-api.html">Org Element API</a>; to share working with the constraints of <code>org-element-at-point</code>; namely that the element at point does load content of that element.  To do so, you must parse the buffer.</p>
+<p>Over the last 3 months I’ve been using <a href="https://orgmode.org/">Org-Mode</a>’s <a href="https://orgmode.org/manual/Clocking-commands.html">Clocking Commands</a>.  I have settled on the following structure:</p>
+<ul>
+<li>The first three headline level’s come from the <a href="https://orgmode.org/manual/Template-elements.html#index-org_002ddefault_002dnotes_002dfile-1">datetree target</a>; levels for year, month and day if you will.</li>
+<li>The fourth level is for projects; these are for clients and we bill at the project level.</li>
+<li>The fifth heading is a task; I track my time on the tasks.</li>
+</ul>
+<p>Headlines deeper than level 5 are for organizational purposes.</p>
+
+<div class="margin">
+
+<p><small>I tag the fourth level heading with a <code>:project:</code> tag and the fifth level heading with a <code>:task:</code> tag; but for this post the tags are irrelevant.</small></p>
+</div>
+
+<p>Below is an example of my structure.</p>
+<pre><code class="language-text">* 2022
+** 2022-10 October
+*** 2022-10-23 Sunday
+**** Samvera :project:
+***** Review pull requests on samvera/hyrax :task:
+</code></pre>
+<h2 id="the-problem-statement">The Problem Statement</h2>
+<p>My logbook entries track time to the task level.  I don’t always complete a task within a single day.  Which means I need to carry forward a task from one day to another.</p>
+<p>When I carry forward that task, I want all of the prior context except the logbook.  If I bring forward the logbook, this messes up my time reporting process.</p>
+<h2 id="code">Code</h2>
+<p>The following function moves <code>point</code> to the task level.  It recursively walks up to a level 5 headline.</p>
+<pre><code class="language-emacs-lisp">(defun jf/org-agenda-task-at-point ()
+  "Find the `org-mode' task at point."
+  (let ((element (org-element-at-point)))
+    (if (eq 'headline (org-element-type element))
+	(pcase (org-element-property :level element)
+	  (1 (error "Selected element is a year"))
+	  (2 (error "Selected element is a month"))
+	  (3 (error "Selected element is a day"))
+	  (4 (error "Selected element is a project"))
+	  (5 (progn (message "%s" element) element))
+	  (_ (progn (org-up-heading-safe) (jf/org-task-at-point))))
+      (progn
+	(org-back-to-heading)
+	(jf/org-task-at-point)))))
+</code></pre>
+<p>Below, the <code>jf/org-agenda-get-day-and-project-and-task-at-point</code> function retrieves the task and it’s associated project and day.</p>
+<pre><code class="language-emacs-lisp">(defun jf/org-agenda-get-day-and-project-and-task-at-point ()
+  "Return a plist of :day, :project, and :task for element at point."
+  (let* ((task (jf/org-agenda-task-at-point))
+	 (project (progn
+		    (org-up-heading-safe)
+		    (org-element-at-point)))
+	 (day (progn
+		(org-up-heading-safe)
+		(org-element-at-point))))
+    (list :project project :task task :day day)))
+</code></pre>
+<p>Now we get to the interactive function <code>jf/org-agenda-carry-forward-task</code>; this does the in buffer adjustments to carry the text forward.</p>
+<pre><code class="language-emacs-lisp">(cl-defun jf/org-agenda-carry-forward-task ()
+  "Carry an `org-mode' task node forward."
+  (interactive)
+  (save-excursion
+    (let* ((day-project-task (jf/org-agenda-get-day-and-project-and-task-at-point))
+	   (from-project (plist-get day-project-task :project))
+	   (from-task (plist-get day-project-task :task)))
+
+      ;; Narrowing the region to perform quicker queries on the element
+      (narrow-to-region (org-element-property :begin from-task)
+			(org-element-property :end from-task))
+
+      ;; Grab each section for the from-task and convert that into text.
+      ;;
+      ;; Yes we have the from-task, however, we haven't parsed that entity.
+      ;; Without parsing that element, the `org-element-contents' returns nil.
+      (let ((content (s-join "\n" (org-element-map (org-element-parse-buffer) 'section
+				    (lambda (section)
+				      (mapconcat
+				       (lambda (element)
+					 (pcase (org-element-type element)
+					   ;; I want to skip my time entries
+					   ('drawer nil)
+					   (_ (buffer-substring-no-properties
+					       (org-element-property :begin element)
+					       (org-element-property :end element)))))
+				       (org-element-contents section)
+				       "\n"))))))
+
+	;; Capture the following to the “Day with plain entry”.  Because it’s a
+	;; plain node, I’m adding the headline level.
+	(org-capture-string (format "%s %s :%s:\n\n%s %s %s :%s:\n%s"
+				    (s-repeat (org-element-property :level from-project) "*")
+				    (org-element-property :title from-project)
+				    (s-join ":" (org-element-property :tags from-project))
+
+				    (s-repeat (org-element-property :level from-task) "*")
+				    (org-element-property :todo-keyword from-task)
+				    (org-element-property :title from-task)
+				    (s-join ":" (org-element-property :tags from-task))
+				    content)
+			    "d")
+
+	;; Widen what we once narrowed
+	(widen))
+      ;; Now that we've added the content, let's tidy up the from-task.
+      (goto-char (org-element-property :begin from-task))
+      ;; Prompt for the todo state of the original task.
+      (call-interactively 'org-todo))))
+</code></pre>
+<p>And below is one of the entries I added to <code>org-capture-templates</code>.  Note, I’m using the <code>plain</code> type.</p>
+<pre><code class="language-emacs-lisp">("d" "Day with plain entry"
+ plain (file+olp+datetree jf/primary-agenda-filename-for-machine)
+ "%i"
+ :empty-lines 1
+ :time-prompt t
+ :immediate-finish t)
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>My hope is that this blog post and associated code can add to the shared examples of how to work with the <a href="https://orgmode.org/worg/dev/org-element-api.html">Org Element API</a>.</p>
+<p>Going forward, I might look to amend the previous task to indicate that I carried the task forward.  I might also add a line item saying, task carried forward from the date.</p>
+<p>As with all things <a href="https://www.gnu.org/software/emacs/">Emacs</a>, once you begin you start seeing all kinds of options unfold.</p>

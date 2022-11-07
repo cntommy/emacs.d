@@ -1,0 +1,3 @@
+
+<p>这几天网上热传了一道“四鸭共半圆”题目：<br />
+<a href="https://kexue.fm/usr/uploads/2022/10/3296253276.png" title="点击查看原图" target="_blank"><img src="https://kexue.fm/usr/uploads/2022/10/3296253276.png" width=420 alt="四鸭共半圆问题.png" /></a></p><p>可能有不少读者看到后也尝试做过，就连李永乐老师也专门开了一节课讲这道题（参考<a href="https://www.bilibili.com/read/cv19251490" target="_blank">《圆形水池四只鸭子在同一个半圆里，概率有多大？》</a>）。就这道题目本身而言，答案并不算困难，可以有很多方法算出来。稍微有难度的是它的推广版本，也就是本文标题所描述的，将鸭子的数目一般化为$n$只，将半圆一般化为圆心角为$\theta$的扇形。更有趣的是，当$\theta \leq \pi$时，依然有比较初等的解法，但是当$\theta > \pi$后，复杂度开始“剧增”...</p><p class="more"><a href="https://www.kexue.fm/archives/9324" title="圆内随机n点在同一个圆心角为θ的扇形的概率">[...]</a></p>

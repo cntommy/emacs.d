@@ -1,0 +1,23 @@
+<p>Extracting frequent words from a collection of texts is commonly performed in
+many subjects. However, as useful as it is to obtain a collection of commonly
+occurring words from texts, there is a need for more specific information to be
+obtained from texts in the form of most commonly occurring phrases. Despite
+this need, extracting frequent phrases is not commonly done due to inherent
+complications, the most significant being double-counting. Double-counting
+occurs when words or phrases are counted when they appear inside longer phrases
+that themselves are also counted, resulting in a selection of mostly
+meaningless phrases that are frequent only because they occur inside frequent
+super phrases. Several papers have been written on phrase mining that describe
+solutions to this issue; however, they either require a list of so-called
+quality phrases to be available to the extracting process, or they require
+human interaction to identify those quality phrases during the process. We
+present here a method that eliminates double-counting via a unique
+rectification process that does not require lists of quality phrases. In the
+context of a set of texts, we define a principal phrase as a phrase that does
+not cross punctuation marks, does not start with a stop word, with the
+exception of the stop words "not" and "no", does not end with a stop word, is
+frequent within those texts without being double counted, and is meaningful to
+the user. Our method identifies such principal phrases independently without
+human input, and enables their extraction from any texts within a reasonable
+amount of time.
+</p>

@@ -1,0 +1,296 @@
+<p>The current development version of <code class="language-plaintext highlighter-rouge">denote</code> provides a fully fledged
+mechanism to control how all file-type-aware operations are carried
+out.  The point of entry is the <code class="language-plaintext highlighter-rouge">denote-file-types</code> variable.  This is
+an advanced feature intended for experienced users who need a bespoke
+setup.  <strong>Nothing changes for other users.</strong></p>
+
+<p>A “file-type-aware operation” is one that relates to tasks like (i)
+inserting front matter for new notes, (ii) formatting <code class="language-plaintext highlighter-rouge">denote:</code> links
+using the appropriate syntax, (iii) concatenating keywords in the
+front matter, (iv) determining the style of the date, (v) specifying
+the file type extension, and others.  In short, we can write notes
+with Denote in <strong>any file type</strong> we want.  By default Denote supports
+Org, Markdown+YAML, Markdown+TOML, and plain text files.</p>
+
+<p>In this tutorial, I show how to define a <code class="language-plaintext highlighter-rouge">shell</code> file type.  A more
+realistic scenario would be something like LaTeX or AsciiDoc, though I
+do not know enough about them.</p>
+
+<p>[ Denote is a simple note-taking tool.  It is based on the idea that
+  notes should follow a predictable and descriptive file-naming
+  scheme.  The file name must offer a clear indication of what the
+  note is about, without reference to any other metadata.  Denote
+  basically streamlines the creation of such files while providing
+  facilities to link between them. ]</p>
+
+<h2>Anatomy of a file type</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">denote-file-types</code> is an alist.  Each element is of the form
+<code class="language-plaintext highlighter-rouge">(SYMBOL PROPERTY-LIST)</code>.  The <code class="language-plaintext highlighter-rouge">SYMBOL</code> is one of those specified in
+<code class="language-plaintext highlighter-rouge">denote-file-type</code> or an arbitrary symbol that defines a new file
+type.  Using the <code class="language-plaintext highlighter-rouge">org</code> entry as an example:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nv">org</span>
+ <span class="ss">:extension</span> <span class="s">".org"</span>
+ <span class="ss">:date-function</span> <span class="nv">denote-date-org-timestamp</span>
+ <span class="ss">:front-matter</span> <span class="nv">denote-org-front-matter</span>
+ <span class="ss">:title-key-regexp</span> <span class="s">"^#\\+title\\s-*:"</span>
+ <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+ <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+ <span class="ss">:keywords-key-regexp</span> <span class="s">"^#\\+filetags\\s-*:"</span>
+ <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-org-front-matter</span>
+ <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+ <span class="ss">:link</span> <span class="nv">denote-org-link-format</span>
+ <span class="ss">:link-in-context-regexp</span> <span class="nv">denote-org-link-in-context-regexp</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The doc string of <code class="language-plaintext highlighter-rouge">denote-file-types</code> explains what each of those
+properties pertains to.  In simple terms, we have the flexibility to
+make notes look exactly how we want.</p>
+
+<p>The one I explain below is this:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nv">shell</span>
+ <span class="ss">:extension</span> <span class="s">".sh"</span>
+ <span class="ss">:date-function</span> <span class="nv">denote-date-iso-8601</span>
+ <span class="ss">:front-matter</span> <span class="nv">my-denote-shell-front-matter</span>
+ <span class="ss">:title-key-regexp</span> <span class="s">"^# title\\s-*:"</span>
+ <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+ <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+ <span class="ss">:keywords-key-regexp</span> <span class="s">"^# tags\\s-*:"</span>
+ <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-text-front-matter</span>
+ <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+ <span class="ss">:link</span> <span class="nv">my-denote-shell-link-format</span>
+ <span class="ss">:link-in-context-regexp</span> <span class="nv">my-denote-shell-link-in-context-regexp</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2>Details of the ‘shell’ file type</h2>
+
+<p>When defining a new file type, we probably want to specify how the
+front matter should look (although we can always reuse the existing
+formats like <code class="language-plaintext highlighter-rouge">denote-org-front-matter</code>).  Here I am creating a new
+variable, called <code class="language-plaintext highlighter-rouge">my-denote-shell-front-matter</code>:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; Demo to add shell script file type.  Why shell?  For demo purposes!</span>
+<span class="p">(</span><span class="nb">defvar</span> <span class="nv">my-denote-shell-front-matter</span>
+  <span class="s">"#!/bin/sh
+
+# title:      %s
+# date:       %s
+# tags:       %s
+# identifier: %s
+\n"</span>
+  <span class="s">"Demo shell script front matter.
+It is passed to `format' with arguments TITLE, DATE, KEYWORDS,
+ID.  Advanced users are advised to consult Info node `(denote)
+Change the front matter format'."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Since the front matter is custom, I need to tell Denote what regexp to
+use to find the “title” and “keywords” lines.  Check again the value
+of <code class="language-plaintext highlighter-rouge">my-denote-shell-front-matter</code>.  It is a line that starts with <code class="language-plaintext highlighter-rouge">#</code>,
+has a space, and then the relevant word:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; Focus on these two:</span>
+<span class="ss">:title-key-regexp</span> <span class="s">"^# title\\s-*:"</span>
+<span class="ss">:keywords-key-regexp</span> <span class="s">"^# tags\\s-*:"</span>
+
+<span class="c1">;; The complete list</span>
+<span class="p">(</span><span class="nv">shell</span>
+ <span class="ss">:extension</span> <span class="s">".sh"</span>
+ <span class="ss">:date-function</span> <span class="nv">denote-date-iso-8601</span>
+ <span class="ss">:front-matter</span> <span class="nv">my-denote-shell-front-matter</span>
+ <span class="ss">:title-key-regexp</span> <span class="s">"^# title\\s-*:"</span>
+ <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+ <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+ <span class="ss">:keywords-key-regexp</span> <span class="s">"^# tags\\s-*:"</span>
+ <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-text-front-matter</span>
+ <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+ <span class="ss">:link</span> <span class="nv">my-denote-shell-link-format</span>
+ <span class="ss">:link-in-context-regexp</span> <span class="nv">my-denote-shell-link-in-context-regexp</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We may then want to specify how <code class="language-plaintext highlighter-rouge">denote:</code> links should look like.  For
+this example, I am picking a syntax that will produce output of this
+sort:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Title of note here&gt;&lt;denote:20220614T130812&gt;
+</code></pre></div></div>
+
+<p>Here is the <code class="language-plaintext highlighter-rouge">my-denote-shell-link-format</code> variable that declares the
+desired style (I just picked the style with the angled brackets on a
+whimsy):</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">defvar</span> <span class="nv">my-denote-shell-link-format</span> <span class="s">"&lt;%2$s&gt;&lt;denote:%1$s&gt;"</span>
+  <span class="s">"Demo format of shell link to note.
+The %N$s notation is for `format', as the supplied arguments are
+IDENTIFIER and TITLE, in this order.
+
+Also see `my-denote-shell-link-in-context-regexp'."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Then we want to make Denote aware of how those links are rendered in
+their context, in order to extract the identifier from them (to create
+backlinks and the like):</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">defvar</span> <span class="nv">my-denote-shell-link-in-context-regexp</span>
+  <span class="p">(</span><span class="nv">concat</span> <span class="s">"&lt;.*?&gt;"</span> <span class="s">"&lt;denote:"</span>  <span class="s">"\\(?1:"</span> <span class="nv">denote-id-regexp</span> <span class="s">"\\)"</span> <span class="s">"&gt;"</span><span class="p">)</span>
+  <span class="s">"Regexp to match a Markdown link in its context.
+The format of such links is `my-denote-shell-link-format'."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>For this demo, I am using the <code class="language-plaintext highlighter-rouge">denote-date-iso-8601</code> for the
+<code class="language-plaintext highlighter-rouge">:date-function</code>.  Other similar functions already implemented in
+<code class="language-plaintext highlighter-rouge">denote.el</code> are <code class="language-plaintext highlighter-rouge">denote-date-org-timestamp</code>, <code class="language-plaintext highlighter-rouge">denote-date-rfc3339</code>.
+Use those or inspect them and then write your own variant.</p>
+
+<p>The rest of this new <code class="language-plaintext highlighter-rouge">shell</code> entry is similar to the one for <code class="language-plaintext highlighter-rouge">text</code>.</p>
+
+<h2>Register the new ‘shell’ file type</h2>
+
+<p>Below is the <code class="language-plaintext highlighter-rouge">denote-file-types</code> with the new entry prepended to the
+default value.  I am writing it this way for didactic purposes, though
+one can always rely on <code class="language-plaintext highlighter-rouge">add-to-list</code>:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">denote-file-types</span>
+      <span class="o">'</span><span class="p">((</span><span class="nv">shell</span>
+         <span class="ss">:extension</span> <span class="s">".sh"</span>
+         <span class="ss">:date-function</span> <span class="nv">denote-date-iso-8601</span>
+         <span class="ss">:front-matter</span> <span class="nv">my-denote-shell-front-matter</span>
+         <span class="ss">:title-key-regexp</span> <span class="s">"^# title\\s-*:"</span>
+         <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+         <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+         <span class="ss">:keywords-key-regexp</span> <span class="s">"^# tags\\s-*:"</span>
+         <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-text-front-matter</span>
+         <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+         <span class="ss">:link</span> <span class="nv">my-denote-shell-link-format</span>
+         <span class="ss">:link-in-context-regexp</span> <span class="nv">my-denote-shell-link-in-context-regexp</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">org</span>
+         <span class="ss">:extension</span> <span class="s">".org"</span>
+         <span class="ss">:date-function</span> <span class="nv">denote-date-org-timestamp</span>
+         <span class="ss">:front-matter</span> <span class="nv">denote-org-front-matter</span>
+         <span class="ss">:title-key-regexp</span> <span class="s">"^#\\+title\\s-*:"</span>
+         <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+         <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+         <span class="ss">:keywords-key-regexp</span> <span class="s">"^#\\+filetags\\s-*:"</span>
+         <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-org-front-matter</span>
+         <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+         <span class="ss">:link</span> <span class="nv">denote-org-link-format</span>
+         <span class="ss">:link-in-context-regexp</span> <span class="nv">denote-org-link-in-context-regexp</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">markdown-yaml</span>
+         <span class="ss">:extension</span> <span class="s">".md"</span>
+         <span class="ss">:date-function</span> <span class="nv">denote-date-rfc3339</span>
+         <span class="ss">:front-matter</span> <span class="nv">denote-yaml-front-matter</span>
+         <span class="ss">:title-key-regexp</span> <span class="s">"^title\\s-*:"</span>
+         <span class="ss">:title-value-function</span> <span class="nv">denote-surround-with-quotes</span>
+         <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace-then-quotes</span>
+         <span class="ss">:keywords-key-regexp</span> <span class="s">"^tags\\s-*:"</span>
+         <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-md-front-matter</span>
+         <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+         <span class="ss">:link</span> <span class="nv">denote-md-link-format</span>
+         <span class="ss">:link-in-context-regexp</span> <span class="nv">denote-md-link-in-context-regexp</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">markdown-toml</span>
+         <span class="ss">:extension</span> <span class="s">".md"</span>
+         <span class="ss">:date-function</span> <span class="nv">denote-date-rfc3339</span>
+         <span class="ss">:front-matter</span> <span class="nv">denote-toml-front-matter</span>
+         <span class="ss">:title-key-regexp</span> <span class="s">"^title\\s-*="</span>
+         <span class="ss">:title-value-function</span> <span class="nv">denote-surround-with-quotes</span>
+         <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace-then-quotes</span>
+         <span class="ss">:keywords-key-regexp</span> <span class="s">"^tags\\s-*="</span>
+         <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-md-front-matter</span>
+         <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+         <span class="ss">:link</span> <span class="nv">denote-md-link-format</span>
+         <span class="ss">:link-in-context-regexp</span> <span class="nv">denote-md-link-in-context-regexp</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">text</span>
+         <span class="ss">:extension</span> <span class="s">".txt"</span>
+         <span class="ss">:date-function</span> <span class="nv">denote-date-iso-8601</span>
+         <span class="ss">:front-matter</span> <span class="nv">denote-text-front-matter</span>
+         <span class="ss">:title-key-regexp</span> <span class="s">"^title\\s-*:"</span>
+         <span class="ss">:title-value-function</span> <span class="nb">identity</span>
+         <span class="ss">:title-value-reverse-function</span> <span class="nv">denote-trim-whitespace</span>
+         <span class="ss">:keywords-key-regexp</span> <span class="s">"^tags\\s-*:"</span>
+         <span class="ss">:keywords-value-function</span> <span class="nv">denote-format-keywords-for-text-front-matter</span>
+         <span class="ss">:keywords-value-reverse-function</span> <span class="nv">denote-extract-keywords-from-front-matter</span>
+         <span class="ss">:link</span> <span class="nv">denote-org-link-format</span>
+         <span class="ss">:link-in-context-regexp</span> <span class="nv">denote-org-link-in-context-regexp</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>With this in place, we are ready to use the new file type.  If the
+<code class="language-plaintext highlighter-rouge">denote-file-type</code> user option has a nil value, then <code class="language-plaintext highlighter-rouge">shell</code> becomes
+the default when we invoke the <code class="language-plaintext highlighter-rouge">denote</code> command.  This is because
+Denote uses the first file type in the <code class="language-plaintext highlighter-rouge">denote-file-types</code>.  We can
+always have something like this, if we want another default:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">denote-file-type</span> <span class="ss">'org</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Or simply re-arrange the <code class="language-plaintext highlighter-rouge">denote-file-types</code>. 🙃</p>
+
+<p>The command <code class="language-plaintext highlighter-rouge">denote-type</code> prompts for a file type and then creates the
+note, using the familiar minibuffer prompts (or check the user option
+<code class="language-plaintext highlighter-rouge">denote-prompts</code>).</p>
+
+<h2>Test the new file type</h2>
+
+<p>I invoke <code class="language-plaintext highlighter-rouge">denote-type</code>, which now includes <code class="language-plaintext highlighter-rouge">shell</code> in the list of
+candidates for available file types.  I pick that one, supply a title
+at the relevant prompt and a couple of keywords in the next prompt.
+Et voilà!  These are the contents of the new file I get:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="c"># title:      Testing the new file type</span>
+<span class="c"># date:       2022-10-30</span>
+<span class="c"># tags:       denote  tutorial</span>
+<span class="c"># identifier: 20221030T115549</span>
+</code></pre></div></div>
+
+<p>The file name is also what I expect:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20221030T115549--testing-the-new-file-type__denote_tutorial.sh
+</code></pre></div></div>
+
+<p>Beautiful! 💕</p>
+
+<p>All commands related to links between notes, acting on the front
+matter, or renaming a note recognise this file as a “note”.  Denote
+does not care that this is a shell script: it just works!</p>
+
+<h2>Coming in Denote version 1.2.0</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">denote-file-types</code> <strong>is not a user option.</strong>  It is a variable
+that only advanced users should configure, assuming they have a need
+for it.  I repeat, <strong>nothing changes for other users:</strong> Denote will
+behave exactly how it did before.</p>
+
+<p>This feature will be widely available in the next stable release,
+which I expect to deliver at the end of November 2022 (tentative).</p>
+
+<p>I announced this earlier on the mailing list, in case you wish to
+participate there:
+<a href="https://lists.sr.ht/~protesilaos/denote/%3C87a65deryt.fsf%40protesilaos.com%3E">https://lists.sr.ht/~protesilaos/denote/%3C87a65deryt.fsf%40protesilaos.com%3E</a>.</p>
+
+<h2>Sources</h2>
+
+<p><a href="https://protesilaos.com/codelog/2022-06-18-denote-demo/">Watch the video demo that was produced before version 0.1.0 of the
+package</a>.  It
+is still relevant, though the implementation details have changed.</p>
+
+<ul>
+  <li>Package name (GNU ELPA): <code class="language-plaintext highlighter-rouge">denote</code></li>
+  <li>Official manual: <a href="https://protesilaos.com/emacs/denote">https://protesilaos.com/emacs/denote</a></li>
+  <li>Change log: <a href="https://protesilaos.com/emacs/denote-changelog">https://protesilaos.com/emacs/denote-changelog</a></li>
+  <li>Git repo on SourceHut: <a href="https://git.sr.ht/~protesilaos/denote">https://git.sr.ht/~protesilaos/denote</a>
+    <ul>
+      <li>Mirrors:
+        <ul>
+          <li>GitHub: <a href="https://github.com/protesilaos/denote">https://github.com/protesilaos/denote</a></li>
+          <li>GitLab: <a href="https://gitlab.com/protesilaos/denote">https://gitlab.com/protesilaos/denote</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Mailing list: <a href="https://lists.sr.ht/~protesilaos/denote">https://lists.sr.ht/~protesilaos/denote</a></li>
+  <li>Backronyms: Denote Everything Neatly; Omit The Excesses.  Don’t Ever
+Note Only The Epiphenomenal.</li>
+</ul>

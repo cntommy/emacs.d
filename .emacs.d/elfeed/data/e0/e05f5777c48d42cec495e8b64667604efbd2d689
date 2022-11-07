@@ -1,0 +1,15 @@
+<p>In a multilingual country like India, multilingual Automatic Speech
+Recognition (ASR) systems have much scope. Multilingual ASR systems exhibit
+many advantages like scalability, maintainability, and improved performance
+over the monolingual ASR systems. However, building multilingual systems for
+Indian languages is challenging since different languages use different scripts
+for writing. On the other hand, Indian languages share a lot of common sounds.
+Common Label Set (CLS) exploits this idea and maps graphemes of various
+languages with similar sounds to common labels. Since Indian languages are
+mostly phonetic, building a parser to convert from native script to CLS is
+easy. In this paper, we explore various approaches to build multilingual ASR
+models. We also propose a novel architecture called Encoder-Decoder-Decoder for
+building multilingual systems that use both CLS and native script labels. We
+also analyzed the effectiveness of CLS-based multilingual systems combined with
+machine transliteration.
+</p>

@@ -1,0 +1,11 @@
+<p>A key bottleneck in building automatic extraction models for visually rich
+documents like invoices is the cost of acquiring the several thousand
+high-quality labeled documents that are needed to train a model with acceptable
+accuracy. We propose Selective Labeling to simplify the labeling task to
+provide "yes/no" labels for candidate extractions predicted by a model trained
+on partially labeled documents. We combine this with a custom active learning
+strategy to find the predictions that the model is most uncertain about. We
+show through experiments on document types drawn from 3 different domains that
+selective labeling can reduce the cost of acquiring labeled data by $10\times$
+with a negligible loss in accuracy.
+</p>

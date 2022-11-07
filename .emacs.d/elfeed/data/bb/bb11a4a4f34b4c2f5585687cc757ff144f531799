@@ -1,0 +1,11 @@
+<p>We present AmberNet, a compact end-to-end neural network for Spoken Language
+Identification. AmberNet consists of 1D depth-wise separable convolutions and
+Squeeze-and-Excitation layers with global context, followed by statistics
+pooling and linear layers. AmberNet achieves performance similar to
+state-of-the-art(SOTA) models on VoxLingua107 dataset, while being 10x smaller.
+AmberNet can be adapted to unseen languages and new acoustic conditions with
+simple finetuning. It attains SOTA accuracy of 75.8% on FLEURS benchmark. We
+show the model is easily scalable to achieve a better trade-off between
+accuracy and speed. We further inspect the model's sensitivity to input length
+and show that AmberNet performs well even on short utterances.
+</p>

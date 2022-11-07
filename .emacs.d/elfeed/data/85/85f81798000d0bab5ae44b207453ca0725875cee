@@ -1,0 +1,98 @@
+<ul class="org-ul">
+<li><a href="https://emacssurvey.org/">Emacs User Survey</a> (<a href="https://www.reddit.com/r/emacs/comments/yc26yd/the_2022_emacs_user_survey_is_now_open/">Reddit</a>, <a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01824.html">emacs-devel</a>) - LibreJS-compatible this year</li>
+<li>Upcoming events:
+<ul class="org-ul">
+<li>Emacs Berlin (virtual, in English) <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a> Wed Oct 26 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata – Thu Oct 27 0030 Singapore</li>
+<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Tue Nov 1 0900 Vancouver / 1100 Chicago / 1200 Toronto / 1600 GMT / 1700 Berlin / 2130 Kolkata – Wed Nov 2 0000 Singapore</li>
+<li>EmacsATX: Mastering Emacs | Crafted Emacs <a href="https://www.meetup.com/emacsatx/events/289100501/">https://www.meetup.com/emacsatx/events/289100501/</a> Wed Nov 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT – Thu Nov 3 0030 Berlin / 0500 Kolkata / 0730 Singapore</li>
+<li>Emacs Paris (virtual, in French) <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a> Thu Nov 3 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata – Fri Nov 4 0030 Singapore</li>
+<li>Emacs users group Slovenia <a href="https://emacs.si/">https://emacs.si/</a> Thu Nov 3 1200 Vancouver / 1400 Chicago / 1500 Toronto / 1900 GMT / 2000 Berlin – Fri Nov 4 0030 Kolkata / 0300 Singapore</li>
+</ul></li>
+<li>Beginner:
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=SBjQuxLV4m0">Emacs: How to get help with  Info Mode</a> (04:21)</li>
+</ul></li>
+<li>Emacs configuration:
+<ul class="org-ul">
+<li><a href="https://panadestein.github.io/emacsd/">Emacs literate configuration</a> (<a href="https://www.reddit.com/r/emacs/comments/y7xw2r/sharing_yet_another_emacs_config/">Reddit</a>)</li>
+</ul></li>
+<li>Emacs Lisp:
+<ul class="org-ul">
+<li><a href="https://lifeofpenguin.blogspot.com/2022/10/aws-api-usage-in-elisp.html">AWS API Usage in Elisp</a> (<a href="https://www.reddit.com/r/emacs/comments/y9nfen/aws_api_usage_in_elisp/">Reddit</a>)</li>
+</ul></li>
+<li>Appearance:
+<ul class="org-ul">
+<li><a href="https://protesilaos.com/codelog/2022-10-24-ef-cyprus-theme/">Protesilaos Stavrou: Emacs: introduction to the ef-themes "cyprus" theme</a></li>
+<li><a href="https://protesilaos.com/codelog/2022-10-23-breaking-modus-themes-3-0-0-notice/">Protesilaos Stavrou: Emacs: minor breaking changes coming to modus-themes 3.0.0</a></li>
+</ul></li>
+<li>Navigation:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/ybqp3m/actually_utilizing_nextbuffer_and_previousbuffer/">Actually utilizing `next-buffer` and `previous-buffer` makes emacs much nicer to use</a></li>
+<li><a href="https://protesilaos.com/codelog/2022-10-19-logos-1-0-0/">Protesilaos Stavrou: Emacs: logos version 1.0.0</a></li>
+</ul></li>
+<li>Writing:
+<ul class="org-ul">
+<li><a href="https://protesilaos.com/codelog/2022-10-20-denote-1-1-0/">Protesilaos Stavrou: Emacs: denote version 1.1.0</a></li>
+</ul></li>
+<li>Org Mode:
+<ul class="org-ul">
+<li><a href="https://mike.puddingtime.org/vintage/2010/02/03/orgmode-in-your">org-mode In Your Pocket Is a GNU-Shaped Devil</a></li>
+<li><a href="https://www.reddit.com/r/orgmode/comments/y8xmrm/the_softer_side_of_orgmode/">The "Softer Side" of Org-mode</a></li>
+<li><a href="https://www.youtube.com/watch?v=eJHFwll13OQ">Org-mode - How I take meeting notes?</a> (07:53)</li>
+<li><a href="https://github.com/alphapapa/org-bookmark-heading">[ANN] org-bookmark-heading v1.2 released</a> (<a href="https://www.reddit.com/r/emacs/comments/yap51u/ann_orgbookmarkheading_v12_released/">r/emacs</a>, <a href="https://www.reddit.com/r/orgmode/comments/yap57e/ann_orgbookmarkheading_v12_released/">r/orgmode</a>)</li>
+<li><a href="https://www.reddit.com/r/emacs/comments/y9udc6/looking_for_html_and_latex_templates_for_orgmode/">Looking for HTML and LaTeX templates for Org-Mode Exports.</a></li>
+<li><a href="https://www.youtube.com/watch?v=560QrNt-a_w">Debugging org-noter with edebug in Emacs - YouTube</a> (<a href="https://www.reddit.com/r/emacs/comments/y7kw44/debugging_an_emacs_package_with_edebug/">Reddit</a>)</li>
+<li><a href="https://codeberg.org/anoduck/org-orgzly/releases/tag/v0.0.3a">Org-Orgzly, the Ooops release</a></li>
+</ul></li>
+<li>Completion:
+<ul class="org-ul">
+<li><a href="https://github.com/MintSoup/all-the-icons-completion">GitHub - MintSoup/all-the-icons-completion: Add icons to completion candidates in Emacs</a> (<a href="https://www.reddit.com/r/emacs/comments/y6d265/a_better_alltheiconscompletion_support_for_more/">Reddit</a>)</li>
+</ul></li>
+<li>Coding:
+<ul class="org-ul">
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=83fbda715973f57dc49fe002d255ecaff8273154">Eglot is merged into emacs git master</a> (<a href="https://news.ycombinator.com/item?id=33277985">HN</a>, <a href="https://www.reddit.com/r/emacs/comments/y94nxp/eglot_is_merged_into_emacs_git_master/">Reddit</a>, <a href="https://lobste.rs/s/xcojdk/eglot_has_landed_on_master_emacs_now_has">lobste.rs</a>)</li>
+</ul></li>
+<li>Math:
+<ul class="org-ul">
+<li><a href="https://github.com/sagemath/sage-shell-mode">sage-shell-mode: Emacs front end for SageMath</a></li>
+</ul></li>
+<li>Shells:
+<ul class="org-ul">
+<li><a href="https://v.redd.it/1omd87ycsbv91">DWIM rename all consistently</a> (<a href="https://www.reddit.com/r/emacs/comments/yaj2mh/dwim_rename_all_consistently/">Reddit</a>)</li>
+</ul></li>
+<li>Multimedia:
+<ul class="org-ul">
+<li><a href="http://mbork.pl/2022-10-24_Playing_videos_from_the_last_position_in_mpv">Marcin Borkowski: Playing videos from the last position in mpv</a></li>
+</ul></li>
+<li>Community:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/y7wrdn/weekly_tips_tricks_c_thread/">Weekly Tips, Tricks, &amp;c. Thread</a></li>
+<li><a href="https://github.com/jeremyf/dotemacs/blob/5120ecae1beb96ced888508a234b58644a05674a/emacs.d/knowledge-management-config.org">jeremyf's knowledge-management-config.org</a></li>
+</ul></li>
+<li>Other:
+<ul class="org-ul">
+<li><a href="https://tony-zorman.com/posts/2022-10-22-emacs-potpourri.html">A Potpourri of Emacs Tweaks</a> (<a href="https://www.reddit.com/r/emacs/comments/yaqdwq/a_potpourri_of_emacs_tweaks/">Reddit</a>) - frame-inhibit-implied-resize, pixel-scroll-precision-mode, org-roam images, LaTeX, ERC, links, repeat-mode</li>
+<li><a href="https://github.com/cfclrk/markdown-xwidget">markdown-xwidget: Preview markdown files using xwidget-webkit. Supports GitHub styles, Mermaid diagrams, Syntax highlightin and Mathjax</a> ( <a href="https://www.reddit.com/r/emacs/comments/y8usf1/local_markdown_preview_using_xwidgetwebkit/">Reddit</a>)</li>
+<li><a href="https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs">Securely Generating TOTP tokens with Emacs</a> (<a href="https://www.reddit.com/r/emacs/comments/y8bvyw/securely_generating_totp_tokens_with_emacs/">Reddit</a>)</li>
+<li><a href="https://github.com/magnars/string-edit.el">string-edit.el: Avoid escape nightmares by editing strings in a separate buffer</a></li>
+<li><a href="http://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rss">Mickey Petersen: Securely Generating TOTP tokens with Emacs</a> (<a href="https://irreal.org/blog/?p=10898">Irreal</a>)</li>
+<li><a href="https://tdodge.consulting/blog/living-the-emacs-garbage-collection-dream">Significant Garbage Collection Improvement For Emacs</a></li>
+<li><a href="https://www.lonecpluspluscoder.com/2022/10/22/homebrew-emacs-mac-cask-from-source/">Timo Geusch: How to build/upgrade emacs-mac using homebrew</a></li>
+<li><a href="https://www.reddit.com/r/emacs/comments/y7xtz0/emacs_as_a_login_manager/">Emacs as a login manager</a></li>
+</ul></li>
+<li>Emacs development:
+<ul class="org-ul">
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01729.html">emacs-devel: Allowing rolling release packages on ELPA</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fab208495699907891bd8df2379efeb317e5d446">Unify outline-minor-mode-use-buttons with in-margins/insert values (bug#57813)</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f61db42fc580fb671016c77be942506d9081ac2c">; * etc/NEWS: Mention Eglot.</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fa7c5c8707cae227e5b9cb7701ec713a66349083">Add 'slovak-querty' input method (bug#58642)</a> (<a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=663fad561d9a18d9b1291f63fe9e9ac1062cf9aa">fix</a>)</li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=45ca261c98af5ff29c16b911bee357081c559cf6">Add tamil99 input method (bug#58070)</a> (<a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=084ac1e5147558b448af41fbfebc0a99a578819c">fix</a>)</li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cd1a81e572d96c93a1c58b8f85f6105f380342c8">* etc/NEWS: Adapt connection-local variables entries.</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cee1cbfd54375cdece23d4741ced6b0c7091f6d9">Improve handling of $PATH in Eshell for remote directories</a> (<a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0954689cb3243e3af4b0c12c08bdcad608fd8433">fix</a>)</li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3cc356abfef8294abcb91dc421e3c63a561a11b4">Add helpers to dynamically assign connection-local values</a></li>
+</ul></li>
+</ul>
+
+<p>
+Links from <a href="https://www.reddit.com/r/emacs">reddit.com/r/emacs</a>, <a href="https://www.reddit.com/r/orgmode">r/orgmode</a>, <a href="https://www.reddit.com/r/spacemacs">r/spacemacs</a>, <a href="https://www.reddit.com/r/planetemacs">r/planetemacs</a>, <a href="https://hn.algolia.com/?query=emacs&amp;sort=byDate&amp;prefix&amp;page=0&amp;dateRange=all&amp;type=story">Hacker News</a>, <a href="https://lobste.rs/search?q=emacs&amp;what=stories&amp;order=newest">lobste.rs</a>, <a href="https://planet.emacslife.com">planet.emacslife.com</a>, <a href="https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt">YouTube</a>, <a href="http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS">the Emacs NEWS file</a>, <a href="https://emacslife.com/calendar/">Emacs Calendar</a>, <a href="http://lists.gnu.org/archive/html/emacs-devel/2022-10">emacs-devel</a>, and <a href="https://lemmy.ml/c/emacs">lemmy/c/emacs</a>. Do you have an Emacs-related link or announcement? Please e-mail me at <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. Thank you!
+</p>

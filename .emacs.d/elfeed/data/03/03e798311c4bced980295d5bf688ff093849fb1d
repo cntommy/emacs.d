@@ -1,0 +1,19 @@
+<p>Self-supervised pre-training has been successful in both text and speech
+processing. Speech and text offer different but complementary information. The
+question is whether we are able to perform a speech-text joint pre-training on
+unpaired speech and text. In this paper, we take the idea of self-supervised
+pre-training one step further and propose token2vec, a novel joint pre-training
+framework for unpaired speech and text based on discrete representations of
+speech. Firstly, due to the distinct characteristics between speech and text
+modalities, where speech is continuous while text is discrete, we first
+discretize speech into a sequence of discrete speech tokens to solve the
+modality mismatch problem. Secondly, to solve the length mismatch problem,
+where the speech sequence is usually much longer than text sequence, we convert
+the words of text into phoneme sequences and randomly repeat each phoneme in
+the sequences. Finally, we feed the discrete speech and text tokens into a
+modality-agnostic Transformer encoder and pre-train with token-level masking
+language modeling (tMLM). Experiments show that token2vec is significantly
+superior to various speech-only pre-training baselines, with up to 17.7%
+relative WER reduction. Token2vec model is also validated on a non-ASR task,
+i.e., spoken intent classification, and shows good transferability.
+</p>

@@ -1,0 +1,23 @@
+<p>In the default Emacs configuration, <code>C-l</code> is bound to <code>recenter-top-bottom</code>.
+This function has an interesting behaviour: when called once, it scrolls the
+current window so that the current line appears at the middle of the screen.
+When called several times in a row, it cycles through three scrolling
+position: middle, top and bottom.</p>
+<p>This has always bugged me because I only need one of the three behaviours, and
+none of these positions are useful to me. In pratice, I want to focus on the
+line I am working on, which means putting it at eye level. In my case at
+roughly 20% of the top of the window.</p>
+<p>Fortunately Emacs is easy to customize. As it turns out, <code>recenter-top-bottom</code>
+is based on <code>recenter</code> which is easy to use:</p>
+<pre><code class="language-lisp">(defcustom g-recenter-window-eye-level 0.2
+  "The relative position of the line considered as eye level in the
+current window, as a ratio between 0 and 1.")
+
+(defun g-recenter-window ()
+  "Scroll the window so that the current line is at eye level."
+  (interactive)
+  (let ((line (round (* (window-height) g-recenter-window-eye-level))))
+    (recenter line)))
+
+(global-set-key (kbd "C-l") 'g-recenter-window)
+</code></pre>

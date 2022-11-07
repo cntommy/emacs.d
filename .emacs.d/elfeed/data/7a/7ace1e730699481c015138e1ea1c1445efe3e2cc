@@ -1,0 +1,15 @@
+<p>We propose a novel method to accelerate training and inference process of
+recurrent neural network transducer (RNN-T) based on the guidance from a
+co-trained connectionist temporal classification (CTC) model. We made a key
+assumption that if an encoder embedding frame is classified as a blank frame by
+the CTC model, it is likely that this frame will be aligned to blank for all
+the partial alignments or hypotheses in RNN-T and it can be discarded from the
+decoder input. We also show that this frame reduction operation can be applied
+in the middle of the encoder, which result in significant speed up for the
+training and inference in RNN-T. We further show that the CTC alignment, a
+by-product of the CTC decoder, can also be used to perform lattice reduction
+for RNN-T during training. Our method is evaluated on the Librispeech and
+SpeechStew tasks. We demonstrate that the proposed method is able to accelerate
+the RNN-T inference by 2.2 times with similar or slightly better word error
+rates (WER).
+</p>

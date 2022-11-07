@@ -1,0 +1,15 @@
+<p>With increasing globalization and immigration, various studies have estimated
+that about half of the world population is bilingual. Consequently, individuals
+concurrently use two or more languages or dialects in casual conversational
+settings. However, most research is natural language processing is focused on
+monolingual text. To further the work in code-switched sentiment analysis, we
+propose a multi-step natural language processing algorithm utilizing points of
+code-switching in mixed text and conduct sentiment analysis around those
+identified points. The proposed sentiment analysis algorithm uses semantic
+similarity derived from large pre-trained multilingual models with a
+handcrafted set of positive and negative words to determine the polarity of
+code-switched text. The proposed approach outperforms a comparable baseline
+model by 11.2% for accuracy and 11.64% for F1-score on a Spanish-English
+dataset. Theoretically, the proposed algorithm can be expanded for sentiment
+analysis of multiple languages with limited human expertise.
+</p>

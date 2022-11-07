@@ -1,0 +1,14 @@
+<p>Iterating with new and improved OCR solutions enforces decision making when
+it comes to targeting the right candidates for reprocessing. This especially
+applies when the underlying data collection is of considerable size and rather
+diverse in terms of fonts, languages, periods of publication and consequently
+OCR quality. This article captures the efforts of the National Library of
+Luxembourg to support those targeting decisions. They are crucial in order to
+guarantee low computational overhead and reduced quality degradation risks,
+combined with a more quantifiable OCR improvement. In particular, this work
+explains the methodology of the library with respect to text block level
+quality assessment. Through extension of this technique, a regression model,
+that is able to take into account the enhancement potential of a new OCR
+engine, is also presented. They both mark promising approaches, especially for
+cultural institutions dealing with historical data of lower quality.
+</p>

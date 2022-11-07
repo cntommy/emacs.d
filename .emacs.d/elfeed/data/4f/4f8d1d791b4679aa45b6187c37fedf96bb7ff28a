@@ -1,0 +1,22 @@
+<p>As two important textual modalities in electronic health records (EHR), both
+structured data (clinical codes) and unstructured data (clinical narratives)
+have recently been increasingly applied to the healthcare domain. Most existing
+EHR-oriented studies, however, either focus on a particular modality or
+integrate data from different modalities in a straightforward manner, which
+usually treats structured and unstructured data as two independent sources of
+information about patient admission and ignore the intrinsic interactions
+between them. In fact, the two modalities are documented during the same
+encounter where structured data inform the documentation of unstructured data
+and vice versa. In this paper, we proposed a Medical Multimodal Pre-trained
+Language Model, named MedM-PLM, to learn enhanced EHR representations over
+structured and unstructured data and explore the interaction of two modalities.
+In MedM-PLM, two Transformer-based neural network components are firstly
+adopted to learn representative characteristics from each modality. A
+cross-modal module is then introduced to model their interactions. We
+pre-trained MedM-PLM on the MIMIC-III dataset and verified the effectiveness of
+the model on three downstream clinical tasks, i.e., medication recommendation,
+30-day readmission prediction and ICD coding. Extensive experiments demonstrate
+the power of MedM-PLM compared with state-of-the-art methods. Further analyses
+and visualizations show the robustness of our model, which could potentially
+provide more comprehensive interpretations for clinical decision-making.
+</p>

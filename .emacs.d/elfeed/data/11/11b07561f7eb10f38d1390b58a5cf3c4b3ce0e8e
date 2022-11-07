@@ -1,0 +1,16 @@
+<p>Controllable Text Generation (CTG) has obtained great success due to its
+fine-grained generation ability obtained by focusing on multiple attributes.
+However, most existing CTG researches overlook how to utilize the attribute
+entanglement to enhance the diversity of the controlled generated texts. Facing
+this dilemma, we focus on a novel CTG scenario, i.e., blessing generation which
+is challenging because high-quality blessing texts require CTG models to
+comprehensively consider the entanglement between multiple attributes (e.g.,
+objects and occasions). To promote the research on blessing generation, we
+present EBleT, a large-scale Entangled Blessing Text dataset containing 293K
+English sentences annotated with multiple attributes. Furthermore, we propose
+novel evaluation metrics to measure the quality of the blessing texts generated
+by the baseline models we designed. Our study opens a new research direction
+for controllable text generation and enables the development of
+attribute-entangled CTG models. Our dataset and source codes are available at
+\url{https://github.com/huangshulin123/Blessing-Generation}.
+</p>

@@ -1,0 +1,15 @@
+<p>Model architectures such as wav2vec 2.0 and HuBERT have been proposed to
+learn speech representations from audio waveforms in a self-supervised manner.
+When these models are combined with downstream tasks such as speech
+recognition, they have been shown to provide state-of-the-art performance.
+However, these models use a large number of parameters, the smallest version of
+which has about 95 million parameters. This constitutes a challenge for edge AI
+device deployments. In this paper, we use knowledge distillation to reduce the
+original model size by about 75% while maintaining similar performance levels.
+Moreover, we use wav2vec 2.0 and HuBERT models for distillation and present a
+comprehensive performance analysis through our experiments where we fine-tune
+the distilled models on single task and multi-task frameworks separately. In
+particular, our experiments show that fine-tuning the distilled models on
+keyword spotting and speaker verification tasks result in only 0.1% accuracy
+and 0.9% equal error rate degradations, respectively.
+</p>

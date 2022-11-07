@@ -1,0 +1,17 @@
+<p>Building automatic speech recognition (ASR) systems is a challenging task,
+especially for under-resourced languages that need to construct corpora nearly
+from scratch and lack sufficient training data. It has emerged that several
+African indigenous languages, including Kiswahili, are technologically
+under-resourced. ASR systems are crucial, particularly for the hearing-impaired
+persons who can benefit from having transcripts in their native languages.
+However, the absence of transcribed speech datasets has complicated efforts to
+develop ASR models for these indigenous languages. This paper explores the
+transcription process and the development of a Kiswahili speech corpus, which
+includes both read-out texts and spontaneous speech data from native Kiswahili
+speakers. The study also discusses the vowels and consonants in Kiswahili and
+provides an updated Kiswahili phoneme dictionary for the ASR model that was
+created using the CMU Sphinx speech recognition toolbox, an open-source speech
+recognition toolkit. The ASR model was trained using an extended phonetic set
+that yielded a WER and SER of 18.87% and 49.5%, respectively, an improved
+performance than previous similar research for under-resourced languages.
+</p>

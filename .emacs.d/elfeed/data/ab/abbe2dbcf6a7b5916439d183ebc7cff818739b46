@@ -1,0 +1,15 @@
+<p>Given the strong results of self-supervised models on various tasks, there
+have been surprisingly few studies exploring self-supervised representations
+for acoustic word embeddings (AWE), fixed-dimensional vectors representing
+variable-length spoken word segments. In this work, we study several
+pre-trained models and pooling methods for constructing AWEs with
+self-supervised representations. Owing to the contextualized nature of
+self-supervised representations, we hypothesize that simple pooling methods,
+such as averaging, might already be useful for constructing AWEs. When
+evaluating on a standard word discrimination task, we find that HuBERT
+representations with mean-pooling rival the state of the art on English AWEs.
+More surprisingly, despite being trained only on English, HuBERT
+representations evaluated on Xitsonga, Mandarin, and French consistently
+outperform the multilingual model XLSR-53 (as well as Wav2Vec 2.0 trained on
+English).
+</p>

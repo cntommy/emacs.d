@@ -1,0 +1,12 @@
+<p>Many recent deep learning-based solutions have widely adopted the
+attention-based mechanism in various tasks of the NLP discipline. However, the
+inherent characteristics of deep learning models and the flexibility of the
+attention mechanism increase the models' complexity, thus leading to challenges
+in model explainability. In this paper, to address this challenge, we propose a
+novel practical framework by utilizing a two-tier attention architecture to
+decouple the complexity of explanation and the decision-making process. We
+apply it in the context of a news article classification task. The experiments
+on two large-scaled news corpora demonstrate that the proposed model can
+achieve competitive performance with many state-of-the-art alternatives and
+illustrate its appropriateness from an explainability perspective.
+</p>

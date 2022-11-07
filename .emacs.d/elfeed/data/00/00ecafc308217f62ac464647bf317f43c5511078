@@ -1,0 +1,21 @@
+<p>Models based on large-pretrained language models, such as S(entence)BERT,
+provide effective and efficient sentence embeddings that show high correlation
+to human similarity ratings, but lack interpretability. On the other hand,
+graph metrics for graph-based meaning representations (e.g., Abstract Meaning
+Representation, AMR) can make explicit the semantic aspects in which two
+sentences are similar. However, such metrics tend to be slow, rely on parsers,
+and do not reach state-of-the-art performance when rating sentence similarity.
+</p>
+<p>In this work, we aim at the best of both worlds, by learning to induce
+$S$emantically $S$tructured $S$entence BERT embeddings (S$^3$BERT). Our
+S$^3$BERT embeddings are composed of explainable sub-embeddings that emphasize
+various semantic sentence features (e.g., semantic roles, negation, or
+quantification). We show how to i) learn a decomposition of the sentence
+embeddings into semantic features, through approximation of a suite of
+interpretable AMR graph metrics, and how to ii) preserve the overall power of
+the neural embeddings by controlling the decomposition learning process with a
+second objective that enforces consistency with the similarity ratings of an
+SBERT teacher model. In our experimental studies, we show that our approach
+offers interpretability -- while fully preserving the effectiveness and
+efficiency of the neural sentence embeddings.
+</p>

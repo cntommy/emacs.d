@@ -1,0 +1,21 @@
+<p>Adversarial training (AT) for attention mechanisms has successfully reduced
+such drawbacks by considering adversarial perturbations. However, this
+technique requires label information, and thus, its use is limited to
+supervised settings. In this study, we explore the concept of incorporating
+virtual AT (VAT) into the attention mechanisms, by which adversarial
+perturbations can be computed even from unlabeled data. To realize this
+approach, we propose two general training techniques, namely VAT for attention
+mechanisms (Attention VAT) and "interpretable" VAT for attention mechanisms
+(Attention iVAT), which extend AT for attention mechanisms to a semi-supervised
+setting. In particular, Attention iVAT focuses on the differences in attention;
+thus, it can efficiently learn clearer attention and improve model
+interpretability, even with unlabeled data. Empirical experiments based on six
+public datasets revealed that our techniques provide better prediction
+performance than conventional AT-based as well as VAT-based techniques, and
+stronger agreement with evidence that is provided by humans in detecting
+important words in sentences. Moreover, our proposal offers these advantages
+without needing to add the careful selection of unlabeled data. That is, even
+if the model using our VAT-based technique is trained on unlabeled data from a
+source other than the target task, both the prediction performance and model
+interpretability can be improved.
+</p>

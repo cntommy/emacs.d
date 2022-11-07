@@ -1,0 +1,3 @@
+In the time honored tradition of using one’s blog as an Internet-enabled notepad, here’s a quick not on how I build GNU Emacs on macOS using homebrew and the emacs-mac port cask:
+brew upgrade -s railwaycat/emacsmacport/emacs-mac --with-mac-metal --with-imagemagick --with-native-comp --with-modern-icon --with-natural-title-bar
+This - amongst other features - turns on some experimental macOS-relevant features and most importantly, the optional native compilation of Elisp code.

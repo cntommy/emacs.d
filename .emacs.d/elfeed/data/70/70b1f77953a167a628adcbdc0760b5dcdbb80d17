@@ -1,0 +1,129 @@
+<ul class="org-ul">
+<li><a href="https://emacssurvey.org/">Emacs User Survey</a> (<a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01824.html">emacs-devel</a>, <a href="https://www.reddit.com/r/emacs/comments/yc26yd/the_2022_emacs_user_survey_is_now_open/">Reddit</a>, <a href="https://news.ycombinator.com/item?id=33328142">HN</a>, <a href="https://lobste.rs/s/yjpdsg/emacs_user_survey_2022">lobste.rs</a>)</li>
+<li>Upcoming events:
+<ul class="org-ul">
+<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Tue Nov 1 0900 Vancouver / 1100 Chicago / 1200 Toronto / 1600 GMT / 1700 Berlin / 2130 Kolkata – Wed Nov 2 0000 Singapore</li>
+<li>EmacsATX: Mastering Emacs | Crafted Emacs <a href="https://www.meetup.com/emacsatx/events/289100501/">https://www.meetup.com/emacsatx/events/289100501/</a> Wed Nov 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT – Thu Nov 3 0030 Berlin / 0500 Kolkata / 0730 Singapore</li>
+<li>Emacs Paris (virtual, in French) <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a> Thu Nov 3 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata – Fri Nov 4 0030 Singapore</li>
+<li>Emacs users group Slovenia <a href="https://emacs.si/">https://emacs.si/</a> Thu Nov 3 1200 Vancouver / 1400 Chicago / 1500 Toronto / 1900 GMT / 2000 Berlin – Fri Nov 4 0030 Kolkata / 0300 Singapore</li>
+<li>Atelier Emacs Montpellier (in person) <a href="https://lebib.org/date/atelier-emacs">https://lebib.org/date/atelier-emacs</a> Fri Nov 11 0900 Vancouver / 1100 Chicago / 1200 Toronto / 1700 GMT / 1800 Berlin / 2230 Kolkata – Sat Nov 12 0100 Singapore</li>
+</ul></li>
+<li>Emacs configuration:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/yhs5zp/a_new_approach_for_me_for_project_wide_variables/">A "new" approach (for me) for project wide variables</a></li>
+<li><a href="https://www.reddit.com/r/emacs/comments/ycfd3l/question_about_the_state_of_package_managers/">Question about the state of package managers</a></li>
+<li><a href="https://github.com/progfolio/melpulls">melpulls: An Elpaca menu for outstanding MELPA pull requests</a></li>
+<li><a href="https://jeffbowman.writeas.com/crafted-emacs-update">Crafted Emacs Update</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ewwl4QuNctI">Where Did Emacs Go? | Setting Up a New Workstation</a> (14:09)</li>
+</ul></li>
+<li>Emacs Lisp:
+<ul class="org-ul">
+<li><a href="https://ag91.github.io/blog/2022/10/30/merge-plists-in-elisp/">A little function to merge plists in Elisp</a> (<a href="https://www.reddit.com/r/emacs/comments/yhneio/a_little_function_to_merge_plists_in_elisp/">Reddit</a>)</li>
+<li><a href="https://www.reddit.com/r/emacs/comments/yh9mmw/emulate_keyboard_input_from_elisp/">Emulate keyboard input from elisp</a></li>
+</ul></li>
+<li>Appearance:
+<ul class="org-ul">
+<li><a href="http://xenodium.com/emacs-a-welcoming-experiment">Alvaro Ramirez: Emacs: A welcoming experiment</a> (<a href="https://www.reddit.com/r/emacs/comments/ycktcp/a_minimalist_welcome_screen/">Reddit</a>)</li>
+<li><a href="https://protesilaos.com/codelog/2022-10-24-ef-cyprus-theme/">Protesilaos Stavrou: Emacs: introduction to the ef-themes "cyprus" theme</a></li>
+<li><a href="https://protesilaos.com/codelog/2022-10-25-ef-cherie/">Protesilaos Stavrou: Emacs: introduction to the ef-themes "cherie" theme</a></li>
+<li><a href="https://protesilaos.com/codelog/2022-10-28-ef-themes-0-9-0/">Protesilaos Stavrou: Emacs: ef-themes version 0.9.0</a></li>
+<li><a href="https://protesilaos.com/codelog/2022-10-28-modus-themes-3-0-0/">Protesilaos Stavrou: Emacs: modus-themes version 3.0.0</a></li>
+</ul></li>
+<li>Navigation:
+<ul class="org-ul">
+<li><a href="https://www.n16f.net/blog/eye-level-window-centering-in-emacs/">Nicolas Martyanoff: Eye level window centering in Emacs</a></li>
+<li><a href="https://irreal.org/blog/?p=10903">Irreal: Undo In Region</a></li>
+<li><a href="https://www.reddit.com/r/emacs/comments/ydenz5/what_killer_features_make_you_prefer_projectile/">What killer feature(s) make you prefer projectile over project.el?</a></li>
+<li><a href="https://github.com/bbatsov/projectile/releases/tag/v2.6.0">Projectile 2.6 released!</a> (<a href="https://www.reddit.com/r/emacs/comments/yd1hkp/projectile_26_released/">Reddit</a>)</li>
+<li><a href="https://github.com/dalanicolai/doc-tools-toc">doc-tools-toc: Create, cleanup, add and manage Table Of Contents (TOC) of pdf and djvu documents with Emacs</a> (<a href="https://www.reddit.com/r/emacs/comments/ygmlv7/an_amazing_small_tool_in_emacs_tocmode/">Reddit</a>)</li>
+<li><a href="https://git.sr.ht/~dannyfreeman/jarchive">jarchive: Navigate to files inside jars.</a> (<a href="https://www.reddit.com/r/planetemacs/comments/ydpi2y/jarchive_navigate_to_files_inside_jars/">Reddit</a>)</li>
+</ul></li>
+<li>Writing:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/yf14tl/what_are_your_favorite_packages_for_improving/">What are your favorite packages for improving vanilla emacs text editing?</a></li>
+<li><a href="https://i.redd.it/6zmdz5spp2w91.png">Arabic Input Setup</a> (<a href="https://www.reddit.com/r/emacs/comments/ydoba2/arabic_input_setup/">Reddit</a>)</li>
+<li><a href="https://protesilaos.com/codelog/2022-10-30-demo-denote-custom-file-type/">Protesilaos Stavrou: Emacs: use custom file type with Denote</a></li>
+<li><a href="https://github.com/PillFall/languagetool.el">languagetool.el: LanguageTool suggestions integrated within Emacs</a></li>
+<li><a href="https://notes.alexkehayias.com/using-grammarly-with-emacs/">Using Grammarly With Emacs</a></li>
+<li><a href="https://taonaw.com/2022-10-23/">TAONAW - Emacs: Of TiddlyWiki, Emacs, and Digital Gardens</a></li>
+<li><a href="https://www.youtube.com/watch?v=o8Vg5YiYH64">xah talk show 2022-10-30 emacs, best way to insert unicode, emoji, math symbols</a> (01:06:36)</li>
+</ul></li>
+<li>Org Mode:
+<ul class="org-ul">
+<li><a href="https://takeonrules.com/2022/10/24/adding-a-function-to-carry-forward-an-org-mode-agenda-item/">Jeremy Friesen: Adding a Function to Carry Forward an Org-Mode Agenda Item</a></li>
+<li><a href="https://gist.github.com/thriveth/f961e42dea4988f464ea67d2d6febbb1">Minimal Emacs config to work with Bibliographies and references</a></li>
+<li><a href="https://arnesonium.com/2022/10/org-mode-to-docx-pipeline">An Org-mode to DOCX Pipeline | Erik L. Arneson — Writer and Software Developer</a> (<a href="https://irreal.org/blog/?p=10911">Irreal</a>)</li>
+<li><a href="http://ag91.github.io/blog/2021/03/12/find-org-roam-notes-via-their-relations">Andrea: Find Org Roam notes via their relations</a></li>
+<li><a href="https://www.reddit.com/r/orgmode/comments/yfd3du/orgorgzly_release_v0041_originally_planned/">Org-Orgzly RELEASE: v0.0.4.1- Originally planned features implemented…and it works too…</a></li>
+<li>Org development:
+<ul class="org-ul">
+<li><a href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=46b71f910844c14d8db1feb54c07de26d101cc05">org.el: Support auto display inline images when cycling</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=c3aa6a6d43fd621bf82c4510c7a63dca7768e6dd">org-refile.el: Show refile targets with a title</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=55767b792ee7dce41e43e6a48d48813dd9ad7f7c">org-agenda.el: Show document title in outline path</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=d4e7bcb4bd87afbcb08a013111ebc976e3cf3b58">org-clock.el: Rename org-clock-get-file-title</a></li>
+</ul></li>
+</ul></li>
+<li>Coding:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/yeijuh/using_emacs_as_a_mysql_client/">Using emacs as a MySQL Client</a></li>
+<li><a href="https://manueluberti.eu//emacs/2022/10/27/cljformat/">Manuel Uberti: Automatically format Clojure buffers</a></li>
+</ul></li>
+<li>Multimedia:
+<ul class="org-ul">
+<li><a href="http://mbork.pl/2022-10-24_Playing_videos_from_the_last_position_in_mpv">Marcin Borkowski: Playing videos from the last position in mpv</a> (<a href="https://irreal.org/blog/?p=10905">Irreal</a>, <a href="https://www.reddit.com/r/planetemacs/comments/yddfzv/irreal_playing_youtube_videos_in_emacs/">Reddit</a>)</li>
+<li><a href="https://www.youtube.com/watch?v=SW3Tx-lHX3o">find-yttranscript-links: downloading transcripts of Youtube videos, in eev style - YouTube</a></li>
+<li><a href="https://sachachua.com/blog/2022/10/subed-el-word-level-timing-improvements/">Sacha Chua: subed.el: Word-level timing improvements, TSV support</a></li>
+</ul></li>
+<li>Community:
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/emacs/comments/ydsjfy/weekly_tips_tricks_c_thread/">Weekly Tips, Tricks, &amp;c. Thread</a></li>
+<li><a href="https://ghuntley.com/fracture/">Visual Studio Code is designed to fracture - I am very happy that I will be able to use emacs forever</a> (<a href="https://www.reddit.com/r/emacs/comments/ycmp4k/visual_studio_code_is_designed_to_fracture_i_am/">Reddit</a>)</li>
+<li><a href="https://high12noon.neocities.org/emacs-adventures.html">Adventures with Emacs - high12noon blog</a> - why high12noon switched to Emacs</li>
+<li><a href="https://www.reddit.com/r/emacs/comments/yi99cw/two_weeks_with_emacs_as_a_vimmer/">two weeks with emacs as a vimmer</a></li>
+<li><a href="https://sachachua.com/blog/2022/10/learning-a-lot-on-the-way-to-emacsconf/">Sacha Chua: Learning a lot on the way to EmacsConf</a></li>
+</ul></li>
+<li>Other:
+<ul class="org-ul">
+<li><a href="https://tdodge.consulting/blog/living-the-emacs-garbage-collection-dream">Significant Garbage Collection Improvement For Emacs: Reducing Wall Clock Latency For sweep_conses By 50%.</a> (<a href="https://www.reddit.com/r/emacs/comments/ycan6z/significant_garbage_collection_improvement_for/">Reddit</a>, <a href="https://irreal.org/blog/?p=10909">Irreal</a>, <a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02174.html">emacs-devel</a>)
+<ul class="org-ul">
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02248.html">emacs-devel: original rationale for block sizes</a></li>
+</ul></li>
+<li><a href="https://github.com/alphapapa/hammy.el">hammy.el: Programmable, interactive interval timers (e.g. for working/resting)</a></li>
+<li><a href="https://github.com/twlz0ne/separedit.el">twlz0ne/separedit.el: Edit comment or string/docstring or code block inside them in separate buffer with your favorite mode</a></li>
+<li><a href="https://github.com/dgutov/mmm-mode">mmm-mode: New official home for mmm-mode, fixed for Emacs &gt;= 23</a></li>
+<li><a href="https://lifeofpenguin.blogspot.com/2022/10/take-charge-of-pdf-in-gnu-emacs.html">Take Charge of PDF in GNU Emacs</a> (<a href="https://www.reddit.com/r/emacs/comments/ygj661/take_charge_of_pdf_in_gnu_emacs/">Reddit</a>)</li>
+<li><a href="http://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline?utm_source=newsletter&amp;utm_medium=rss">Mickey Petersen: Keyboard Shortcuts every Command Line Hacker should know about GNU Readline</a> (<a href="https://www.reddit.com/r/emacs/comments/yerc61/keyboard_shortcuts_every_command_line_hacker/">Reddit</a>, <a href="https://irreal.org/blog/?p=10913">Irreal</a>, <a href="https://lobste.rs/s/xooyhy/keyboard_shortcuts_every_command_line">lobste.rs</a>)</li>
+<li><a href="https://imgur.com/gallery/zMv0ub8">Using emacs artist-mode</a> (<a href="https://www.reddit.com/r/emacs/comments/yc7g6j/using_emacs_artistmode/">Reddit</a>)</li>
+<li><a href="https://emacsnotes.wordpress.com/2022/10/30/use-xkb-to-setup-full-spectrum-of-modifiers-meta-alt-super-and-hyper-for-use-with-emacs/">Emacs Notes: Use xkb to setup full-spectrum of modifiers (Meta, Alt, Super, and Hyper) for use with Emacs</a></li>
+<li><a href="https://www.youtube.com/watch?v=zMzkorlfqLA">Crafting a Configuration Site Generator in Emacs - System Crafters Live!</a> (56:16)</li>
+<li><a href="https://www.youtube.com/watch?v=1DREuC020X0">Emacs: adattamento nella Storia del software @ Linux Day 2022 Roma</a> (01:50:42)</li>
+</ul></li>
+<li>Emacs development:
+<ul class="org-ul">
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02166.html">The "noverlay" branch was merged to master. This should speed up overlays in emacs</a> (<a href="https://www.reddit.com/r/emacs/comments/yg4mvt/the_noverlay_branch_was_merged_to_master_this/">Reddit</a>)</li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02309.html">emacs-devel: challenge with shorthands Re: Help sought understanding shorthands wrt modules/packages</a> (<a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02259.html">context of shorthands</a>)</li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01654.html">emacs-devel: CL packages landed</a> (<a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01734.html">goal</a>, <a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01786.html">versus shorthands</a>)</li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01681.html">emacs-devel: explanation of feature/ and scratch/ branches Re: CL packages landed</a></li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01588.html">emacs-devel: libgccjit leaking memory Re: Suppressing native compilation (short and long term)</a></li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg01604.html">emacs-devel: tip for building on macOS - com.apple.security.get-task-allow Re: Volunteering to help on etc/TODO item: Improved xwidgets support</a></li>
+<li><a href="https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg02117.html">emacs-devel discussion about whitespace in commits</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=647c36cbfa485e54bbe8e4f0825b4fc3be7c5706">; * etc/NEWS: Add entry about more performant overlays.</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c6ec08e49af84ac35d0f793d01390a8b8c991f18">Allow Hierarchy to delay computation of children</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8728da58ab319cbffc160b49c716b65429c8d5a6">Allow applying Rmail summary filters consecutively</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1b1ffe07897ebe06cf96ab423fad3cde9fd6c981">(Ffunction): Make interpreted closures safe for space</a></li>
+<li><a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fe816fc679ead2100cddb4e51bc81c329bcb4265">Handle context changes in Tramp kubernetes method</a></li>
+</ul></li>
+<li>New packages:
+<ul class="org-ul">
+<li><a href="https://melpa.org/#/ddate" target="_blank">ddate</a>: Manage Discordian dates with ddate (MELPA)</li>
+<li><a href="https://melpa.org/#/farmhouse-themes" target="_blank">farmhouse-themes</a>: Farmhouse Themes, dark and light versions (MELPA)</li>
+<li><a href="https://melpa.org/#/guake" target="_blank">guake</a>: Interact with Guake via DBus (MELPA)</li>
+<li><a href="https://melpa.org/#/nameframe-project" target="_blank">nameframe-project</a>: Nameframe integration with project.el (MELPA)</li>
+<li><a href="https://melpa.org/#/ox-linuxmag-fr" target="_blank">ox-linuxmag-fr</a>: Org-mode exporter for the French GNU/Linux Magazine (MELPA)</li>
+<li><a href="https://elpa.gnu.org/packages/url-scgi.html" target="_blank">url-scgi</a>: SCGI support for url.el (GNU ELPA)</li>
+</ul></li>
+</ul>
+
+<p>
+Links from <a href="https://www.reddit.com/r/emacs">reddit.com/r/emacs</a>, <a href="https://www.reddit.com/r/orgmode">r/orgmode</a>, <a href="https://www.reddit.com/r/spacemacs">r/spacemacs</a>, <a href="https://www.reddit.com/r/planetemacs">r/planetemacs</a>, <a href="https://hn.algolia.com/?query=emacs&amp;sort=byDate&amp;prefix&amp;page=0&amp;dateRange=all&amp;type=story">Hacker News</a>, <a href="https://lobste.rs/search?q=emacs&amp;what=stories&amp;order=newest">lobste.rs</a>, <a href="https://planet.emacslife.com">planet.emacslife.com</a>, <a href="https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt">YouTube</a>, <a href="http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS">the Emacs NEWS file</a>, <a href="https://emacslife.com/calendar/">Emacs Calendar</a>, <a href="http://lists.gnu.org/archive/html/emacs-devel/2022-10">emacs-devel</a>, and <a href="https://lemmy.ml/c/emacs">lemmy/c/emacs</a>. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. Thank you!
+</p>

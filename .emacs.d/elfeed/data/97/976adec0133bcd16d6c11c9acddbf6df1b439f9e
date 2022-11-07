@@ -1,0 +1,24 @@
+<p>The medical codes prediction problem from clinical notes has received
+substantial interest in the NLP community, and several recent studies have
+shown the state-of-the-art (SOTA) code prediction results of full-fledged deep
+learning-based methods. However, most previous SOTA works based on deep
+learning are still in early stages in terms of providing textual references and
+explanations of the predicted codes, despite the fact that this level of
+explainability of the prediction outcomes is critical to gaining trust from
+professional medical coders. This raises the important question of how well
+current explainability methods apply to advanced neural network models such as
+transformers to predict correct codes and present references in clinical notes
+that support code prediction. First, we present an explainable Read, Attend,
+and Code (xRAC) framework and assess two approaches, attention score-based
+xRAC-ATTN and model-agnostic knowledge-distillation-based xRAC-KD, through
+simplified but thorough human-grounded evaluations with SOTA transformer-based
+model, RAC. We find that the supporting evidence text highlighted by xRAC-ATTN
+is of higher quality than xRAC-KD whereas xRAC-KD has potential advantages in
+production deployment scenarios. More importantly, we show for the first time
+that, given the current state of explainability methodologies, using the SOTA
+medical codes prediction system still requires the expertise and competencies
+of professional coders, even though its prediction accuracy is superior to that
+of human coders. This, we believe, is a very meaningful step toward developing
+explainable and accurate machine learning systems for fully autonomous medical
+code prediction from clinical notes.
+</p>

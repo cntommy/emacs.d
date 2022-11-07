@@ -1,0 +1,3 @@
+[submodule "lisp/plantuml-emacs"]
+	path = lisp/plantuml-emacs
+	url = https://github.com/ginqi7/plantuml-emacs.git

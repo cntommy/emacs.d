@@ -1,0 +1,73 @@
+<p>The next release of the <code class="language-plaintext highlighter-rouge">modus-themes</code> includes a new default value
+for three user options.  From the Git commit log:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bc8604e 2022-10-23 04:11:05 +0300 BREAKING Make modus-themes-fringes visible
+3c272ec 2022-10-23 03:58:36 +0300 BREAKING Make modus-themes-hl-line intense
+681e031 2022-10-23 03:50:22 +0300 BREAKING Make modus-themes-completions intense
+</code></pre></div></div>
+
+<p>Each change is small, though still noticeable.  The intent is to
+provide a more usable out-of-the-box experience, prioritising users
+who are not aware that these themes are highly customisable.</p>
+
+<p>The changes to <code class="language-plaintext highlighter-rouge">modus-themes-completions</code> and <code class="language-plaintext highlighter-rouge">modus-themes-hl-line</code>
+increase the intensity of the grey background colour of the
+highlighted line.  Some users have had trouble discerning the previous
+default value.  This is at least in part due to limitations in the
+underlying hardware, which misrepresents shades of light/dark grey or
+black.</p>
+
+<p>[ Try to calibrate your monitor’s settings by relying on resources
+  such as <a href="http://www.lagom.nl/lcd-test/black.php">http://www.lagom.nl/lcd-test/black.php</a> and
+  <a href="http://www.lagom.nl/lcd-test/white.php">http://www.lagom.nl/lcd-test/white.php</a>.  Or find some software
+  that affects colour output (e.g. <code class="language-plaintext highlighter-rouge">xrandr</code> can influence the gamma
+  value of the red, green, blue channels of light).  ]</p>
+
+<p>The change to <code class="language-plaintext highlighter-rouge">modus-themes-fringes</code> deviates from the previous style
+as it now makes the fringes visible.  The “fringes” are a narrow area
+to the side of each buffer that can contain indicators such as those
+for truncated or wrapped lines.  I am rendering them conspicuous
+because they make it easier to spot the vertical border that divides
+windows in a frame.  They also complement nicely the default style of
+the themes for the <code class="language-plaintext highlighter-rouge">display-line-numbers-mode</code>, which many users
+enable (often globally).</p>
+
+<p>All things considered, these tweaks do not refashion the character of
+the themes.  Existing users may not like them though, in which case
+they are advised to add this to their init file BEFORE loading either
+<code class="language-plaintext highlighter-rouge">modus-operandi</code> or <code class="language-plaintext highlighter-rouge">modus-vivendi</code>:</p>
+
+<div class="language-elisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">modus-themes-completions</span> <span class="no">nil</span>
+      <span class="nv">modus-themes-hl-line</span> <span class="no">nil</span>
+      <span class="nv">modus-themes-fringes</span> <span class="no">nil</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>[ Any change to a user option after the theme has been loaded requires
+a theme reload. ]</p>
+
+<p>I expect to release version <code class="language-plaintext highlighter-rouge">3.0.0</code> of the Modus themes before the end
+of this month.  The plan is to have it coincide with the cut of the
+<code class="language-plaintext highlighter-rouge">emacs-29</code> branch, which is expected to happen in November (the themes
+are built into Emacs).</p>
+
+<hr />
+
+<ul>
+  <li>Package name (GNU ELPA): <code class="language-plaintext highlighter-rouge">modus-themes</code> (also built into Emacs &gt;= 28)</li>
+  <li>Official manual: <a href="https://protesilaos.com/emacs/modus-themes">https://protesilaos.com/emacs/modus-themes</a></li>
+  <li>Change log: <a href="https://protesilaos.com/emacs/modus-themes-changelog">https://protesilaos.com/emacs/modus-themes-changelog</a></li>
+  <li>Colour palette: <a href="https://protesilaos.com/emacs/modus-themes-colors">https://protesilaos.com/emacs/modus-themes-colors</a></li>
+  <li>Sample pictures: <a href="https://protesilaos.com/emacs/modus-themes-pictures">https://protesilaos.com/emacs/modus-themes-pictures</a></li>
+  <li>Git repo on SourceHut: <a href="https://git.sr.ht/~protesilaos/modus-themes">https://git.sr.ht/~protesilaos/modus-themes</a>
+    <ul>
+      <li>Mirrors:
+        <ul>
+          <li>GitHub: <a href="https://github.com/protesilaos/modus-themes">https://github.com/protesilaos/modus-themes</a></li>
+          <li>GitLab: <a href="https://gitlab.com/protesilaos/modus-themes">https://gitlab.com/protesilaos/modus-themes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Mailing list: <a href="https://lists.sr.ht/~protesilaos/modus-themes">https://lists.sr.ht/~protesilaos/modus-themes</a></li>
+  <li>Backronym: My Old Display Unexpectedly Sharpened … themes</li>
+</ul>

@@ -1,0 +1,36 @@
+<p>
+I figured out how to align the subtitles to get word-level timestamps
+and generate SRV2 files, so now I'm working on improving the support
+in <a href="https://github.com/sachac/subed">subed.el</a> so that it can work with those timestamps.
+</p>
+
+<p>
+The <code>subed-word-data-load-from-file</code> function in <code>subed-word-data.el</code> should load the word data from the SRV2 file and attempt to match it up with the text, colouring words if they were successfully matched.
+</p>
+
+
+<div class="figure" id="org859d9fb">
+<p><img alt="Screenshot_2022-10-26_13-46-31.png" src="https://sachachua.com/blog/2022/10/subed-el-word-level-timing-improvements/Screenshot_2022-10-26_13-46-31.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>After subed-word-data-load-from-file</p>
+</div>
+
+<p>
+I also updated and committed code for working with TSV files like the
+label export from the <a href="https://www.audacityteam.org/">Audacity</a> audio editor. The concise format might make editing and reviewing easier. The files look like this:
+</p>
+
+
+<div class="figure" id="orgd780f53">
+<p><img alt="Screenshot_2022-10-26_13-49-00.png" src="https://sachachua.com/blog/2022/10/subed-el-word-level-timing-improvements/Screenshot_2022-10-26_13-49-00.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Tab-separated values</p>
+</div>
+
+<p>
+To convert an existing file, use <code>subed-convert</code> (from <code>subed-common.el</code>). You can also manually turn on <code>subed-tsv-mode</code> from <code>subed-tsv.el</code> when you're visitng a TSV subtitle/label file. Tab-separated values can be in any sort of text file and <code>tsv</code> is a common file extension, so I don't automatically add it to <code>auto-mode-alist</code>.
+</p>
+
+<p>
+The changes should be in 1.0.16 or the latest version from the Git repository at <a href="https://github.com/sachac/subed">https://github.com/sachac/subed</a> .
+</p>

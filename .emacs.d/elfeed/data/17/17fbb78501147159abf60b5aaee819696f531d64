@@ -1,0 +1,14 @@
+<p>Multi-talker automatic speech recognition (ASR) has been studied to generate
+transcriptions of natural conversation including overlapping speech of multiple
+speakers. Due to the difficulty in acquiring real conversation data with
+high-quality human transcriptions, a na\"ive simulation of multi-talker speech
+by randomly mixing multiple utterances was conventionally used for model
+training. In this work, we propose an improved technique to simulate
+multi-talker overlapping speech with realistic speech overlaps, where an
+arbitrary pattern of speech overlaps is represented by a sequence of discrete
+tokens. With this representation, speech overlapping patterns can be learned
+from real conversations based on a statistical language model, such as N-gram,
+which can be then used to generate multi-talker speech for training. In our
+experiments, multi-talker ASR models trained with the proposed method show
+consistent improvement on the word error rates across multiple datasets.
+</p>
