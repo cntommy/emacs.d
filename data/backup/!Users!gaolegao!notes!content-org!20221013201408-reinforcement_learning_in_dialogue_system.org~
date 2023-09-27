@@ -1,0 +1,180 @@
+:PROPERTIES:
+:ID:       CE044C83-27CD-42B0-A2A8-E100C6D799E1
+:END:
+#+TITLE: reinforcement-learning-in-dialogue-system
+#+AUTHOR: Jun Gao
+#+DATE: [2022-10-13 四 20:14]
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: notes
+
+数据集不一样
+自己浮现
+用同数据集 report数值不一样
+
+follow 大组 和 代码
+- 尽量follow开源代码的文章
+- 尽量follow大组（Google，Meta）的文章
+- 先看这些组最新的文章，然后看看他们的related work，再到Google Scholar看看有哪些文章引用了它们
+- 动手写正式的survey，重点回答：我们要做的这个事情跟之前的文章到底有什么区别
+
+  里程碑
+
+
+
+* idea
+** WAIT curriculum learning for composite task
+
+simple composite task can use hirarchical DPL, difficult one need improvemnet
+定义场景 滴滴 multiwoz  新的setting 还是旧的（有代码比较好复现）
+研究价值
+数据 构造出来不够真实
+
+类似想法的论文 Oh my mistaske
+"Are current benchmark datasets sufficiently diverse to handle casual conversations in which one changes their mind after a certain topic is over?" We found that the answer is "No" because DST models cannot refer to previous user preferences when template-based turnback utterances are injected into the dataset
+
+multitask learning
+*** composite 的区别具体是什么 2017论文   方法上的区别是什么
+*** 进展：找不到可以复现的代码
+** continual learning + reinforcement learning
+新的业务或领域
+如何表征新的task和domain
+** reinforcement select data augmentation way
+利用强化学习选择数据扩增的方式   autoAugment
+怎么进行扩增
+有没有必要进行选择
+怎么评估 怎么监督
+AAAI20 Dialog State Tracking with Reinforced Data Augmentation
+Variational hierarchical dialog autoencoder for dialog state tracking data augmentation
+N-Shot Learning for Augmenting Task-Oriented Dialogue State Tracking
+Controllable User Dialogue Act Augmentation for Dialogue State Tracking
+** ONGOING RLHF 从人类反馈中强化学习
+*** learning from human preference
+**** [[zotero://select/items/1_7BQ7C2I4][[1] P. Christiano, J. Leike, T. B. Brown, M. Martic, S. Legg和D. Amodei, 《Deep reinforcement learning from human preferences》. arXiv, 2017年7月13日. 见于: 2022年12月7日. [在线]. 载于: http://arxiv.org/abs/1706.03741]]
+https://github.com/nottombrown/rl-teacher 这一类论文应该是RLHF的源头，可以好好关注一下，耀东老师最近也有篇做这个的，我觉得这个对于dialog来说是很有价值的
+**** SURF: Semi-supervised Reward Learning with Data Augmentation for Feedback-efficient Preference-based RL (ICLR 2022)
+**** B-Pref: Benchmarking Preference-BasedReinforcement Learning
+**** instruct GPT
+***** [[zotero://select/items/1_QL9SZN7L][[1] L. Ouyang等, 《Training language models to follow instructions with human feedback》. arXiv, 2022年3月4日. 见于: 2022年12月7日. [在线]. 载于: http://arxiv.org/abs/2203.02155]]
+
+****** 问题：没有可以复现的代码
+****** 引用的文献
+******* Deep reinforcement learning from human preferences
+******** 代码：https://github.com/mrahtz/learning-from-human-preferences 用在游戏上
+******* Learning to summarize from human feedback
+******** 代码：https://github.com/openai/summarize-from-feedback 文本摘要
+******** ONGOING 复现了代码，移植到对话上
+*** 有没有任务型对话用RLHF的工作？（最好有代码）
+**** Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems
+***** 代码：https://github.com/google-research-datasets/simulated-dialogue
+***** 视频：https://www.microsoft.com/en-us/research/video/research-talk-towards-self-learning-end-to-end-dialog-systems/
+***** 解决离线和在线数据的对话状态不匹配带来的学习效率问题，提出了hybrid imitation and reinforcement learning method
+***** 数据集：DSTC2
+***** backbone：lstm+REINFORCE
+***** 缺点：只在整个对话的结尾加了反馈，没有用预训练语言模型
+**** Toward Self-Learning End-to-End Task-Oriented Dialog Systems
+***** 数据集：multiwoz
+***** 代码将会开源(代码问一下 复现)
+***** 解决对话系统自动适应变化环境的问题（新的问题），同时只需很少量的标注
+***** backbone：SOLOIST
+***** 训练了一个奖励模型来预测回复质量，能从无标注的人机对话中学习应对环境变化
+***** 关键：构造用于训练奖励的数据
+
+
+** online distillation based model lightweight
+18 19 做的比较多 AutoAugment FastAutoAugment NAS
+
+* RL in dialogue system
+** dialog state tracking
+*** turn back
+**** [[zotero://select/items/1_R36UX6SZ][[1] T. Kim, Y. Lee, H. Yoon, P. Kang, J. Bang和M. Kim, 《Oh My Mistake!: Toward Realistic Dialogue State Tracking including Turnback Utterances》. arXiv, 2022年10月12日. 见于: 2022年11月25日. [在线]. 载于: http://arxiv.org/abs/2108.12637]]
+
+** dialogue policy learning
+*** data augmentation
+**** generation
+***** [[zotero://select/items/1_DQAR2ZP7][[1] Z. Li, W. Chen, S. Li, H. Wang, J. Qian和X. Yan, 《Dialogic: Controllable Dialogue Simulation with In-Context Learning》. arXiv, 2022年11月12日. 见于: 2022年11月18日. [在线]. 载于: http://arxiv.org/abs/2210.04185]]
+
+**** concate
+*** data driven
+*** RL based
+**** user simulator/online
+***** architecture of simulator
+****** agenda based
+******* [[zotero://select/items/1_VZ4NPFJU][[1] X. Li, Z. C. Lipton, B. Dhingra, L. Li, J. Gao和Y.-N. Chen, 《A User Simulator for Task-Completion Dialogues》. arXiv, 2017年11月13日. 见于: 2022年11月24日. [在线]. 载于: http://arxiv.org/abs/1612.05688]]
+****** PLM based
+******* [[zotero://select/items/1_G34P52P5][[1] H. Liu, Y. Cai, Z. Ou, Y. Huang和J. Feng, 《A Generative User Simulator with GPT-based Architecture and Goal State Tracking for Reinforced Multi-Domain Dialog Systems》. arXiv, 2022年10月18日. 见于: 2022年11月16日. [在线]. 载于: http://arxiv.org/abs/2210.08692]]
+
+***** architecture of system
+****** pipline
+******* jointly train
+******** [[zotero://select/items/1_LD37PCHH][[1] A. Ohashi和R. Higashinaka, 《Post-processing Networks: Method for Optimizing Pipeline Task-oriented Dialogue Systems using Reinforcement Learning》. arXiv, 2022年7月25日. 见于: 2022年11月24日. [在线]. 载于: http://arxiv.org/abs/2207.12185]]
+******* composite task
+different from multi-domain task, it may involve multiple domain in a single dialogue
+******** hirarchical deep reinforcement learning
+******** low sampling efficiency /poor transferability
+********* [[zotero://select/items/1_Q6DUK7XN][[1] Z. Chen, X. Liu, L. Chen和K. Yu, 《Structured Hierarchical Dialogue Policy with Graph Neural Networks》. arXiv, 2020年9月22日. 见于: 2022年11月25日. [在线]. 载于: http://arxiv.org/abs/2009.10355]]
+********** 没有后续的工作
+********** 前人的工作？baolin peng 没有代码
+*********** Subdomain modelling for dialogue management with hierarchical reinforcement learning
+
+****** lstm-based
+****** PLM-based
+******* continual learning
+******** [[zotero://select/items/1_85XTRJ6T][[1] C. Geishauser等, 《Dynamic Dialogue Policy for Continual Reinforcement Learning》, 收入 Proceedings of the 29th International Conference on Computational Linguistics, Gyeongju, Republic of Korea, 10月 2022, 页 266–284. 见于: 2022年10月17日. [在线]. 载于: https://aclanthology.org/2022.coling-1.21]]
+
+****** plain RL algorithm
+decision transformer
+******* DQN
+Duel DQN, Double DQN, Duel dqn, average dqn, maxmin dqn
+******** problem
+********* overestimate
+********** [[zotero://select/items/1_IGZX58HZ][[1] C. Tian, W. Yin和M.-F. Moens, 《Anti-Overestimation Dialogue Policy Learning for Task-Completion Dialogue System》, 收入 Findings of the Association for Computational Linguistics: NAACL 2022, Seattle, United States, 7月 2022, 页 565–577. doi: 10.18653/v1/2022.findings-naacl.43.]]
+
+****** self-play
+******* Building a Conversational Agent Overnight with Dialogue Self-Play
+******* [[zotero://select/items/1_VVG2S4Y9][[1] B.-H. Tseng, Y. Dai, F. Kreyssig和B. Byrne, 《Transferable Dialogue Systems and User Simulators》, 收入 Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), Online, 8月 2021, 页 152–166. doi: 10.18653/v1/2021.acl-long.13.]]
+******** joint learning framework for US and DS
+******** transfer learning
+******* A Generative User Simulator with GPT-based Architecture and Goal State Tracking for Reinforced Multi-Domain Dialog Systems
+architecture:PLM
+简介：为面向任务的对话系统（DS）的强化学习（RL）构建用户模拟器（US）已经受到越来越多的关注，然而，这仍然面临一些基本挑战。首先，目前尚不清楚我们是否可以利用预训练的语言模型来设计，例如，基于GPT-2的用户界面，以赶上最近先进的基于GPT-1的用户界面并与之交互。第二，美国的一个重要因素是用户目标可以被有效地纳入和跟踪；但如何灵活地集成目标状态跟踪，并为多域开发端到端可训练的US，仍然是一个挑战。本文提出了基于GPT-2架构和目标状态跟踪的生成式用户模拟器（GUS），以解决上述两个挑战。在MultiWOZ2.1上进行了广泛的实验。通过RL和GUS、经典的基于议程的用户模拟器（ABUS）和其他消融模拟器分别训练不同的DS，并对其进行跨模型评估、基于语料库的评估和人类评估。GUS在所有三项评估任务中都取得了优异的结果。
+******* Multi-Agent Task-Oriented Dialog Policy Learning with Role-Aware Reward Decomposition
+******* Collaborative multi-agent dialogue model training via reinforcement learning
+******* Transferable Dialogue Systems and User Simulators
+***** goal state tracking
+****** rule-based
+****** use initial user goal
+****** track by binary vectors
+****** token(at semantic level)
+**** no user simulator/offline
+***** response reranking
+
+* survey
+[[zotero://select/items/1_SA76QZ4Z][[1] I. Graßl, 《A Survey on Reinforcement Learning for Dialogue Systems》, 页 6.]]
+[[zotero://select/items/1_27FLF3KC][[1] V. Uc-Cetina, N. Navarro-Guerrero, A. Martin-Gonzalez, C. Weber和S. Wermter, 《Survey on reinforcement learning for language processing》, Artif Intell Rev, 6月 2022, doi: 10.1007/s10462-022-10205-5.]]
+[[zotero://select/items/1_BD3M93QV][[1] W.-C. Kwan, H. Wang, H. Wang和K.-F. Wong, 《A Survey on Recent Advances and Challenges in Reinforcement Learning Methods for Task-Oriented Dialogue Policy Learning》. arXiv, 2022年7月10日. 见于: 2022年10月19日. [在线]. 载于: http://arxiv.org/abs/2202.13675]]
+
+* 冷启动
+Continuously Learning Neural Dialogue Management
+Policy Networks with Two-Stage Training for Dialogue Systems
+Iterative Policy Learning in End-to-End Trainable Task-Oriented Neural Dialog Models
+Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning
+Goal-Oriented Dialogue Policy Learning from Failures
+
+* 模拟器
+
+** Data-driven simulator
+A sequence-to-sequence model for user simulation in spoken dialogue systems
+** Improving alignment of dialogue agents via targeted human judgements
+用强化学习来筛选回复
+
+* offline
+[CASPI] Causal-aware Safe Policy Improvement for Task-oriented Dialogue
+CHAI: A CHatbot AI for Task-Oriented Dialogue with Offline Reinforcement Learning
+GPT-CRITIC: OFFLINE REINFORCEMENT LEARNING FOR END-TO-END TASK-ORIENTED DIALOGUE SYSTEM
+
+TODO todo
+标题：CONQRR: Conversational Query Rewriting for Retrieval with Reinforcement Learning（华盛顿大学: Zeqiu Wu|CONQRR：使用强化学习进行检索的会话查询重写）了解详情
+简介：与标准检索任务相比，对话式问答（CQA）的段落检索在理解当前用户问题方面提出了新的挑战，因为每个问题都需要在对话上下文中进行解释。此外，重新训练完善的检索器（例如最初为非会话查询开发的搜索引擎）可能会很昂贵。为了方便他们的使用，本文开发了一个查询重写模型 CONQRR，它将上下文中的对话问题重写为一个独立的问题。它使用一种新的奖励函数进行训练，以使用强化学习直接优化检索，并且可以适应任何现成的检索器。CONQRR 在最近包含来自三个不同来源的对话的开放域 CQA 数据集上实现了最先进的结果，并且对两个不同的现成检索器有效。本文的广泛分析还显示了 CONQRR 对域外对话以及零查询重写监督的稳健性。
+论文链接：https://arxiv.org/pdf/2112.08558.pdf
+
+https://mp.weixin.qq.com/s/syNeENyhazbQA1Lk1C_9xg

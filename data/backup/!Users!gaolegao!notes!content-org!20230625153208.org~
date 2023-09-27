@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       A21BF5B5-CEB1-42C6-8484-E33CA6E20A52
+:END:
+#+TITLE: my_mac_config
+#+AUTHOR: Jun Gao
+#+DATE: [2023-06-25 日 15:32]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+记录mac上常用的生产力工具的配置
+* 笔记类
+[[id:F8B70B1B-7DAE-4E17-BD13-FE2706FDAEC4][从零开始使用emacs]]
+#+begin_src
+M-x package-install <RET> gruvbox-theme
+M-x load-theme
+
+#+end_src>
+* 代码类
+** iterm
+*** zsh
+*** sampler
+进程采样可视化工具 https://blog.51cto.com/mingongge/3151278?b=totalstatistic
+*** nvitop
+** pycharm
+** vscode
+#+begin_src
+setting.json改为
+{
+    "editor.accessibilitySupport": "on",
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Gruvbox Minor Dark Hard",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Minor Dark Hard",
+    "workbench.preferredLightColorTheme": "Gruvbox Minor Light Hard",
+
+}
+#+end_src
+* 窗口管理 触摸板
+** bettertouch tool
+** magnet
+* 效率类
+** alfred
+** maczip
+** ffmpeg
+** Mounty 读取ntfs格式的硬盘
+** Bartender 隐藏菜单栏图标
+* 科研
+** paperlib
+https://sspai.com/post/80998
+** 飞书
+软件下载：
+https://xclient.info/

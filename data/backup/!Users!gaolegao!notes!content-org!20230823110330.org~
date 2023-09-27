@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       96F21747-3DA6-4352-AE90-F3373DA832F2
+:END:
+#+TITLE: emnlp2023 rebuttal plan
+#+AUTHOR: Jun Gao
+#+DATE: [2023-08-23 三 11:03]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+* 需要补充的实验
+** 槽位生成器部分
+*** 用别的llm替换soloist
+**** 效果会不会变差
+Why not use LLMs for implementing the TSG module also? This reasoning is not available. It's unclear whether TSG is the best option for generating the slots, as the success of the next phase is dependent on this. So, comparison with baselines for TSG should be done more thoroughly.
+
+** 自适应prompt部分
+*** 更新的模型
+Unfair comparison with baseline in response generation task: The SOLOIST baseline is quite old now. Aren't there more recent models proposed for this? Please compare with other baselines from here: https://github.com/budzianowski/multiwoz#combined-score--inform-success05--bleu-1
+*** 更多的指标
+Results on generation metrics are not shown. (BLEU, METEOR or newer metrics that can capture semantics e.g. DEB [1])
+[1] Improving Dialog Evaluation with a Multi-reference Adversarial Dataset and Large Scale Pretraining - Sai et al.
+*** 新prompt的结果差别
+This paper argues that using the same prompt in LLM cannot effectively capture useful belief state information. Can you provide some experiments to validate this point?
+** 创新性
+*** 只在soloist上有效
+**** 可以替换为更好的模型，这样需要更少的语料
+1 The proposed Trainable Slot Generator is only validated on the SOLOIST model, which is incremental and minor. Besides, why incorporating contrastive learning can improve efficiency should be explained
+2 It seems that the proposed TSG is tuned on a small amount of data, and I am worried about whether the proposed method can be generalized to other domains. The motivation of this paper is ok, but if the proposed method is trained on the MultiWOZ dataset and can only solve tasks in MultiWOZ, its value will be minor.
+**** 可以反向生成语料微调模型
+*** 是否还需要belief
+And whether the belief state is necessary in TOD tasks when we have LLMs?
+** 其他
+文字描述
+1 Can you provide some descriptions of the belief state and what is its structure?
+实验
+2 Are there any ablation studies to investigate the effect of static prompt, dynamic prompt and the prompt for system response to the final results?
+文字描述
+3 How to measure the format error and dialogue generation error?
+文字描述
+4 Another question about this area: This paper introduces an Adaptive Prompt Generation for solving task-oriented dialogue tasks, and it introduces many previous experiences (e.g., Belief state) in TOD tasks. But one question is: after we have LLMs (e.g., ChatGPT), do we still need to follow these traditional settings to solve TOD tasks?

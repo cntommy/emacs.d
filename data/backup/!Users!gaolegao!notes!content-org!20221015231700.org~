@@ -1,0 +1,133 @@
+:PROPERTIES:
+:ID:       DCC56CE7-9D23-4E23-B702-513D1446DB53
+:END:
+#+TITLE: study
+#+AUTHOR: Jun Gao
+#+DATE: [2022-10-15 六 23:17]
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: notes
+
+* 学期计划
+** 2月
+*** 每天阅读一篇论文
+*** 梳理任务型对话框架
+*** 研究方法
+**** zhiyun qian-UCR [[https://medium.com/digital-diplomacy/how-to-look-for-ideas-in-computer-science-research-7a3fa6f4696f#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5NjJlN2EwNTljN2Y1YzBjMGQ1NmNiYWQ1MWZlNjRjZWVjYTY3YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzY4NzEyMzgsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwMjI5Mzc0Nzc3OTc0Mzk3NTk5NSIsImVtYWlsIjoiY250b21teTIwMTBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF6cCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsIm5hbWUiOiLpq5jpqo8iLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwN0lwLXg5ZkVJX2c4M3NxMENRbmdlV0ZDYVVNcEY4eHBjN0pqTEY9czk2LWMiLCJnaXZlbl9uYW1lIjoi6aqPIiwiZmFtaWx5X25hbWUiOiLpq5giLCJpYXQiOjE2NzY4NzE1MzgsImV4cCI6MTY3Njg3NTEzOCwianRpIjoiZDRlOWI3YTQ1YTZhOWZiYTM5OWRmOGE3NWQ0MWM2YThlN2IyZjU0MSJ9.cJeEocc9mqQRtYPP5oEqYrDHa94X8Hy7HUXovJEwXRo7NqKxTlvSThewbhjt3hiCA3lu7mPzCbYQAc_tTof8EkLsaaRRTPyh2M1Z4RNg1giRmZu2fJsp1SXUk6urt3epTKNdf3zz09dhheGVTEtTb14yr3GiD0CtRGouHVkki-dEGOtUBbhLjO3yuoyY_OOwcDCN9Pq-zhBXesqjc006TezfdUWeg2B04j5u0ygSdMi0SHYm_CRYLbI0VbNxG5Z34RWlOfjW2hKZM3dFZkicgkCeipGSlIrIyVFjEpD8mFtsAehiVd804s4cL-r7aZuYpLJ-R5e0mGcDTWRsaV_Ing][how to look idea]]
+***** 读论文
+****** 三步法 [[https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf][how to read paper]]
+******* 第一步
+******** 流程
+1. 读标题、摘要和简介
+2. 读子标题
+3. 读结论
+4. 读参考文献
+******** 回答
+1. 目录：什么类型的文章？
+2. 内容：和哪些文章相关？用到了哪些方法来分析问题？
+3. 正确性：假设是不是可靠
+4. 贡献：主要贡献
+5. 清晰：文章写的好不
+******* 第二步
+知道主要的结论，和支持的证据
+1. 看图表和说明，是否有错误
+2. 标注未读的相关参考文献
+
+******* 第三步
+根据假设重新完成工作，从而深入了解论文的证明和表达技巧，同时记录未来的创新点
+最后应该完整重构文章，知道优点和缺点
+
+****** 文献调研
+******* 关键词搜索文章，可能找到survey
+******* 找引用的多的文章或作者，看他发表的最新论文
+******* 找顶会的文章
+***** 认识产生idea的模式
+****** 填空
+****** 扩展维度
+****** 造锤子再找钉子（困难）
+****** 由小到大
+******* 找到不寻常的现象
+******* 发现现象很难用现有的理论解释
+******* 这个问题的背后有很大的研究空间
+****** 复现之前的文章
+******* 复现效果不好意味着提升空间
+****** 利用外部资源
+******* 搜集工业界的问题
+***** 养成想idea的习惯
+****** 项目和idea不一样
+****** 泛读，各种会议
+****** 认真看文章建议
+****** 多参加讨论，辩论一个方法的好坏
+****** 多和同学沟通，说问题
+*** 复现文章
+*** 啃透soloist
+*** 每日计划
+**** 2.21
+***** 弄清soloist评估方法
+***** 找到和复现文章相关的paper
+***** 继续复现
+***** 整理工具库
+**** 2.28
+***** 测试数据集+测试
+** 3月
+*** 调研强化学习泛化性
+**** [[https://arxiv.org/pdf/2111.09794.pdf][A Survey of Zero-shot Generalisation in DRL]]
+**** 对了，何老师跟这个老师也有合作 Liang yitao，他也做一些语言和RL交叉的工作，有空可以读读这篇文章，看看适不适合作为下一阶段的切入点
+Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents
+** 4月
+** 5月
+
+* DONE [#B] 何老师-对话系统ppt
+CLOSED: [2022-10-26 三 20:19]
+* TODO reorganize onenote
+* 整理soloist的各部分提升数据
+* 踩坑经验交流
+** 王小捷组
+** 覃立波师兄
+** 佩佩师姐和项老师
+** 大宝
+** 申磊
+* 强化学习顶会
+* DONE MLNLP研讨会
+CLOSED: [2022-11-11 五 17:23] SCHEDULED: <2022-10-30 日 09:00>
+http://live.bilibili.com/23872620
+* 滴滴合作项目
+** 给项老师调研材料
+*** ppt file:/Users/didi/Desktop/reinforcemen*
+*** [[id:CE044C83-27CD-42B0-A2A8-E100C6D799E1][reinforcement-learning-in-dialogue-system]]
+*** [[id:D46A1353-3682-49B3-B1E1-C7663199842A][2022-dialogue-paper]]
+*** paper list
+* [#A] 专利
+** 找到模板
+* 研究方向梳理
+
+* DONE [#B] [[id:44CF80E3-73D7-4784-B90D-99A61E951D0F][复盘dstc11]]
+CLOSED: [2023-09-07 四 23:01]
+* TODO 学习习惯
+[2022-11-08 Tue 15:09]
+
+https://mp.weixin.qq.com/s/iK9TNUcXpRvkNJYgoBQ4LA
+* 阅读列表
+DeepMind的Sparrow
+* 技术方案
+（1）   面向AI数字人的多模态生物特征识别技术，包括虹膜识别、人脸识别、多模态融合等；
+（2）   面向AI数字人的人机交互关键技术，包括对话生成、智能问答、姿态及表情生成等；
+（3）   面向AI数字人的知识图谱与大数据挖掘关键技术，包括实体抽取、意图识别与知识推理等。
+
+简单一点，为了免费备案
+（1） 随便找个虹膜识别的博士论文， 从中摘一点技术路线即可
+[[shell:open /Users/gaolegao/Desktop/声智/中科院自动化所-2022-博士-卫建泽-多源异质虹膜图像的识别与分割问题研究.pdf]]
+（2） 对话方面的，你自己就做，随便找个博士论文，摘抄一点就行。我记得之前给过你计算所的一个博士论文
+[[shell:open /Users/gaolegao/Desktop/声智/申磊-面向开放域的对话生成关键技术研究.pdf]]
+（3） 知识图谱那个，前段时间不是写了杭州市的一个AI重大项目，以那个为基础，编一点就行。
+[[shell:open /Users/gaolegao/Desktop/声智/0613-智云健康-基于知识图谱的医疗智能问诊系统项目申报书20220613.pdf]]
+
+技术路线那一部分，分三个小条目
+（1）XXX
+（2）XXX
+
+参考合同
+[[shell:open /Users/gaolegao/Desktop/声智/声智委托北邮技术开发合同-声智科技-20220831.doc]]
+
+参考格式
+[[shell:open /Users/gaolegao/Desktop/声智/20221026-亿海微-水印算法技术方案-办理免税用.docx]]
+[[shell:open /Users/gaolegao/Desktop/声智/20221026-亿海微-水印算法技术方案-办理免税用(1).docx]]

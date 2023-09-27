@@ -1,0 +1,200 @@
+:PROPERTIES:
+:ID:       B19A8F5D-FFFA-41CC-B166-2C261B5ABCB4
+:END:
+#+TITLE: daily
+#+AUTHOR: Jun Gao
+#+DATE: [2022-10-15 六 22:31]
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: notes
+* 科研类
+** DONE 论文rebuttal
+CLOSED: [2023-09-07 四 15:31]
+[[id:96F21747-3DA6-4352-AE90-F3373DA832F2][emnlp2023 rebuttal plan]]
+** 和栋商量一下怎么一起做 主要是建立合作关系
+*** 了解一下他的工作 还有和他一起做的人
+** 确定一下human preference的方案
+** [[id:6BEB9DF3-0895-4C90-AE24-BC66386AE163][多元价值观]]
+** DONE 审论文
+CLOSED: [2023-09-07 四 11:32] DEADLINE: <2023-09-05 二>
+** TODO [#A] 写openclue报告
+SCHEDULED: <2023-09-07 四>
+** 实验室大模型小组
+*** DONE 周五讨论
+CLOSED: [2023-09-16 六 12:02] SCHEDULED: <2023-09-08 五 18:30>
+**** 目标：围绕科委项目和大家的兴趣，从应用，项目，论文，专利等方面组织下本周的讨论。
+**** 分享
+     加密数据中的对齐技术
+     探索LLM中的密码能力
+     用参数生成减少对齐成本
+**** 会议记录
+***** 怎么用gpt4数据让小模型变得更好
+*** 日常讨论 龚老师ppt
+SCHEDULED: <2023-09-22 五 18:30-20:30>
+**** 目标：看不同的论文
+**** 分享
+***** [[file:~/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/849a800fd418e0494973824bdf7e7474/Message/MessageTemp/639b03ef774be05210940d0262b2f374/File/VCIS大模型小组论文讨论记录.docx][组会纪要]]
+
+** emnlp2023论文
+*** 是否能撤稿 可以不用测
+*** colin 10.15 eacl 10.16
+* 项目类
+** 鹏城sft
+*** 测试多轮的效果
+*** TODO 把sft的实验跑上，整理一个实验的表格
+*** 测一下agent bench
+*** 购买云服务器
+*** DONE 龙猫数据开会
+CLOSED: [2023-09-07 四 11:32] SCHEDULED: <2023-09-01 五 16:30>
+*** DONE 合同开会
+CLOSED: [2023-08-28 一 16:14] SCHEDULED: <2023-08-22 二 19:00>
+*** TODO 跑一下王老师的脚本
+*** WAIT 知识森林构造
+SCHEDULED: <2023-09-07 四>
+*** DONE beaver code diff push
+CLOSED: [2023-09-02 六 14:30]
+*** DONE 周五ppt
+CLOSED: [2023-09-22 五 12:17]
+** redteam
+*** DONE 聚类 gpt4
+CLOSED: [2023-09-07 四 23:01]
+*** TODO [#A] 跑上baichuan2-13B
+DEADLINE: <2023-09-08 五 17:30>
+fp32 len=512 batch=2*1*2 内存压力过大 减小bathch
+
+需不需要用多轮数据微调
+
+内存计算1B参数占4G内存
+13B参数 = （模型参数4 模型梯度4 adam参数备份4 momentum4 variance4 ）*13
+** openclue
+*** DONE 确定种子问题
+CLOSED: [2023-08-23 三 01:10] DEADLINE: <2023-08-19 六>
+*** TODO 和睿阳确定代码合并
+*** 确定一下评测项目的计算量
+*** TODO 写论文
+*** [[id:1D0A28B1-8BFD-49FC-88D2-55F31F739500][openclue]]
+** llm科委可信ai项目
+*** DONE 填充本子
+CLOSED: [2023-08-22 二 18:39]
+*** DONE 完成本子财务
+CLOSED: [2023-08-22 二 18:39] DEADLINE: <2023-08-22 二>
+*** DONE 完成每个内容1-2页ppt
+CLOSED: [2023-08-28 一 16:14] DEADLINE: <2023-08-22 二>
+*** DONE 和吴老师讨论
+CLOSED: [2023-08-28 一 16:14] SCHEDULED: <2023-08-22 二 20:00>
+*** 会议记录
+**** 吴老师讨论<2023-08-22 二>
+***** 科委想看到榜单
+****** gpt4 chatgpt llama2 chatglm
+*** DONE 开会
+CLOSED: [2023-09-07 四 11:33] SCHEDULED: <2023-09-01 五 14:00>
+*** TODO [#C] 找一下数据公司
+SCHEDULED: <2023-09-18 一>
+** 策划比赛
+*** DONE 第一次开会
+CLOSED: [2023-08-31 四 23:03] SCHEDULED: <2023-08-29 二 14:30>
+会议主题：实验室第二届“暹星杯”赛题及后续安排
+会议时间：8月29日14:30-16:00
+会议地点：F10东区会议室
+远程会议链接：https://meeting.huaweicloud.com/welink/j/96279396/nart7y43hZFbuNoJ1OpXiXXOlDAmfGBLh
+*** 问一下稼科
+*** 初步想法
+指令安全性评测
+给定一个3B的模型，自己找数据集微调，需要判断给定对话的有害性（政治 暴力 色情 等方面）
+*** 会议记录
+**** 评测
+***** 确定模型 有没有现有模型
+***** 给定一个评测集样例
+
+**** 效率 孙博
+把盘古的模型 不同的策略 来提升
+把模型通一个状态到另一个状态 谁用的时间少？
+
+**** 问题
+***** 参赛人数：联培博士 职工 实习生 去年20+
+***** 赛程：几天训练
+***** 算力：只有十几个节点 一两百张卡 mindspore
+***** 模型实现 安全 qa计算 计算生物 数据集打榜
+**** 赛题
+一、赛题设置
+随着大模型逐步应用到实际场景中，模型的安全性变得愈加重要，现有的模型对齐方法分为SFT和RLHF。本赛道拟给出3B/7B（待定）的模型（含初始代码、模型），选手自行搜集安全数据集用于模型SFT微调，框架使用mindspore。最终测试集的形式为50条安全类问题（包括但不限于道德伦理、违法犯罪、政治合规、财产隐私等方面，具体可参考Safety-Prompts中的类别），参赛者需要使用微调后的模型生成答案。最终使用GPT4基于标准答案给选手模型回答的安全性进行打分。
+论文：
+Safety Assessment of Chinese Large Language Models
+Paperwithcode
+https://paperswithcode.com/paper/safety-assessment-of-chinese-large-language
+
+参考数据集：Safety-Prompts
+https://github.com/thu-coai/Safety-Prompts
+
+GPT4评分脚本：MT-Bench
+https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge
+二、比赛形式
+参赛选手（限 1 人），利用云脑Ⅱ环境进行开发，在截止日期前提交模型、训练数据及50条模型回答，名次根据最终给定测试集上的准确度排名。
+** 把baichuan-7B的用自己的数据训练一遍
+** 去看一下baichuan的效果
+** 研究一下百川数据配比
+** 和睿阳，孙祯波,徐飞老师学生交流一下怎么设置deepspeed的pipline megetron
+** 看一下llama的源码实现 看下llama tokenizer的实现方式、旋转位置编码是怎么做的、整体的模型结构是什么样的、大模型里面step by step的解码过程是什么样的、上下文窗口和模型宽度的关系、padding mask的实现方式、解码具体是怎么实现的，怎么做的beam search，temperature、top_p这些参数是怎么控制的解码过程
+
+** 怎么实现多卡推理 ray
+** 大模型多轮对话能力和理解长文本能力之间的关系
+** 把分词这块看一下
+** TODO [#B] 写教材
+SCHEDULED: <2023-09-18 一>
+* 效率类
+** github
+*** 打印在读证明 教一 学校信纸
+*** 录取通知书 学校名称日期公章
+*** 购买wps会员
+* 杂事
+** 找一下深圳的牙科
+*** 深圳市人民医院、南方医科大学深圳口腔医院（坪山）、深圳市口腔医院、南方医科大学深圳口腔医院
+*** 深圳市儿童医院、北京大学深圳医院、深圳市人民医院、深圳市第二人民医院
+*** TODO [#A] 或者北京看牙
+** 尝试新东西
+*** 暗黑4
+*** 镰仓物语
+*** 命运石之门
+*** 权力的游戏 前传
+*** 思考一下
+** 检查制动油位
+** [[id:3C40B42F-B1BC-46EE-8A8D-5664E04D01CF][shopping list]]
+** TODO 选课
+SCHEDULED: <2023-09-04 一>
+教一423还是425 问一下专题文献选读课
+
+
+
+** TODO [#C] 远程撸猫系统
+** 和王老师弄一下报销的事情
+SCHEDULED: <2023-09-26 二>
+** DONE 和钊为对一下数据
+CLOSED: [2023-09-24 日 00:33] SCHEDULED: <2023-09-22 五 13:00-14:00>
+** 和睿阳对一下论文
+SCHEDULED: <2023-09-24 日>
+** 和海哥去申请美国旅游签
+SCHEDULED: <2023-09-25 一>
+** 看emnlp结果，recycle
+SCHEDULED: <2023-10-06 五>
+** 看openclue的论文
+SCHEDULED: <2023-09-22 五 16:00-17:30>
+** TODO intel stock
+https://mp.weixin.qq.com/s/tRhs0IKZmDnUYmlu9iTxTQ
+
+** 给论文加一下一致性的部分 实验结果发群里 画图
+SCHEDULED: <2023-09-24 日>
+
+** DONE 给稼科发一下OpenCLUE的介绍
+CLOSED: [2023-09-25 一 03:26] SCHEDULED: <2023-09-24 日>
+
+** 给龚老师发训练介绍的ppt
+SCHEDULED: <2023-09-26 二>
+
+** 成栋的实验
+SCHEDULED: <2023-09-24 日>
+
+** TODO 看往年的best paper
+
+** TODO [#A] 生成英文种子数据
+SCHEDULED: <2023-09-25 一>
+
+** TODO 智能计算系统导论教材修改

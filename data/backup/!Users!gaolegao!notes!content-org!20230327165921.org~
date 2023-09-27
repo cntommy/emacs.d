@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       66A6AE63-9893-4BA0-BB8D-E90347062BC6
+:END:
+#+TITLE: idea:LLM+rl
+#+AUTHOR: Jun Gao
+#+DATE: [2023-03-27 一 16:59]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+* 想法
+还有哪些任务能用llm做指导:可以用自然语言表述，任务较复杂，llm有相应的知识
+planning-based？
+* 相关工作
+Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents
+怎么让大模型得到相应的回复的

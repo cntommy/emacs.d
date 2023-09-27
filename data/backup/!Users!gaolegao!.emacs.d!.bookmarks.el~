@@ -1,0 +1,16 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/notes/content-org/20230823110330.org")
+ (front-context-string . "* 需要补充的实验\n** 槽位生")
+ (rear-context-string . "ECTION: ch/docs\n")
+ (position . 197)
+ (last-modified 25829 30560 334619 0))
+("org-refile-last-stored"
+ (filename . "~/notes/content-org/20221015223139.org")
+ (front-context-string . "*** TODO 把sft的实验")
+ (rear-context-string . "sft\n*** 测试多轮的效果\n")
+ (position . 754))
+)

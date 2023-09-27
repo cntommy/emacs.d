@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       3A12D7D8-C111-4CD6-8F8B-F60DC6D873DB
+:END:
+#+TITLE: 可用服务器
+#+AUTHOR: Jun Gao
+#+DATE: [2023-08-17 四 09:59]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+| 归属 |                            ip | 卡       | 内存 | docker | 用途 | 账号            | 密码              | 驱动版本 |   |
+|-----+-------------------------------+---------+-----+--------+-----+----------------+------------------+--------+---|
+| 学校 |                               |         |     |        |     |                |                  |        |   |
+| 鹏城 |               192.168.206.106 | 16*V100 | 32G | -p 100 | sft |                |                  |        |   |
+|     |               192.168.206.110 | 16*V100 | 32G |        | sft |                |                  |        |   |
+|     |                192.168.202.13 | 16*V100 | 32G |        | sft |                |                  |        |   |
+|     |               192.168.206.112 | 16*V100 | 32G |        | sft |                |                  |        |   |
+|     |               192.168.206.104 | 16*V100 | 32G |        | 推理 |                |                  |        |   |
+|     |                 192.168.215.4 | A100    | 80G |        |     |                |                  |        |   |
+| 北大 |                          [[http://pai-console.c95ec79dd6bf04b63a3403cac3ae3617d.cn-wulanchabu.alicontainer.com/index?projectId=&regionId=#/dlc][阿里云]] | 8*A100  | 80G |        | 科研 | pku-redteaming | S6ifPP3gFVzLJMCR |        |   |
+|     |                180.184.82.216 | 8*A100  | 80G |        | 科研 | gaojun         | gaojun           |        |   |
+|     | console.cloudbrain2.pcl.ac.cn | V100?   |     |        |     | gaojun         | Cloudbrain2@pcl  |        |   |
+
+| num | account                                                                                                        | 分配                            | main   | quota |
+|-----+----------------------------------------------------------------------------------------------------------------+--------------------------------+--------+-------|
+|   1 | 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    账号：nicholaskell.y62.6.0.222@gmail.com 登录密码：Zz123456 | ceyao dehua !zhaowei chengdong | ？8.28  |     0 |
+|   2 | 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    账号：jenniferkdwyere86@gmail.com                         | ceyao shaomeng jiake cihai     | gaojun |     0 |
+|   3 | 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  账号 yothinp.ay.a.k.25.1.4@gmail.com                       | ceyao dehua                    | ceyao  |     0 |
+|   4 | 卡号：ixrpo46@163.com密码：5vfq453cy1 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                         | chengdong                      |        |     x |
+|   5 | 卡号：symki18@163.com密码：49dSzbaMDD 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                         | gaojun wangwen                 |        |     x |
+|   6 | 卡号：gcwwi94@163.com密码：SFceSsZ71e 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                         | wangwen dehua zhaowei          |        |     x |
+|   7 | 卡号：zeskv86@163.com密码：Y249TUH4Fm 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                         | wangwen不用了    ceyao           |        |     x |
+|   8 | 卡号：aqubr98@163.com密码：51jn9d2KYr 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                         | gaojun                         |        |     x |
+|   * | kifelushejygae@hotmail.com Y7woV1u7  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                       | ceyao                          | ceyao  |     0 |
+|   * | kidunaewe3@hotmail.com 3YcdDq8g  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                           | gaojun zhaowei                 | gaojun |     0 |
+|   * | 卡号：packrticoverbot@mail.com 3RW9MyZa1w 3RW9MyZa1w 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         | gaojun                         | gaojun |     0 |
+|   9 |                                                                                                                |                                |        |       |
+|  10 |                                                                                                                |                                |        |       |
+
+
+
+
+

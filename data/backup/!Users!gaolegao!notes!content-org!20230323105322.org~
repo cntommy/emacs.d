@@ -1,0 +1,100 @@
+:PROPERTIES:
+:ID:       05B3CAA8-7E00-4EA8-848D-6CD4B478B165
+:END:
+#+TITLE: idea:LLM增强
+#+AUTHOR: Jun Gao
+#+DATE: [2023-03-23 四 10:53]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+动机：
+如何获取最新的外部知识是LLM的一个不足[fn:1]
+LLM能很好的胜任任务型对话系统，除了获取外部知识的能力，但获取外部知识的能力对于对话系统很重要[fn:5]
+有大量的没有标注的任务型对话语料可以作为非结构化外部知识[fn:2] ？只有website faq review
+
+？目前的对话系统还不能充分地利用这些语料信息[fn:3]或作为外部知识？
+目前的对话系统，由于标注成本高，数据库不完善甚至没有数据库？[fn:4]
+
+在任务型对话系统中外部知识包括：实体常规的slot和value（容易结构化），非常规的一些信息（不容易结构化）,同时存在动态变化[fn:4] multiwoz中能不能找到？构造？模拟？
+将已有的对话结构化放入数据库中会损失一些非常规的信息
+需要解决：1如何通过已有的未标注对话构建或更新数据库 2如何查询对话中的一些非常规的不容易被结构化的信息
+设计一个框架：1能提取没有标注对话中的结构化和非结构化信息2能查询还没有结构化的对话信息，同时扩展已有的数据库 3不需要额外训练
+从没有标注的对话中进行学习，进一步更新db
+虽然对话中的一些信息已经能被很好的结构化，但是仍然存在不容易结构化的信息？
+
+是不是问题
+是不是必须是加prompt
+为什么不用微调
+chatgpt接口
+
+* todo
+** 判断2.2和2.0上的效果差距
+
+** 在别的领域进行尝试
+
+** 找别的论文中用的指标
+
+** 为什么blue很低
+
+** 把思路梳理清楚
+传统的模型理解能力有问题，而chatgpt适合实体识别
+如果完全用chatgpt会存在幻觉的问题，导致slot不够准确？
+Soloist+chatgpt能够解决这个问题
+
+** jga和inform是不是一样
+不一样，
+inform 是否提供了正确的实体
+jga 每一轮对话的槽位（和value？）是不是一样
+t轮之前都正确 https://redian.news/wxnews/60848
+turn acc 每个槽位的准确度
+* 实验记录
+把训练数据中value去除，保留slot：mod_belief.py
+
+* 流程
+判断是否要查询外部数据（哪些？）：1数据库中没有记录 2数据库中有记录，但是没有相关信息
+搜集要查询的外部数据：用产生的belief去匹配所有对话中的belief
+从搜集到的外部数据提取信息
+根据提取的信息生成回复
+
+[[id:9BD2160B-DC7B-429C-A48A-4E1E3FC22A38][论文规划Soloist+chatgpt]]
+
+* 学习哪些知识
+数据库？有的槽位
+为什么不能从对话中直接抽取
+是不是变成信息抽取的任务了
+
+数据库中没有的槽位
+
+* 评价指标
+对话成功率
+knowledge f1：对
+
+* chatgpt api
+检索实时信息：比分，新闻
+检索kb信息：公司文档，个人笔记
+执行动作：定航班，点食物
+
+决定什么时候调用api：看起来和描述（用自然语言）相似
+过程：在用户和chatgpt对话的时候会被注入（plugin description，endpoints，example）
+，整合信息
+
+优点：
+槽位提供enumerate能力
+
+缺点：
+不能主动调用plugin，只能让chatgpt自己判断
+
+* 相关论文
+
+* Footnotes
+[fn:6]Contextualize Knowledge Bases with Transformer for End-to-end Task-Oriented Dialogue Systems
+
+[fn:5]Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems
+[fn:4]Learning Knowledge Bases with Parameters for Task-Oriented Dialogue Systems
+
+[fn:3]GraphDialog: Integrating Graph Knowledge into End-to-End Task-Oriented Dialogue Systems
+[fn:2]GALAXY: A Generative Pre-trained Model for Task-Oriented Dialog with Semi-supervised Learning and Explicit Policy Injection
+
+[fn:1] 1 GODEL: Large-Scale Pre-Training for Goal-Directed Dialog
+解决：general purpose dialog model下游任务需要外部信息，预训练阶段没有适配
+
+Efficient Retrieval Augmented Generation from Unstructured Knowledge for Task-Oriented Dialog

@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       92E87AD9-B373-4495-A7BB-6CCAF43D8C84
+:END:
+#+TITLE: 大模型规划
+#+AUTHOR: Jun Gao
+#+DATE: [2023-07-26 三 17:00]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+* 数据
+** 设计sft数据
+The Flan Collection: Designing Data and Methods for Effective Instruction Tuning
+https://mp.weixin.qq.com/s/Vrr_B_ElD15HUFEBq3ERwg
+** 已有sft数据
+* prompt工程
+** https://www.zhihu.com/question/582979328/answer/3005839274
+* 模型架构
+* pretrain
+* sft
+** 单轮
+** 多轮
+*** 用什么格式构成conversation
+*** 语料要不要进行截断
+https://mp.weixin.qq.com/s/x6NybHVrKss_Um8vMHHwkQ
+* rlhf
+* 评测
+https://www.notion.so/9ed8ab5a453747ca87b7733dbc305493
+[[id:382BAC56-165E-47F8-9F71-0AE3A9732D04][redteam大模型工作]]
+https://www.zhihu.com/question/604592470/answer/3082235356
+** 目前有哪些评测的方法
+** 这些方法都有哪些优缺点
+* 部署
+** longchain+ray
+https://mp.weixin.qq.com/s/d3gOU4oDIHMzz6V4SJiAGQ
+** 量化
+* 主要研究方向
+** 价值观对齐
+** 大模型评测
+https://mp.weixin.qq.com/s/wv_tksKKGZA2yr40NESKmg
+* 自己的规划
+** 先把大模型的整个流程搞透
+** 确定一下研究的方向
+*** 做一个评测多轮的数据集?
+** 实验室能用上的资源
+** 和成栋一起做
+** 和feiji商量一下
+* 工具学习
+** docker
+** 前端gradio + 后端flask
+** beaver
+** deepspeed
+** wandb tensorboard
+* 知名的研究团队
+** 唐杰 清华 chatglm
+** fuyao 爱丁堡大学
+* [[id:C6F43766-7830-4229-8654-D93BC2B4A2EC][鹏程工作]]
+* [[id:569ABA90-BDF8-41F2-8478-54DABB16E161][实验室工作（大模型）]]

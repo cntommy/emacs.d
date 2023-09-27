@@ -1,0 +1,1 @@
+("~/notes/" "~/Desktop/LLM/evaluation/openCLUE/" "~/.emacs.d/")

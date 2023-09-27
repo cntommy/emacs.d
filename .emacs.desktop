@@ -1,0 +1,1343 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Sep 28 01:14:02 2023
+;; Desktop file format version 208
+;; Emacs version 29.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25876 25306 461381 0) (desktop . "208") "gaolegao@gaojundeMacBook-Pro.local" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-*-Monaco-medium-normal-normal-*-16-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#cccccc") (background-color . "#2d2d2d") (mouse-color . "black") (border-color . "#515151") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (alpha) (alpha-background) (scroll-bar-foreground) (scroll-bar-background) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (inhibit-double-buffering) (menu-bar-lines . 0) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "#f2777a") (font-parameter) (environment) (ns-appearance . light) (ns-transparent-titlebar . t) (last-focus-update . t) (frameset--id . "2254-440B-9712-F939") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "Mac") (explicit-name) (tool-bar-position . top) (tabs (current-tab (name . "20230817095922.org") (explicit-name))) (frameset--text-pixel-width . 1776) (frameset--text-pixel-height . 1067) (height . 50) (width . 177) (left . 0) (top . 25)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 84) (min-pixel-width . 100) (min-pixel-height-ignore . 45) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 21) (min-pixel-width-safe . 20)) leaf (pixel-width . 1792) (pixel-height . 1046) (total-width . 179) (total-height . 49) (normal-height . 1.0) (normal-width . 1.0) (buffer "20230625153208.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 268) (start . 1)) (prev-buffers ("20221015223139.org" 4087 4844) ("20230817095922.org" 1 4664) ("20230726170006.org" 348 991) ("20221011163732-从零开始使用emacs.org" 26579 26865) ("20230721140946.org" 4672 5160) ("20230828160541.org" 440 1067) ("20230411212456.org" 1 244) ("20230625153208.org" 494 992) ("*scratch*" 1 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("recover-this-file" "load-theme" "recover-this-file" "org-insert-link" "load-theme" "recover-this-file" "org-capture" "load-theme" "previous-buffer" "load-theme" "org-agenda" "load-theme" "toggle-truncate-lines" "package-list-packages" "package-install" "load-theme" "package-install" "load-theme" "package-install" "recover-this-file" "org-agenda" "color-theme-sanityinc-tomorrow-day" "color-theme-sanityinc-tomorrow-eighties" "org-todo" "org-time-stamp" "org-timer" "customize-themes" "color-theme-sanityinc-tomorrow-eighties" "org-roam-buffer" "org-roam-buffer-toggle"))
+(setq face-name-history nil)
+(setq file-name-history '("~/.emacs.d/.bookmarks.el" "~/.emacs.d/custom.el" "~/notes/content-org/20230203093918.org" "~/notes/content-org/20221011163732-从零开始使用emacs-NSConflict1109-gaolegao-mac12.6.7.org" "~/notes/content-org/20221011163732-从零开始使用emacs-NSConflict-gaolegao-mac12.6.7.org" "~/notes/content-org/20230411225910.org" "~/notes/content-org/20230411223349.org" "~/notes/content-org/20230411223239.org" "~/notes/content-org/20230411223129.org" "~/notes/content-org/20230411212432.org" "~/notes/content-org/20230404201113.org" "~/notes/content-org/20230404193643.org" "~/notes/content-org/20230328190039.org" "~/notes/content-org/20230328160004.org" "~/notes/content-org/20230327165921.org" "~/notes/content-org/20230313112430.org" "~/notes/content-org/20230223164308.org" "~/notes/content-org/20230222155828.org" "~/notes/content-org/20230221142643.org" "~/notes/content-org/20230221141337.org" "~/notes/content-org/20230221140846.org" "~/notes/content-org/20230216165404.org" "~/notes/content-org/20230213235433.org" "~/notes/content-org/20230213141146.org" "~/notes/content-org/20230212172048.org" "~/notes/content-org/20230207164412.org" "~/notes/content-org/20230205162127.org" "~/notes/content-org/20230113141227.org" "~/notes/content-org/20230110234912.org" "~/notes/content-org/20221228214151.org" "~/notes/content-org/20221226233646.org" "~/notes/content-org/20221208174408.org" "~/notes/content-org/20221128204409.org" "~/notes/content-org/20221125141037.org" "~/notes/content-org/20221124205854.org" "~/notes/content-org/20221124134056.org" "~/notes/content-org/20221112110141.org" "~/notes/content-org/20221111210758.org" "~/notes/content-org/20221111002009.org" "~/notes/content-org/20221110160133.org" "~/notes/content-org/20221110145621.org" "~/notes/content-org/20221108171202.org" "~/notes/content-org/20221106134534.org" "~/notes/content-org/20221104215416.org" "~/notes/content-org/20221104111222.org" "~/notes/content-org/20221103214225.org" "~/notes/content-org/20221103174236.org" "~/notes/content-org/20221102215206.org" "~/notes/content-org/20221102212415.org" "~/notes/content-org/20221102151212.org" "~/notes/content-org/20221101175821.org" "~/notes/content-org/20221031223615.org" "~/notes/content-org/20221031221052.org" "~/notes/content-org/20221030231251.org" "~/notes/content-org/20221030225846.org" "~/notes/content-org/20221030112016.org" "~/notes/content-org/20221030110526.org" "~/notes/content-org/20221029122530.org" "~/notes/content-org/20221028180450.org" "~/notes/content-org/20221028175536.org" "~/notes/content-org/20221028175310.org" "~/notes/content-org/20221028174331.org" "~/notes/content-org/20221028173756.org" "~/notes/content-org/20221028173428.org" "~/notes/content-org/20221027151916.org" "~/notes/content-org/20221024235407.org" "~/notes/content-org/20221024172206.org" "~/notes/content-org/20221020145221.org" "~/notes/content-org/20221020143336.org" "~/notes/content-org/20221020142352.org" "~/notes/content-org/20221020135523.org" "~/notes/content-org/20221020133831.org" "~/notes/content-org/20221020132554.org" "~/notes/content-org/20221020105357.org" "~/notes/content-org/20221019183651.org" "~/notes/content-org/20221019173435.org" "~/notes/content-org/20221019164515.org" "~/notes/content-org/20221019155555.org" "~/notes/content-org/20221017224337.org" "~/notes/content-org/20221015232702.org" "~/notes/content-org/20221015223109.org" "~/notes/content-org/20221013201408-reinforcement_learning_in_dialogue_system.org" "~/notes/content-org/20221013175809-nlp会议期刊.org" "~/notes/content-org/20221013113356-如何提问.org" "~/notes/content-org/20221013110549-如何做笔记.org" "~/notes/content-org/20221013105202-如何做笔记.org" "~/notes/content-org/20230417110425.org" "~/notes/content-org/20230802152247.org" "~/opt/anaconda3/pkgs/daal4py-2021.3.0-py39h01d92e1_0/info/test/examples/dbscan_spmd.py" "~/notes/content-org/20221015231700.org" "~/notes/content-org/20230731102654.org" "~/notes/content-org/20230817151920.org" "~/notes/content-org/20230728154733.org" "~/notes/content-org/20230823110330.org" "~/notes/content-org/20230323105322.org" "~/notes/content-org/20221226214112.org" "~/notes/content-org/20221013144002-2022_dialogue_paper.org" "~/.emacs.d/lisp/init-local.el" "~/.notes" "~/.emacs.d/lisp/init-org.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq magit-revision-history nil)
+(setq minibuffer-history '("gruvbox-light-soft" "组会纪要" "gruvbox-light-soft" "no" "a" "gruvbox-dark-hard" "gruvbox-dark-soft" "gruvbox-light-soft" "gruvbox-light-medium" "gruvbox" "wheatgrass" "gruvbox-dark-soft" "gruvbox-light-soft" "no" "gruvbox-light-soft" "gruvbox-dark-hard" "gruvbox-dark-soft" "gruvbox-light-soft" "gruvbox-dark-hard" "gruvbox-theme" "gruvbox-dark-soft" "gruvbox-dark-hard" "gruvbox-light-soft" "gruvbox-dark-hard" "gruvbox-theme" "10x8" "5x5" "5x6" "Black-Box Prompt Learning for Pre-trained\nLanguage Models" "https://arxiv.org/pdf/2201.08531.pdf" "d" "5x2" "4*5" "color-theme" "org-roam-ui"))
+(setq org-clock-history nil)
+(setq org-refile-history '("项目类/鹏城sft/" "项目类/openclue/" "细节/问题构造/首轮问题/" "可以参考的/" "杂事/" "效率类/" "杂事/" "学校/" "策略/买入策略/程序2：与市场的比价关系/" "策略/买入策略/" "路线/怀柔/" "路线/延庆/" "路线/门头沟/" "路线/延庆/"))
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((111 . "agenda ")))
+(setq search-ring '(#("科委" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("do" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("docker" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("docke" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("open" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("agenda" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("default-n" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("defa" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("temp" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("cap" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("prio" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("[A]" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("[]" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("a" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("gruv" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("deadl" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230625153208.org"
+  "20230625153208.org"
+  'org-mode
+  '(anzu-mode corfu-mode override-global-mode flymake-mode org-superstar-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode eldoc-mode font-lock-mode)
+  268
+  '(1028 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25876 23962 556340 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (992 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015223139.org"
+  "20221015223139.org"
+  'org-mode
+  '(anzu-mode corfu-mode override-global-mode flymake-mode org-superstar-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode eldoc-mode font-lock-mode)
+  4844
+  '(4844 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25876 20748 108548 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (4896 5101 1975 1975 5045 4734 4196 4196 4468 1891 3949 4070 506 783 1 1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230817095922.org"
+  "20230817095922.org"
+  'org-mode
+  '(anzu-mode corfu-mode override-global-mode flymake-mode org-superstar-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode eldoc-mode font-lock-mode)
+  4664
+  '(4664 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25876 19676 416492 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (4834 4834 4312 4138 1713 1726 1726 1726 1249 1487 1487 2761 4834 3792 4834 2932))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230924005443.org"
+  "20230924005443.org"
+  'org-mode
+  '(anzu-mode corfu-mode font-lock-mode eldoc-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode org-superstar-mode flymake-mode)
+  463
+  '(573 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25875 40409 832699 890000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (469 1 264 466 310 405 238 572 347 405))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230726170006.org"
+  "20230726170006.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  991
+  '(991 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25874 20459 527673 890000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1464 1402 1228 1134 995 994 325 427 325 276 659 659 195 483 655 1311))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221011163732-从零开始使用emacs.org"
+  "20221011163732-从零开始使用emacs.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  26865
+  '(16633 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25872 20211 368975 890000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (12611 20024 20003 19995 12926 20035 199 26732 26732 26782 26729 22487 15103 15103 1 26812))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230721140946.org"
+  "20230721140946.org"
+  'org-mode
+  '(anzu-mode corfu-mode font-lock-mode eldoc-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode org-superstar-mode flymake-mode override-global-mode)
+  5160
+  '(5160 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25872 15999 983869 890000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (5135 6972 5100 7059 7274 7274 1 1 1 1 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230828160541.org"
+  "20230828160541.org"
+  'org-mode
+  '(anzu-mode corfu-mode flymake-mode org-superstar-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode eldoc-mode font-lock-mode)
+  1067
+  '(1067 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25872 13862 533077 890000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1067 877 876 708 1064 878 692 653 597 100 333 333 297 333 1 362))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411212456.org"
+  "20230411212456.org"
+  'org-mode
+  '(anzu-mode corfu-mode font-lock-mode eldoc-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode org-superstar-mode flymake-mode override-global-mode)
+  244
+  '(244 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25867 18577 995385 933000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (244 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  nil
+  "init-org.el"
+  'dired-mode
+  '(anzu-mode corfu-mode diff-hl-dired-mode font-lock-mode diredfl-mode whole-line-or-region-local-mode whitespace-cleanup-mode)
+  120
+  '(120 nil)
+  t
+  '("/Users/gaolegao/.emacs.d/lisp/init-org.el")
+  '((buffer-display-time 25865 62723 721426 825000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/.emacs.d/lisp/init-org.el"
+  "init-org.el"
+  'emacs-lisp-mode
+  '(anzu-mode corfu-mode goto-address-prog-mode bug-reference-prog-mode symbol-overlay-mode rainbow-delimiters-mode display-fill-column-indicator-mode display-line-numbers-mode flymake-mode highlight-quoted-mode aggressive-indent-mode paredit-mode elisp-slime-nav-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode auto-compile-mode eldoc-mode font-lock-mode)
+  108
+  '(11055 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25863 35808 839813 765000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (4795 4108 4108 3893 3893 3876 1 3876))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/.notes"
+  ".notes"
+  'fundamental-mode
+  '(anzu-mode corfu-mode font-lock-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25863 35819 773626 765000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/.emacs.d/lisp/init-local.el"
+  "init-local.el"
+  'emacs-lisp-mode
+  '(anzu-mode corfu-mode goto-address-prog-mode bug-reference-prog-mode symbol-overlay-mode rainbow-delimiters-mode display-fill-column-indicator-mode display-line-numbers-mode flymake-mode highlight-quoted-mode aggressive-indent-mode paredit-mode elisp-slime-nav-mode page-break-lines-mode whole-line-or-region-local-mode whitespace-cleanup-mode diff-hl-mode auto-compile-mode eldoc-mode font-lock-mode)
+  18112
+  '(17826 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25863 35823 611815 765000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (18112 18088 18071 18067))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013144002-2022_dialogue_paper.org"
+  "20221013144002-2022_dialogue_paper.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25863 35824 923324 765000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221226214112.org"
+  "20221226214112.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  2868
+  '(1408 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25863 31608 380902 705000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230323105322.org"
+  "20230323105322.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1346
+  '(5696 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25863 31610 216727 705000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230823110330.org"
+  "20230823110330.org"
+  'org-mode
+  '(anzu-mode corfu-mode font-lock-mode eldoc-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode org-superstar-mode flymake-mode)
+  1198
+  '(1198 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25860 64280 309036 705000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (1198 1198 853 974 853 686 2074 2176 1741 1465 2091 1520 1465 1465 1465 251))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230728154733.org"
+  "20230728154733.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1071
+  '(290 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25856 25969 629941 672000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1071 8894 290 3495 4953 4770 4589 4380 4157 3723 3043 2601 1074 4953 2165 981))))
+
+(desktop-create-buffer 208
+  nil
+  "Baichuan-7B"
+  'dired-mode
+  '(anzu-mode corfu-mode font-lock-mode diredfl-mode override-global-mode whitespace-cleanup-mode whole-line-or-region-local-mode diff-hl-dired-mode)
+  276
+  '(1 nil)
+  t
+  '("/Users/gaolegao/Desktop/LLM/model/Baichuan-7B/")
+  '((buffer-display-time 25854 36933 855120 425000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230817151920.org"
+  "20230817151920.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  179
+  '(261 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25854 3630 48134 186000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (179 315 261))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230731102654.org"
+  "20230731102654.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  361
+  '(361 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25854 3620 391454 186000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015231700.org"
+  "20221015231700.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  2864
+  '(2411 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25854 3612 121488 186000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (186))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/opt/anaconda3/pkgs/daal4py-2021.3.0-py39h01d92e1_0/info/test/examples/dbscan_spmd.py"
+  "dbscan_spmd.py"
+  'python-mode
+  '(anzu-mode corfu-mode bug-reference-prog-mode display-fill-column-indicator-mode display-line-numbers-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode flymake-mode goto-address-prog-mode symbol-overlay-mode rainbow-delimiters-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (tab-width . 8) (indent-tabs-mode) (buffer-display-time 25854 3619 601973 186000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230802152247.org"
+  "20230802152247.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  264
+  '(264 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25854 3619 888324 186000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230417110425.org"
+  "20230417110425.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  568
+  '(568 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25854 3620 116333 186000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (568))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013105202-如何做笔记.org"
+  "20221013105202-如何做笔记.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55746 676073 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013110549-如何做笔记.org"
+  "20221013110549-如何做笔记.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55748 34077 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013113356-如何提问.org"
+  "20221013113356-如何提问.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55749 273557 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013175809-nlp会议期刊.org"
+  "20221013175809-nlp会议期刊.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55751 346649 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013201408-reinforcement_learning_in_dialogue_system.org"
+  "20221013201408-reinforcement_learning_in_dialogue_system.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55752 798337 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015223109.org"
+  "20221015223109.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55753 971784 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015232702.org"
+  "20221015232702.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55755 632770 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221017224337.org"
+  "20221017224337.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55756 856477 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019155555.org"
+  "20221019155555.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55758 54986 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019164515.org"
+  "20221019164515.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55759 277734 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019173435.org"
+  "20221019173435.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55760 417976 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019183651.org"
+  "20221019183651.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  225
+  '(225 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55761 575657 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020105357.org"
+  "20221020105357.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55762 767965 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020132554.org"
+  "20221020132554.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55763 951326 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020133831.org"
+  "20221020133831.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55765 207315 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020135523.org"
+  "20221020135523.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55766 487915 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020142352.org"
+  "20221020142352.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55767 699208 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020143336.org"
+  "20221020143336.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55768 917786 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020145221.org"
+  "20221020145221.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55770 178808 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221024172206.org"
+  "20221024172206.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55771 423674 583000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221024235407.org"
+  "20221024235407.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55772 739521 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221027151916.org"
+  "20221027151916.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55777 395395 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028173428.org"
+  "20221028173428.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55778 733468 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028173756.org"
+  "20221028173756.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55780 27139 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028174331.org"
+  "20221028174331.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55781 336237 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028175310.org"
+  "20221028175310.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55782 720775 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028175536.org"
+  "20221028175536.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55784 66915 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028180450.org"
+  "20221028180450.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55785 450503 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221029122530.org"
+  "20221029122530.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55786 861892 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030110526.org"
+  "20221030110526.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55788 359657 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030112016.org"
+  "20221030112016.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55789 738068 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030225846.org"
+  "20221030225846.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55791 125930 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030231251.org"
+  "20221030231251.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55792 518725 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221031221052.org"
+  "20221031221052.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55793 941386 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221031223615.org"
+  "20221031223615.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55795 422837 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221101175821.org"
+  "20221101175821.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55796 912992 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102151212.org"
+  "20221102151212.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55798 445477 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102212415.org"
+  "20221102212415.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55799 998503 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102215206.org"
+  "20221102215206.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55801 475757 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221103174236.org"
+  "20221103174236.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55802 964119 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221103214225.org"
+  "20221103214225.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55804 637531 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221104111222.org"
+  "20221104111222.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55806 163280 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221104215416.org"
+  "20221104215416.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-beamer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55899 192206 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221106134534.org"
+  "20221106134534.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  6401
+  '(6393 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55901 113209 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221108171202.org"
+  "20221108171202.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55902 619400 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221110145621.org"
+  "20221110145621.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55904 524859 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221110160133.org"
+  "20221110160133.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55906 186165 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221111002009.org"
+  "20221111002009.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55907 902775 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221111210758.org"
+  "20221111210758.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55909 709096 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221112110141.org"
+  "20221112110141.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55911 252360 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221124134056.org"
+  "20221124134056.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55913 17237 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221124205854.org"
+  "20221124205854.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55914 569601 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221125141037.org"
+  "20221125141037.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55916 137893 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221128204409.org"
+  "20221128204409.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55917 728093 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221208174408.org"
+  "20221208174408.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55919 419694 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221226233646.org"
+  "20221226233646.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55921 32455 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221228214151.org"
+  "20221228214151.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55922 673325 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230110234912.org"
+  "20230110234912.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55924 283692 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230113141227.org"
+  "20230113141227.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55926 156394 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230205162127.org"
+  "20230205162127.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55928 271166 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230207164412.org"
+  "20230207164412.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55929 872422 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230212172048.org"
+  "20230212172048.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55931 527622 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230213141146.org"
+  "20230213141146.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55933 239885 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230213235433.org"
+  "20230213235433.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55934 920684 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230216165404.org"
+  "20230216165404.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55936 589228 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221140846.org"
+  "20230221140846.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55938 249187 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221141337.org"
+  "20230221141337.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55939 950003 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221142643.org"
+  "20230221142643.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55941 733627 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230222155828.org"
+  "20230222155828.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  473
+  '(404 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55943 502948 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230223164308.org"
+  "20230223164308.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55945 290716 583000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230313112430.org"
+  "20230313112430.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  6223
+  '(4996 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55947 243813 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230327165921.org"
+  "20230327165921.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  427
+  '(427 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55950 596316 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230328160004.org"
+  "20230328160004.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  185
+  '(185 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55952 331968 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230328190039.org"
+  "20230328190039.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  230
+  '(190 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55954 258187 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230404193643.org"
+  "20230404193643.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  218
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55956 33133 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230404201113.org"
+  "20230404201113.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  603
+  '(603 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55957 825539 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411212432.org"
+  "20230411212432.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  489
+  '(485 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55959 615842 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223129.org"
+  "20230411223129.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  175
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55961 380263 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223239.org"
+  "20230411223239.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  175
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55963 159580 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223349.org"
+  "20230411223349.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  193
+  '(189 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55964 940590 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411225910.org"
+  "20230411225910.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  304
+  '(217 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25820 55966 881624 583000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221011163732-从零开始使用emacs-NSConflict-gaolegao-mac12.6.7.org"
+  "20221011163732-从零开始使用emacs-NSConflict-gaolegao-mac12.6.7.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25823 55649 754603 373000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221011163732-从零开始使用emacs-NSConflict1109-gaolegao-mac12.6.7.org"
+  "20221011163732-从零开始使用emacs-NSConflict1109-gaolegao-mac12.6.7.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25838 54904 448559 96000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230203093918.org"
+  "20230203093918.org"
+  'org-mode
+  '(anzu-mode corfu-mode org-superstar-mode font-lock-mode eldoc-mode override-global-mode diff-hl-mode whitespace-cleanup-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode)
+  187
+  '(187 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25875 56536 416980 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+

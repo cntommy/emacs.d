@@ -1,0 +1,183 @@
+:PROPERTIES:
+:ID:       D8B993A8-870D-4EA6-BE11-D208D0437CB8
+:END:
+#+TITLE: idea:RLAIF
+#+AUTHOR: Jun Gao
+#+DATE: [2023-03-13 一 11:24]
+#+HUGO_BASE_DIR: ~/notes
+#+HUGO_SECTION: ch/docs
+灵感来源：Constitutional AI: Harmlessness from AI Feedback
+如果利用ai的反馈来提升系统
+设立新的评测标准
+判断contamination
+能不能用在意图聚类上（dialog schema要用意图，）
+自动生成或组合prompt
+* todo
+** 现有的工作有哪些？
+1 Human-centric dialog training via offline reinforcement learning
+Batch Constrained Q-learning
+结论：an offline setting usually fails due to the lack of ability to explore and the tendency to make over-optimistic estimates of future reward
+2 anthropic
+结论：endofcontext能提升模型性能
+轮次变多影响精度
+3 Learning to summarize from human feedback 2022 openai 有代码
+** 通过如何与ai进行交互来提升？
+目的：获得策略
+直接把失败的对话给chatgpt训练,得到正例，训练一个reward model
+
+** 以哪个模型为基准
+好复现
+soloist
+
+以哪个任务为基准
+
+
+相关工作
+Deep reinforcement learning from human preferences
+Learning to summarize from human feedback
+Lamda: Language models for dialog applications
+Training language models to follow instructions with human feedback
+Improving alignment of dialogue agents via targeted human judgements
+A general language assistant as a laboratory for alignment
+Training a helpful and harmless assistant with reinforcement learning from human feedback
+Scaling laws for reward model overoptimization
+When life gives you lemons, make cherryade: Converting feedback from bad responses into good labels
+Large language models can self-improve
+Red teaming language models to reduce harms: Methods, scaling behaviors, and lessons learned
+Language models (mostly) know what they know
+Measuring progress on scalable oversight for large language models 2022.11
+解决:系统优于人时，怎么进行监督
+目标是设计safe and useful AI system
+scalable oversight：一种提供监督的能力，在模型到达人类水平之后依然有效
+
+Fine-Tuning Language Models from Human Preferences
+ppo finetune
+
+
+* chatgpt相关论文
+
+** 直接用
+Cross-Lingual Summarization via ChatGPT
+http://arxiv.org/abs/2302.14229v1
+跨语言摘要任务
+
+Is ChatGPT A Good Keyphrase Generator? A Preliminary Study
+直接评测
+
+Is ChatGPT a General-Purpose Natural Language Processing Task Solver?
+推理和对话能力强大，特定任务有挑战：sequence tagging Arithmetic
+
+Exploring the Limits of ChatGPT for Query or Aspect-based Text Summarization
+第一个用在 aspect summarize
+
+A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
+http://arxiv.org/abs/2302.04023v2
+任务型对话：测出来的inform和我的差不多
+dst有prompt  JGA（完全一样）24.4问题出在评价 turn_belief成功率73%(soloist multiwoz2.0 JGA 53.2 turn_belief成功率对应有多少？) 
+inform 71.1 不确定是不是一样的测法（怀疑论文有误 是测dialog 而不是turn）
+inform：entity指的什么
+soloist whether the entity was proposed
+whether the system provides an appropriate entity
+
+jga：turn里面的belief都对
+端到端setting的问题：基本推理错误，在给定的数据库外产生幻觉
+
+Zero-Shot Information Extraction via Chatting with ChatGPT
+北交 达摩院
+
+** 数据标注
+Is ChatGPT better than Human Annotators? Potential and Limitations of ChatGPT in Explaining Implicit Hate Speech
+http://arxiv.org/abs/2302.07736v2
+
+Leveraging ChatGPT for Text Data Augmentation
+
+
+
+** prompt
+Guiding Large Language Models via Directional Stimulus Prompting
+自动生成prompt
+
+Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback
+解决知识获取和幻觉问题，plug-and-play方式
+设计一个prompt框架：
+1 working memory：包含user query，evidence from KC，candidate response，socore and feedback，history
+2 policy：选择1）获取evidence2）生成candidate3）sending response
+3 action excutor：knowledge consolidator：1）retriever：找到有关的语料 2）找到关联
+
+Large Language Models Are State-of-the-Art Evaluators of Translation Quality
+
+UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation
+
+An Independent Evaluation of ChatGPT on Mathematical Word Problems (MWP)
+ 2. Authors: Paulo Shakarian*, Abhinav Koyyalamudi, Noel Ngu and Lakshmivihari Mareedu
+002320 3. Affiliation: 亚利桑那州立大学（Arizona State University）
+http://arxiv.org/abs/2302.13814v2
+
+Exploring ChatGPT's Ability to Rank Content: A Preliminary Study on Consistency with Human Preferences
+http://arxiv.org/abs/2303.07610v1
+
+Can ChatGPT Understand Too? A Comparative Study on ChatGPT and Fine-tuned BERT
+
+Exploring the Feasibility of ChatGPT for Event Extraction
+
+A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+
+** 评价器
+Is ChatGPT a Good NLG Evaluator? A Preliminary Study
+http://arxiv.org/abs/2303.04048v1
+
+** prompt优化
+
+Multitask prompted training enables zero-shot task generalization 2022
+Finetuned language models are zero-shot learners 2021
+*** 连续
+Contextual Dynamic Prompting for Response Generation in Task-oriented Dialog Systems 2023.2.10
+Prefix-tuning: Optimizing continuous prompts for generation
+The power of scale for parameter-efficient prompt tuning
+Spot: Better frozen model adaptation through soft prompt transfer
+Black-box tuning for language-model-as-a-service
+Input-tuning: Adapting unfamiliar inputs to frozen pretrained models
+How Does In-Context Learning Help Prompt Tuning?
+Dynamic Prompting: A Unified Framework for Prompt Tuning
+Meta-augmented Prompt Tuning for Better Few-shot Learning
+PromDA: Prompt-based Data Augmentation for Low-Resource NLU Tasks
+*** 离散
+**** 手工
+Language models as knowledge bases? 2019
+从bert中提取fill-in-the-blank知识
+Language models are few-shot learners 2020
+gpt3的few-shot
+Prompt programming for large language models: Beyond the few-shot paradigm 2021
+**** 重写
+How can we know what language models know?
+**** 生成
+Large language models are human-level prompt engineers 2023
+只能用在简单的任务上
+Prompting: Better ways of using language models for nlp tasks 2021
+Guiding Large Language Models via Directional Stimulus Prompting 2023
+生成dialog act
+**** 编辑
+Autoprompt: Eliciting knowledge from language models with automatically generated prompts
+从候选的template中选择
+**** 优化
+Rlprompt: Optimizing discrete text prompts with reinforcement learning
+**** retrieval
+DYNAMIC PROMPT LEARNING VIA POLICY GRADIENT FOR SEMI-STRUCTURED MATHEMATICAL REASONING 2023
+
+
+* article
+** introduction
+large language model progress recently, but not good at tod,task oriented dialog system with large language model
+
+progress in prompt method
+progress in prompt tuning
+
+limited work in adaptive prompt selection
+our work in adaptive prompt selection
+** related work
+*** task-oriented dialog system with LLM
+*** prompt of large language model
+** method
+** experiments
+
+

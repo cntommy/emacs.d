@@ -1,0 +1,1211 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Jul 16 00:43:13 2023
+;; Desktop file format version 208
+;; Emacs version 28.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25778 52385 64639 0) (desktop . "208") "gaolegao@mac13.local" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-*-Monaco-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eaeaea") (background-color . "#000000") (mouse-color . "black") (border-color . "#424242") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (alpha) (scroll-bar-foreground . "black") (scroll-bar-background) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (inhibit-double-buffering) (menu-bar-lines . 0) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "#d54e53") (environment) (ns-appearance . light) (ns-transparent-titlebar . t) (modeline . t) (unsplittable) (tabs (current-tab (name . "20230313112430.org") (explicit-name))) (frameset--id . "1A1F-CE6A-2C0F-968C") (frameset--mini t . t) (display . "Mac") (last-focus-update . t) (icon-name) (explicit-name) (tool-bar-position . top) (top-toolbar-shadow-color . "#ffffffffffff") (bottom-toolbar-shadow-color . "#909099999999") (background-toolbar-color . "bisque") (frameset--text-pixel-width . 1700) (frameset--text-pixel-height . 847) (height . 40) (width . 170) (left . 0) (top . 25)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 84) (min-pixel-width . 100) (min-pixel-height-ignore . 45) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 21) (min-pixel-width-safe . 20)) leaf (pixel-width . 1716) (pixel-height . 826) (total-width . 171) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 7721) (start . 7293)) (prev-buffers ("init-local.el" 17552 18071) ("*Messages*" 7079 7145) ("*scratch*" 1 1) ("20221226214112.org" 82 636) ("20221106134534.org" 6217 6401) ("20230625153208.org" 1 341) ("*info*" 173 227) ("20230222155828.org" 264 473) ("content-org" 1 261) ("20230323105322.org" 16939 17313) ("20230313112430.org" 5081 5797) ("20230404201113.org" 226 508) ("20230327165921.org" 1 428) ("20221015223139.org" 1 590) ("20221011163732-从零开始使用emacs.org" 16403 16798) ("20221015231700.org" 1 186) ("20230411212456.org" 855 1231) ("20230203093918.org" 1 206) ("20230411225910.org" 218 304) ("20230417110425.org" 308 398) ("20230411212432.org" 1 489) ("20230411223349.org" 1 193) ("20221013105202-如何做笔记.org" 1 1) ("20230404193643.org" 1 218) ("20230328190039.org" 1 362) ("20230213141146.org" 1 1) ("20230328160004.org" 1 185) ("20230323221315.org" 1 178) ("20221029122530.org" 1 1) ("20221024235407.org" 1 1) ("20221019155555.org" 1 1) ("init.el" 4142 4513) ("init.el<2>" 1 98) ("init-local.el<2>" 1 115) ("20221013110549-如何做笔记.org" 1 1) ("20221013113356-如何提问.org" 1 1) ("20221013144002-2022_dialogue_paper.org" 1 1) ("20221013175809-nlp会议期刊.org" 1 1) ("20221013201408-reinforcement_learning_in_dialogue_system.org" 1 1) ("20221015223109.org" 1 1) ("20221015232702.org" 1 1) ("20221017224337.org" 1 1) ("20221019164515.org" 1 1) ("20221019173435.org" 1 1) ("20221019183651.org" 1 1) ("20221020105357.org" 1 1) ("20221020132554.org" 1 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("toggle-truncate-lines" "toggle-debug-on-error" "package-install" "org-roam-db-sync" "toggle-debug-on-error" "org-roam-db-clear-all" "color-theme-sanityinc-tomorrow-eighties" "toggle-debug-on-error" "eval-buffer" "color-theme-sanityinc-tomorrow-eighties" "org-roam-db-sync" "line-number-mode" "color-theme-sanityinc-tomorrow-eighties" "eval-buffer" "fdx/delete-current-buffer-file" "color-theme-sanityinc-tomorrow-eighties" "line-number-mode" "goto-line" "color-theme-sanityinc-tomorrow-eighties" "color-theme-sanityinc-tomorrow-day" "color-theme-sanityinc-solarized-light" "color-theme-sanityinc-tomorrow-eighties" "color-theme-sanityinc-solarized-light" "color-theme-sanityinc-tomorrow-blue" "color-theme-sanityinc-tomorrow-day" "color-theme-sanityinc-solarized-light" "color-theme-sanityinc-tomorrow-bright" "color-theme-sanityinc-tomorrow-eighties" "color-theme-sanityinc-tomorrow-bright" "color-theme-sanityinc-tomorrow-blue"))
+(setq face-name-history nil)
+(setq file-name-history '("~/.emacs.d/custom.el" "~/notes/content-org/20230411223239.org" "~/notes/content-org/20230411223129.org" "~/notes/content-org/20230223164308.org" "~/notes/content-org/20230221142643.org" "~/notes/content-org/20230221141337.org" "~/notes/content-org/20230221140846.org" "~/notes/content-org/20230216165404.org" "~/notes/content-org/20230213235433.org" "~/notes/content-org/20230212172048.org" "~/notes/content-org/20230207164412.org" "~/notes/content-org/20230205162127.org" "~/notes/content-org/20230113141227.org" "~/notes/content-org/20230110234912.org" "~/notes/content-org/20221228214151.org" "~/notes/content-org/20221226233646.org" "~/notes/content-org/20221208174408.org" "~/notes/content-org/20221128204409.org" "~/notes/content-org/20221125141037.org" "~/notes/content-org/20221124205854.org" "~/notes/content-org/20221124134056.org" "~/notes/content-org/20221112110141.org" "~/notes/content-org/20221111210758.org" "~/notes/content-org/20221111002009.org" "~/notes/content-org/20221110160133.org" "~/notes/content-org/20221110145621.org" "~/notes/content-org/20221108171202.org" "~/notes/content-org/20221104215416.org" "~/notes/content-org/20221104111222.org" "~/notes/content-org/20221103214225.org" "~/notes/content-org/20221103174236.org" "~/notes/content-org/20221102215206.org" "~/notes/content-org/20221102212415.org" "~/notes/content-org/20221102151212.org" "~/notes/content-org/20221101175821.org" "~/notes/content-org/20221031223615.org" "~/notes/content-org/20221031221052.org" "~/notes/content-org/20221030231251.org" "~/notes/content-org/20221030225846.org" "~/notes/content-org/20221030112016.org" "~/notes/content-org/20221030110526.org" "~/notes/content-org/20221028180450.org" "~/notes/content-org/20221028175536.org" "~/notes/content-org/20221028175310.org" "~/notes/content-org/20221028174331.org" "~/notes/content-org/20221028173756.org" "~/notes/content-org/20221028173428.org" "~/notes/content-org/20221027151916.org" "~/notes/content-org/20221024172206.org" "~/notes/content-org/20221020145221.org" "~/notes/content-org/20221020143336.org" "~/notes/content-org/20221020142352.org" "~/notes/content-org/20221020135523.org" "~/notes/content-org/20221020133831.org" "~/notes/content-org/20221020132554.org" "~/notes/content-org/20221020105357.org" "~/notes/content-org/20221019183651.org" "~/notes/content-org/20221019173435.org" "~/notes/content-org/20221019164515.org" "~/notes/content-org/20221017224337.org" "~/notes/content-org/20221015232702.org" "~/notes/content-org/20221015223109.org" "~/notes/content-org/20221013201408-reinforcement_learning_in_dialogue_system.org" "~/notes/content-org/20221013175809-nlp会议期刊.org" "~/notes/content-org/20221013144002-2022_dialogue_paper.org" "~/notes/content-org/20221013113356-如何提问.org" "~/notes/content-org/20221013110549-如何做笔记.org" "~/.emacs.d/init.el" "~/notes/content-org/20221019155555.org" "~/notes/content-org/20221024235407.org" "~/notes/content-org/20221029122530.org" "~/notes/content-org/20230323221315.org" "~/notes/content-org/20230328160004.org" "~/notes/content-org/20230213141146.org" "~/notes/content-org/20230328190039.org" "~/notes/content-org/20230404193643.org" "~/notes/content-org/20221013105202-如何做笔记.org" "~/notes/content-org/20230411223349.org" "~/notes/content-org/20230411212432.org" "~/notes/content-org/20230417110425.org" "~/notes/content-org/20230411225910.org" "~/notes/content-org/20230203093918.org" "~/notes/content-org/20230411212456.org" "~/notes/content-org/20221015231700.org" "~/notes/content-org/20221011163732-从零开始使用emacs.org" "~/notes/content-org/20221015223139.org" "~/notes/content-org/20230327165921.org" "~/notes/content-org/20230404201113.org" "~/notes/content-org/20230313112430.org" "~/notes/content-org/20230323105322.org" "~/notes/content-org/20230222155828.org" "~/notes/content-org/20230625153208.org" "~/notes/content-org/20221106134534.org" "~/notes/content-org/20221226214112.org" "~/.emacs.d/lisp/init-local.el" "~/.emacs.d/custom.el" "~/notes/content-org/20230411223239.org" "~/notes/content-org/20230411223129.org" "~/notes/content-org/20230223164308.org" "~/notes/content-org/20230221142643.org"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq magit-revision-history nil)
+(setq minibuffer-history '("Black-Box Prompt Learning for Pre-trained\nLanguage Models" "https://arxiv.org/pdf/2201.08531.pdf" "d" "5x2" "4*5" "color-theme" "org-roam-ui"))
+(setq org-clock-history nil)
+(setq org-refile-history '("学校/" "策略/买入策略/程序2：与市场的比价关系/" "策略/买入策略/" "路线/怀柔/" "路线/延庆/" "路线/门头沟/" "路线/延庆/"))
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq search-ring '(#("C-c C-s" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("脚" 0 1 (isearch-case-fold-search nil isearch-regexp-function nil)) #("标题" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("org-roam" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("magit" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("rim" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("plan" 0 4 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/gaolegao/.emacs.d/lisp/init-local.el"
+  "init-local.el"
+  'emacs-lisp-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode goto-address-prog-mode symbol-overlay-mode rainbow-delimiters-mode flymake-mode highlight-quoted-mode aggressive-indent-mode paredit-mode elisp-slime-nav-mode anzu-mode dimmer-mode)
+  18071
+  '(18071 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46845 888792 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (18067 18042 17943 1372 1372 265 265 1 1 1 14128 13646 10756 10266 10277 17839))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221226214112.org"
+  "20221226214112.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  636
+  '(2585 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46860 955019 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (2567 3057 2200 2303 2308 2563 2678 2763 2948 2857 2763 2948 2961 2962 2763 511))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221106134534.org"
+  "20221106134534.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode org-hugo-auto-export-mode)
+  6401
+  '(6393 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46861 108896 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (6441 6435 6435 6429 6402 2520 2481 6299 6448 6448 6448 6448 6448 6217 6217 6217))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230625153208.org"
+  "20230625153208.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  341
+  '(341 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46861 296124 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (67 341 67 204 304 341))))
+
+(desktop-create-buffer 208
+  nil
+  "*info*"
+  'Info-mode
+  '(ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode anzu-mode dimmer-mode)
+  227
+  '(nil nil)
+  t
+  '("dir" "Top" nil)
+  '((tab-width . 8) (buffer-display-time 25778 46861 623247 465000) (case-fold-search . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230222155828.org"
+  "20230222155828.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  473
+  '(404 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46861 788409 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (404 467 466 405 467 405 397))))
+
+(desktop-create-buffer 208
+  nil
+  "content-org"
+  'dired-mode
+  '(ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode anzu-mode dimmer-mode diff-hl-dired-mode)
+  261
+  '(1 nil)
+  t
+  '("/Users/gaolegao/notes/content-org/")
+  '((buffer-display-time 25778 46862 118532 465000))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230323105322.org"
+  "20230323105322.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode linum-mode)
+  17313
+  '(5696 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46869 186662 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (5661 5507 5302 5006 4775 4570 8181 17261 16939 16939 16939 16939 16939 16939 16851 17313))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230313112430.org"
+  "20230313112430.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  5797
+  '(5797 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46869 387922 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (5004 6165 4996 4931 4873 4816 4767 307 1955 5706 5620 5506 4226 4371 4238 5415))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230404201113.org"
+  "20230404201113.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  508
+  '(603 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46869 575943 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (726 726 1049 1049 1049 1049 1 399))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230327165921.org"
+  "20230327165921.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  428
+  '(428 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46869 753869 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (427 391 230 215 375 220 220 390 427 428))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015223139.org"
+  "20221015223139.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  590
+  '(590 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46869 924225 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (590 173 590))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221011163732-从零开始使用emacs.org"
+  "20221011163732-从零开始使用emacs.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode org-hugo-auto-export-mode)
+  16798
+  '(12583 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46870 168726 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (12583 13134 27237 1 1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015231700.org"
+  "20221015231700.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  186
+  '(186 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46870 943266 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (186 186 1 186))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411212456.org"
+  "20230411212456.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1231
+  '(1231 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46871 163792 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (1223 535 535 592 536 1101 1087 957 920 915 978 1101 255 255 536 571))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230203093918.org"
+  "20230203093918.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  206
+  '(206 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46871 373882 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (206 109 206 206))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411225910.org"
+  "20230411225910.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  304
+  '(304 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46871 608122 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (217 280 223 291))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230417110425.org"
+  "20230417110425.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  398
+  '(398 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46871 850244 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (187 375 316 243 205 196 311 218 343 315 405 284 288 492 513 419))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411212432.org"
+  "20230411212432.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  489
+  '(485 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46872 69094 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (383 178 330 330 276 330 276 330 330 330 330 330 178 330 383 489))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223349.org"
+  "20230411223349.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  193
+  '(189 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46872 265206 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013105202-如何做笔记.org"
+  "20221013105202-如何做笔记.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46872 476015 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230404193643.org"
+  "20230404193643.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  218
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46872 701947 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230328190039.org"
+  "20230328190039.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  362
+  '(362 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46872 956221 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (190 182 314 362))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230213141146.org"
+  "20230213141146.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46873 195822 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230328160004.org"
+  "20230328160004.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  185
+  '(185 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46873 413858 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230323221315.org"
+  "20230323221315.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  178
+  '(178 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46873 774185 465000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221029122530.org"
+  "20221029122530.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46874 16330 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221024235407.org"
+  "20221024235407.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46874 266735 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019155555.org"
+  "20221019155555.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode org-hugo-auto-export-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46874 512505 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode goto-address-prog-mode symbol-overlay-mode rainbow-delimiters-mode flymake-mode highlight-quoted-mode aggressive-indent-mode paredit-mode elisp-slime-nav-mode anzu-mode dimmer-mode)
+  4513
+  '(4513 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25778 46875 258621 465000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 4513))))
+
+(desktop-create-buffer 208
+  nil
+  "init.el"
+  'dired-mode
+  '(ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode anzu-mode dimmer-mode diff-hl-dired-mode)
+  98
+  '(nil nil)
+  t
+  '("/Users/gaolegao/.emacs.d/init.el")
+  '((buffer-display-time 25778 46875 402288 465000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "init-local.el"
+  'dired-mode
+  '(ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode anzu-mode dimmer-mode diff-hl-dired-mode)
+  115
+  '(115 nil)
+  t
+  '("/Users/gaolegao/.emacs.d/lisp/init-local.el")
+  '((buffer-display-time 25778 46875 546848 465000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013110549-如何做笔记.org"
+  "20221013110549-如何做笔记.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46875 800675 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013113356-如何提问.org"
+  "20221013113356-如何提问.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46876 52779 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013144002-2022_dialogue_paper.org"
+  "20221013144002-2022_dialogue_paper.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46876 311480 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013175809-nlp会议期刊.org"
+  "20221013175809-nlp会议期刊.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46876 553227 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221013201408-reinforcement_learning_in_dialogue_system.org"
+  "20221013201408-reinforcement_learning_in_dialogue_system.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46876 821466 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015223109.org"
+  "20221015223109.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46877 68989 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221015232702.org"
+  "20221015232702.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46877 351060 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221017224337.org"
+  "20221017224337.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46877 692761 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019164515.org"
+  "20221019164515.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46877 966220 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019173435.org"
+  "20221019173435.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46878 244044 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221019183651.org"
+  "20221019183651.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46878 493504 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020105357.org"
+  "20221020105357.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46878 356818 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020132554.org"
+  "20221020132554.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 46874 624184 465000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020133831.org"
+  "20221020133831.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24686 509484 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020135523.org"
+  "20221020135523.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24688 41824 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020142352.org"
+  "20221020142352.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24689 622082 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020143336.org"
+  "20221020143336.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24691 225268 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221020145221.org"
+  "20221020145221.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24692 868995 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221024172206.org"
+  "20221024172206.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24694 624039 224000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221027151916.org"
+  "20221027151916.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24696 360026 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028173428.org"
+  "20221028173428.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24698 49840 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028173756.org"
+  "20221028173756.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24699 805450 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028174331.org"
+  "20221028174331.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24701 489584 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028175310.org"
+  "20221028175310.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24703 183499 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028175536.org"
+  "20221028175536.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24704 902371 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221028180450.org"
+  "20221028180450.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24706 697715 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030110526.org"
+  "20221030110526.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24708 442488 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030112016.org"
+  "20221030112016.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24710 224111 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030225846.org"
+  "20221030225846.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24711 962625 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221030231251.org"
+  "20221030231251.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24714 151225 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221031221052.org"
+  "20221031221052.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24715 991961 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221031223615.org"
+  "20221031223615.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24717 829710 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221101175821.org"
+  "20221101175821.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24719 612112 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102151212.org"
+  "20221102151212.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24721 437523 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102212415.org"
+  "20221102212415.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24723 222733 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221102215206.org"
+  "20221102215206.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24725 57654 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221103174236.org"
+  "20221103174236.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24726 866510 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221103214225.org"
+  "20221103214225.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24728 765763 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221104111222.org"
+  "20221104111222.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24730 811514 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221104215416.org"
+  "20221104215416.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode org-beamer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24769 185992 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221108171202.org"
+  "20221108171202.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24770 974232 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221110145621.org"
+  "20221110145621.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24772 763243 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221110160133.org"
+  "20221110160133.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24774 565159 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221111002009.org"
+  "20221111002009.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24776 363800 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221111210758.org"
+  "20221111210758.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24778 274414 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221112110141.org"
+  "20221112110141.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24780 149028 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221124134056.org"
+  "20221124134056.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24782 45579 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221124205854.org"
+  "20221124205854.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24783 893735 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221125141037.org"
+  "20221125141037.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24785 812994 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221128204409.org"
+  "20221128204409.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24787 773805 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221208174408.org"
+  "20221208174408.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24789 637094 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221226233646.org"
+  "20221226233646.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24792 290345 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20221228214151.org"
+  "20221228214151.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24794 218344 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230110234912.org"
+  "20230110234912.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24796 99775 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230113141227.org"
+  "20230113141227.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24798 58907 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230205162127.org"
+  "20230205162127.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24800 467925 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230207164412.org"
+  "20230207164412.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24802 397923 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230212172048.org"
+  "20230212172048.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24804 329289 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230213235433.org"
+  "20230213235433.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24806 248402 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230216165404.org"
+  "20230216165404.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24808 171776 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221140846.org"
+  "20230221140846.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24810 162200 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221141337.org"
+  "20230221141337.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24812 153153 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230221142643.org"
+  "20230221142643.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24814 227654 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230223164308.org"
+  "20230223164308.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24816 282776 224000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223129.org"
+  "20230411223129.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  175
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25706 24818 368230 224000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/gaolegao/notes/content-org/20230411223239.org"
+  "20230411223239.org"
+  'org-mode
+  '(eldoc-mode ns-auto-titlebar-mode global-auto-revert-mode override-global-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode flymake-mode anzu-mode dimmer-mode)
+  175
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (buffer-display-time 25778 52375 435119 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
